@@ -1,0 +1,15 @@
+{
+  "name": "ocp-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:registerSearch": "cypress run --spec 'cypress/integration/roc/registerSearch.spec.js'",
+    "cypress:open": "cypress open"
+  },
+  "author": "lord sayur",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^5.4.0"
+  }
+}
