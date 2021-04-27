@@ -80,7 +80,7 @@ Cypress.Commands.add("rdLogin", (user) => {
 });
 
 Cypress.Commands.add("goTo", (section) => {
-  cy.visit("http://localhost:5082/playground");
+  cy.visit("http://localhost:5082/playground/369");
   cy.get(".multiselect__tags").click();
   cy.contains(section).click();
   cy.get(".multiselect__select").click();
