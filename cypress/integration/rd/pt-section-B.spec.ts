@@ -51,11 +51,11 @@ const user = {
 };
 
 const fields = {
-  icNumber: "icNumber",
-  name: "name",
+  icNumber: "identityNumber",
+  name: "fullName",
   isDirector: "isDirector",
   sharePercentage: "sharePercentage",
-  capitalAmount: "capitalAmount",
+  capitalAmount: "capital",
 };
 
 Cypress.Commands.add("enterShareholder", (params) => {
@@ -123,15 +123,15 @@ describe("PT - Section B", () => {
     cy.getDataTestId("totalCapitalAmount").should("have.value", "0");
   });
 
-  it("should show error message if input is missing value", () => {
+  it.only("should show error message if input is missing value", () => {
     cy.getDataTestId(tableInput2.addBtn()).click();
 
     cy.getDataTestId("submitBtn").click();
 
-    cy.contains("IC Number is required");
-    cy.contains("Name is required");
+    cy.contains("Identity Number is required");
+    cy.contains("Full Name is required");
     cy.contains("% of shares is required");
-    cy.contains("Capital Amount is required");
+    cy.contains("Capital is required");
   });
 
   it("should hide summary message if at least 1 shareholder is added and total % of share is equal 100", () => {
