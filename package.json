@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:registerSearch": "cypress run --spec 'cypress/integration/roc/registerSearch.spec.js'",
-    "cypress:open": "cypress open"
+    "cy:run-rd": "cypress run --headless --browser chrome --spec 'cypress/integration/rd/*'",
+    "cy:open": "cypress open",
+    "build": "tsc --p tsconfig-build.json"
   },
   "author": "lord sayur",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^6.9.1"
+    "cypress": "^6.9.1",
+    "typescript": "^4.2.4"
   }
 }

@@ -79,13 +79,40 @@ Cypress.Commands.add("rdLogin", (user) => {
   );
 });
 
-Cypress.Commands.add("goTo", (section) => {
+Cypress.Commands.add("goTo", (...sections) => {
   cy.visit("http://localhost:5082/playground/369");
   cy.get(".multiselect__tags").click();
-  cy.contains(section).click();
-  cy.get(".multiselect__select").click();
+  sections.forEach((section) => {
+    cy.contains(section).click({ force: true });
+  });
+  cy.get(".multiselect__select").click({ force: true });
 });
 
 Cypress.Commands.add("getDataTestId", (testId) =>
   cy.get(`[data-testid=${testId}]`, { timeout: 15000 })
 );
+
+// Set CYPRESS_COMMAND_DELAY above zero for demoing to stakeholders,
+// E.g. CYPRESS_COMMAND_DELAY=1000 node_modules/.bin/cypress open
+const COMMAND_DELAY = Cypress.env("COMMAND_DELAY") || 0;
+if (COMMAND_DELAY > 0) {
+  for (const command of [
+    "visit",
+    "click",
+    "trigger",
+    "type",
+    "clear",
+    "reload",
+    "contains",
+  ]) {
+    Cypress.Commands.overwrite(command, (originalFn, ...args) => {
+      const origVal = originalFn(...args);
+
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve(origVal);
+        }, COMMAND_DELAY);
+      });
+    });
+  }
+}

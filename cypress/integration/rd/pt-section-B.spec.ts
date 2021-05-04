@@ -1,5 +1,7 @@
 /// <reference types="Cypress" />
 
+import { tableInput2 } from "../../support/lib/elements";
+
 const user = {
   id_token:
     "eyJhbGciOiJSUzI1NiIsImtpZCI6IjdFMkI0RjhGRURERDg2QjU3NTQxMzA2M0RBQTdBRkYyIiwidHlwIjoiSldUIn0.eyJuYmYiOjE2MTY5OTk0NDYsImV4cCI6MTYxNzAwMzA0NiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDgxIiwiYXVkIjoiZXNlcnZpY2VfcG9ydGFsX2RldmVsb3BtZW50IiwiaWF0IjoxNjE2OTk5NDQ2LCJhdF9oYXNoIjoiTl9mb1FYNmZtMW9qcXI2WGNkcUdBdyIsInNfaGFzaCI6IlgzWlIteUY5aXZVUHNqQ1hka0g4cnciLCJzaWQiOiJBNTYxQkEyMjJDNzAwRDlBNjlDRDUxNTk2MUFCODg4RCIsInN1YiI6ImVkZDRlYmM0LTE3ODQtNDZmYi04YjE3LWRhNDQ4NzI3ZjQ1NCIsImF1dGhfdGltZSI6MTYxNjk5OTQ0MywiaWRwIjoibG9jYWwiLCJhbXIiOlsicHdkIl19.q_Xael5u0xhc4N9HgXVHZ5oaSUd_RpVPjUOJ2mr3eBsML78pfRDMiNTvX4F7LGrPgW2Y_HQzUksM33rSRbMFmxcmY-J8Hqx5iaf1czbf2n7B1rKQt6Emqryqqle_g7jReXPhJPKj2PPNUF_LHmFtYHZM184WaTGNJnlwOLWXw3Kw-sfr1pCbeduj65a4IQ0fHhZ_MwgXnM_enFx9e38zlND9-Hv2e62YXhTYAFu0plAKxlhErqNFOCu4_WdOQKgfMNNXOC7SxvHDi6AWn533c8inT6VzPyomHnxkKlu7WiWZqxqjT6CniuGGRVows2uNLdIN0oxuEYn3wCti9QCY0Q",
@@ -48,36 +50,84 @@ const user = {
   expires_at: 1617003046,
 };
 
-context("PT - Section B", () => {
+const fields = {
+  icNumber: "icNumber",
+  name: "name",
+  isDirector: "isDirector",
+  sharePercentage: "sharePercentage",
+  capitalAmount: "capitalAmount",
+};
+
+Cypress.Commands.add("enterShareholder", (params) => {
+  cy.getDataTestId(tableInput2.inputField(fields.icNumber, params.row)).type(
+    params.icNumber
+  );
+  cy.getDataTestId(tableInput2.inputField(fields.name, params.row)).type(
+    params.name
+  );
+  if (params.check)
+    cy.getDataTestId(
+      tableInput2.inputField(fields.isDirector, params.row)
+    ).check({ force: true });
+  cy.getDataTestId(
+    tableInput2.inputField(fields.sharePercentage, params.row)
+  ).type(params.sharePercentage);
+  cy.getDataTestId(
+    tableInput2.inputField(fields.capitalAmount, params.row)
+  ).type(params.capitalAmount);
+});
+
+describe("PT - Section B", () => {
   beforeEach(() => {
     cy.rdLogin(user);
     cy.goTo("PTSectionB");
   });
 
-  it("should be able to add shareholder and get correct total % of shares", () => {
-    cy.getDataTestId("tableInputAddBtn").click();
-    cy.getDataTestId("tableInputField0").type("01-010191");
-    cy.getDataTestId("tableInputField1").type("Test Shareholder");
-    cy.get(".custom-control").click();
-    cy.getDataTestId("tableInputField3").type("80");
-    cy.getDataTestId("tableInputField4").type("1000");
-    cy.getDataTestId("totalCapitalAmount").should("have.value", "1000");
+  it("should be able to add shareholder and get correct total % of shares and total capital amount", () => {
+    cy.getDataTestId(tableInput2.addBtn()).click();
+    cy.enterShareholder({
+      icNumber: "01-010191",
+      name: "Test Shareholder",
+      check: true,
+      sharePercentage: 40,
+      capitalAmount: 1000,
+    });
+
+    cy.getDataTestId(tableInput2.addBtn()).click();
+    cy.enterShareholder({
+      row: 1,
+      icNumber: "01-010191",
+      name: "Test Shareholder",
+      check: true,
+      sharePercentage: 50,
+      capitalAmount: 1500,
+    });
+
+    cy.getDataTestId("totalCapitalAmount").should("have.value", "2500");
+    cy.getDataTestId("totalSharePercentage").should("have.value", "90");
   });
 
   it("should be able to delete shareholder and get correct total % of shares", () => {
-    cy.getDataTestId("tableInputAddBtn").click();
-    cy.getDataTestId("tableInputField0").type("01-010191");
-    cy.getDataTestId("tableInputField1").type("Test Shareholder");
-    cy.get(".custom-control").click();
-    cy.getDataTestId("tableInputField3").type("80");
-    cy.getDataTestId("tableInputField4").type("1000");
-    cy.getDataTestId("tableInputDeleteBtn").click();
+    cy.getDataTestId(tableInput2.addBtn()).click();
+
+    cy.enterShareholder({
+      icNumber: "01-010191",
+      name: "Test Shareholder",
+      check: true,
+      sharePercentage: 80,
+      capitalAmount: 1000,
+    });
+
+    cy.getDataTestId(tableInput2.deleteBtn()).click();
+
     cy.getDataTestId("totalCapitalAmount").should("have.value", "0");
   });
 
   it("should show error message if input is missing value", () => {
-    cy.getDataTestId("tableInputAddBtn").click();
+    cy.getDataTestId(tableInput2.addBtn()).click();
+
     cy.getDataTestId("submitBtn").click();
+
     cy.contains("IC Number is required");
     cy.contains("Name is required");
     cy.contains("% of shares is required");
@@ -85,13 +135,18 @@ context("PT - Section B", () => {
   });
 
   it("should hide summary message if at least 1 shareholder is added and total % of share is equal 100", () => {
-    cy.getDataTestId("tableInputAddBtn").click();
-    cy.getDataTestId("tableInputField0").type("01-010191");
-    cy.getDataTestId("tableInputField1").type("Test Shareholder");
-    cy.get(".custom-control").click();
-    cy.getDataTestId("tableInputField3").type("100");
-    cy.getDataTestId("tableInputField4").type("1000");
+    cy.getDataTestId(tableInput2.addBtn()).click();
+
+    cy.enterShareholder({
+      icNumber: "01-010191",
+      name: "Test Shareholder",
+      check: true,
+      sharePercentage: 100,
+      capitalAmount: 1000,
+    });
+
     cy.getDataTestId("submitBtn").click();
+
     cy.contains("You must enter at least one").should("not.exist");
     cy.contains("The total % of shares must equal 100%").should("not.exist");
   });
@@ -116,7 +171,7 @@ context("PT - Section B", () => {
         },
       }
     );
-    cy.getDataTestId("tableInputField1").should(
+    cy.getDataTestId(tableInput2.inputField(fields.name)).should(
       "have.value",
       "Stubbed Director"
     );
@@ -142,7 +197,8 @@ context("PT - Section B", () => {
         },
       }
     );
-    cy.getDataTestId("tableInputField1").should(
+
+    cy.getDataTestId(tableInput2.inputField(fields.name)).should(
       "have.value",
       "Stubbed Director"
     );
@@ -167,19 +223,25 @@ context("PT - Section B", () => {
         },
       }
     );
-    cy.getDataTestId("tableInputField3")
+
+    cy.getDataTestId(tableInput2.inputField(fields.sharePercentage))
       .should("be.empty")
       .should("not.have.attr", "disabled");
-    cy.getDataTestId("tableInputField3").type("40").should("have.value", "40");
+
+    cy.getDataTestId(tableInput2.inputField(fields.sharePercentage))
+      .type("40")
+      .should("have.value", "40");
   });
 
   it("should display error message if user does not enter at least one shareholder", () => {
     cy.getDataTestId("submitBtn").click();
+
     cy.contains("You must enter at least one");
   });
 
   it("should display error message if Total % of share is not equal 100%", () => {
     cy.getDataTestId("submitBtn").click();
+
     cy.contains("The total % of shares must equal 100%");
   });
 });
