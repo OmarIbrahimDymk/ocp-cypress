@@ -24,27 +24,13 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-Cypress.Commands.add("login", () => {
-  cy.request({
-    method: "POST",
-    url: "",
-    body: {
-      user: {
-        email: "",
-        password: "",
-      },
-    },
-  }).then((resp) => {
-    window.localStorage.setItem("id_token", resp.body.user.token);
-  });
-});
+import "cypress-file-upload";
 
-Cypress.Commands.add("OCPLogin", ({ url, icNumber, password }) => {
-  cy.visit(url);
-  cy.get("button").contains("Login").click();
-  cy.get("#Username").type(icNumber);
-  cy.get("#Password").type(`${password}{enter}`);
-  cy.get(":nth-child(1) > .nav-link").click();
+Cypress.Commands.add("qaSetToken", (user: string) => {
+  localStorage.setItem(
+    "oidc.user:https://accounts.qa.ocp.mofe.gov.bn:eservice_portal_qa_onprem_env",
+    JSON.stringify(user)
+  );
 });
 
 Cypress.Commands.add("searchEntity", (entity) => {
@@ -67,12 +53,6 @@ Cypress.Commands.add("searchEntity", (entity) => {
 });
 
 Cypress.Commands.add("rdLogin", (user) => {
-  // cy.request("POST", "api/url", user)
-  //   .its("body.data.access_token")
-  //   .should("exist")
-  //   .then((token) => {
-  //     localStorage.setItem("auth._token.local", `Bearer ${token}`)
-  //   })
   localStorage.setItem(
     "oidc.user:http://localhost:5081:eservice_portal_development",
     JSON.stringify(user)
