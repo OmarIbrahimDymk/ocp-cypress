@@ -1,0 +1,43 @@
+[
+  {
+    "shareholders": [
+      {
+        "icNumber": "01-010191",
+        "name": "Test Shareholder1",
+        "check": true,
+        "sharePercentage": 40,
+        "capitalAmount": 1000
+      },
+      {
+        "row": 1,
+        "icNumber": "01-010192",
+        "name": "Test Shareholder2",
+        "check": true,
+        "sharePercentage": 50,
+        "capitalAmount": 2000
+      }
+    ],
+    "totalShares": 90,
+    "totalCapital": 3000
+  },
+  {
+    "shareholders": [
+      {
+        "icNumber": "01-010191",
+        "name": "Test Shareholder1",
+        "check": true,
+        "sharePercentage": 40,
+        "capitalAmount": 1000
+      },
+      {
+        "icNumber": "01-010192",
+        "name": "Test Shareholder2",
+        "check": true,
+        "sharePercentage": 50,
+        "capitalAmount": 2000
+      }
+    ],
+    "totalShares": 90,
+    "totalCapital": 3000
+  }
+]
