@@ -1,17 +1,31 @@
-xcontext("Shakedown Testing", () => {
+describe("Shakedown Testing", () => {
   let currentDate = "18-Nov-2020";
   beforeEach(() => {
-    cy.visit("https://qa.ocp.mofe.gov.bn/");
-    cy.get("button").contains("Login").click();
-    cy.get("#Username").type("01047431");
-    cy.get("#Password").type("!Password1{enter}");
-    cy.get(
-      ".wrapper-entity-list-table > :nth-child(1) > .text-center > .btn"
-    ).click();
-    cy.get(':nth-child(8) > [aria-colindex="3"]').click();
-    cy.get("#__BVID__156__BV_toggle_").click();
+    cy.fixture('tokens/qa.json').then((user) => {
+      cy.qaSetToken(user)
+      cy.visit("https://eservices.qa.ocp.mofe.gov.bn/");
+    })
   });
-  it("should test Change company name of public company", () => {
+
+  describe('User', () => {
+    beforeEach(() => {
+      cy.visit('https://eservices.qa.ocp.mofe.gov.bn/entities/1/0/registration/businessname')
+    });
+    it('should be able to upload file', () => {
+      cy.contains('Owner Details').click()
+
+      cy.get(':nth-child(6) > .col-12 > .panel-general > :nth-child(2)').within(async () => {
+        const file = await cy.fixture("image/Capture.png");
+        cy.get('input[type="file"]').attachFile({
+          fileContent: file.toString(),
+          fileName: "Capture.png",
+          mimeType: "image/png",
+        });
+      })
+    });
+  });
+
+  it.skip("should test Change company name of public company", () => {
     // Select change company name application
     cy.get(
       "#__BVID__156 > .dropdown-menu > .row > :nth-child(2) > :nth-child(5) > .dropdown-item"

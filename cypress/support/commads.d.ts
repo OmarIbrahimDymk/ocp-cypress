@@ -2,6 +2,8 @@
 
 declare namespace Cypress {
   interface Chainable {
+    qaSetToken(): Chainable<Element>;
+
     /**
      * Custom command to login for RD module.
      * @example cy.rdLogin(user)
