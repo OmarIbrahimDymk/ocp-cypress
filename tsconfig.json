@@ -7,7 +7,8 @@
     ],
     "types": [
       "cypress",
-      "cypress-file-upload"
+      "cypress-file-upload",
+      "node"
     ],
     "resolveJsonModule": true,
     "esModuleInterop": true
