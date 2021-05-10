@@ -109,17 +109,17 @@ describe("PT Section D", () => {
       cy.getDataTestId("noJointVenture").check({ force: true });
       cy.getDataTestId("jointVenture").check({ force: true });
       cy.getDataTestId("addJoinVentures").click();
-      cy.get("#__BVID__462").type("2344", { force: true });
-      cy.get("#__BVID__469").type("3455", { force: true });
-      cy.get("[data-testid=tableInputField-description-Assets]").type("Asset", {
+      cy.get("#__BVID__463").type("2344", { force: true });
+      cy.get("#__BVID__470").type("3455", { force: true });
+      cy.get("[data-testid=tableInputField-name-Assets]").type("Asset", {
         force: true,
       });
       cy.get("[data-testid=tableInputField-amount-Assets]").type("4536", {
         force: true,
       });
       cy.get("[data-testid=tableInputAddBtn-Assets]").click({ force: true });
-      cy.get("[data-testid=nameOfAgreement0]").type("Nameee", { force: true });
-      cy.get("#__BVID__539").type("60", { force: true });
+      cy.get("[data-testid=name0]").type("Nameee", { force: true });
+      cy.get("#__BVID__540").type("60", { force: true });
       cy.get("[data-testid=tableInput2Field-amount0-Revenue]").type("2345", {
         force: true,
       });
@@ -128,10 +128,10 @@ describe("PT Section D", () => {
       });
 
       cy.get(
-        "#__BVID__546 > :nth-child(1) > .custom-control-label > span"
+        "#__BVID__547 > :nth-child(1) > .custom-control-label > span"
       ).click({ force: true });
 
-      cy.get("#__BVID__595").type("2341", { force: true });
+      cy.get("#__BVID__596").type("2341", { force: true });
 
       cy.get("[data-testid=tableInput2Field-amount0-CIA]").type("3425", {
         force: true,
