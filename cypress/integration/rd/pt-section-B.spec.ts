@@ -1,32 +1,25 @@
 /// <reference types="Cypress" />
 
 import { tableInput2 } from "../../support/lib/elements";
+import { IShareholder, ShareholderEnum } from "../../support/lib/shareholder";
 
-const fields = {
-  icNumber: "identityNumber",
-  name: "fullName",
-  isDirector: "isDirector",
-  sharePercentage: "sharePercentage",
-  capitalAmount: "capital",
-};
-
-Cypress.Commands.add("enterShareholder", (params) => {
-  cy.getDataTestId(tableInput2.inputField(fields.icNumber, params.row)).type(
-    params.icNumber
-  );
-  cy.getDataTestId(tableInput2.inputField(fields.name, params.row)).type(
-    params.name
-  );
-  if (params.check)
+Cypress.Commands.add("enterShareholder", (params: IShareholder) => {
+  cy.getDataTestId(
+    tableInput2.inputField(ShareholderEnum.IdentityNumber, params.row)
+  ).type(params.identityNumber);
+  cy.getDataTestId(
+    tableInput2.inputField(ShareholderEnum.FullName, params.row)
+  ).type(params.fullName);
+  if (params.isDirector)
     cy.getDataTestId(
-      tableInput2.inputField(fields.isDirector, params.row)
+      tableInput2.inputField(ShareholderEnum.IsDirector, params.row)
     ).check({ force: true });
   cy.getDataTestId(
-    tableInput2.inputField(fields.sharePercentage, params.row)
-  ).type(params.sharePercentage);
+    tableInput2.inputField(ShareholderEnum.SharePercentage, params.row)
+  ).type(params.sharePercentage.toString());
   cy.getDataTestId(
-    tableInput2.inputField(fields.capitalAmount, params.row)
-  ).type(params.capitalAmount);
+    tableInput2.inputField(ShareholderEnum.Capital, params.row)
+  ).type(params.capital.toString());
 });
 
 describe("PT - Section B", () => {
@@ -40,21 +33,21 @@ describe("PT - Section B", () => {
   it("should be able to add shareholder and get correct total % of shares and total capital amount", () => {
     cy.getDataTestId(tableInput2.addBtn()).click();
     cy.enterShareholder({
-      icNumber: "01-010191",
-      name: "Test Shareholder",
-      check: true,
+      identityNumber: "01-010191",
+      fullName: "Test Shareholder",
+      isDirector: true,
       sharePercentage: 40,
-      capitalAmount: 1000,
+      capital: 1000,
     });
 
     cy.getDataTestId(tableInput2.addBtn()).click();
     cy.enterShareholder({
       row: 1,
-      icNumber: "01-010191",
-      name: "Test Shareholder",
-      check: true,
+      identityNumber: "01-010191",
+      fullName: "Test Shareholder",
+      isDirector: true,
       sharePercentage: 50,
-      capitalAmount: 1500,
+      capital: 1500,
     });
 
     cy.getDataTestId("totalCapitalAmount").should("have.value", "2500");
@@ -65,11 +58,11 @@ describe("PT - Section B", () => {
     cy.getDataTestId(tableInput2.addBtn()).click();
 
     cy.enterShareholder({
-      icNumber: "01-010191",
-      name: "Test Shareholder",
-      check: true,
+      identityNumber: "01-010191",
+      fullName: "Test Shareholder",
+      isDirector: true,
       sharePercentage: 80,
-      capitalAmount: 1000,
+      capital: 1000,
     });
 
     cy.getDataTestId(tableInput2.deleteBtn()).click();
@@ -77,7 +70,7 @@ describe("PT - Section B", () => {
     cy.getDataTestId("totalCapitalAmount").should("have.value", "0");
   });
 
-  it.only("should show error message if input is missing value", () => {
+  it("should show error message if input is missing value", () => {
     cy.getDataTestId(tableInput2.addBtn()).click();
 
     cy.getDataTestId("submitBtn").click();
@@ -92,11 +85,11 @@ describe("PT - Section B", () => {
     cy.getDataTestId(tableInput2.addBtn()).click();
 
     cy.enterShareholder({
-      icNumber: "01-010191",
-      name: "Test Shareholder",
-      check: true,
+      identityNumber: "01-010191",
+      fullName: "Test Shareholder",
+      isDirector: true,
       sharePercentage: 100,
-      capitalAmount: 1000,
+      capital: 1000,
     });
 
     cy.getDataTestId("submitBtn").click();
@@ -116,7 +109,7 @@ describe("PT - Section B", () => {
           lists: [
             {
               identifierNumber: "N/A",
-              name: "Stubbed Director",
+              fullName: "Stubbed Director",
               isDirector: true,
               sharePercentage: 40,
               shareCapital: 2000,
@@ -125,7 +118,7 @@ describe("PT - Section B", () => {
         },
       }
     );
-    cy.getDataTestId(tableInput2.inputField(fields.name)).should(
+    cy.getDataTestId(tableInput2.inputField(ShareholderEnum.FullName)).should(
       "have.value",
       "Stubbed Director"
     );
@@ -142,7 +135,7 @@ describe("PT - Section B", () => {
           lists: [
             {
               identifierNumber: "N/A",
-              name: "Stubbed Director",
+              fullName: "Stubbed Director",
               isDirector: true,
               sharePercentage: 40,
               shareCapital: 2000,
@@ -152,7 +145,7 @@ describe("PT - Section B", () => {
       }
     );
 
-    cy.getDataTestId(tableInput2.inputField(fields.name)).should(
+    cy.getDataTestId(tableInput2.inputField(ShareholderEnum.FullName)).should(
       "have.value",
       "Stubbed Director"
     );
@@ -169,7 +162,7 @@ describe("PT - Section B", () => {
           lists: [
             {
               identifierNumber: "N/A",
-              name: "Stubbed Director",
+              fullName: "Stubbed Director",
               isDirector: true,
               shareCapital: 2000,
             },
@@ -178,11 +171,11 @@ describe("PT - Section B", () => {
       }
     );
 
-    cy.getDataTestId(tableInput2.inputField(fields.sharePercentage))
+    cy.getDataTestId(tableInput2.inputField(ShareholderEnum.SharePercentage))
       .should("be.empty")
       .should("not.have.attr", "disabled");
 
-    cy.getDataTestId(tableInput2.inputField(fields.sharePercentage))
+    cy.getDataTestId(tableInput2.inputField(ShareholderEnum.SharePercentage))
       .type("40")
       .should("have.value", "40");
   });

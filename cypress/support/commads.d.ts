@@ -35,18 +35,18 @@ declare namespace Cypress {
      */
     enterShareholder(params: {
       row?: number;
-      icNumber: string;
-      name: string;
-      check: boolean;
+      identityNumber: string;
+      fullName: string;
+      isDirector: boolean;
       sharePercentage: number;
-      capitalAmount: number;
+      capital: number;
     }): Chainable<Element>;
 
     typeRegistrationNumber(registrationNumber: string);
 
     selectRegistrationNumber(registrationNumber: string);
 
-    addAsset(asset: { description: string; amount: number });
+    addAsset(asset: { name: string; amount: number });
 
     addParticipant(asset: {
       row?: number;

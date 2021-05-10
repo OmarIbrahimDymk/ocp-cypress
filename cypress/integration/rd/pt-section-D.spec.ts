@@ -3,9 +3,7 @@
 import { tableInput, tableInput2 } from "../../support/lib/elements";
 
 Cypress.Commands.add("addAsset", (params) => {
-  cy.getDataTestId(tableInput.inputField("description", "Assets")).type(
-    params.description
-  );
+  cy.getDataTestId(tableInput.inputField("name", "Assets")).type(params.name);
   cy.getDataTestId(tableInput.inputField("amount", "Assets")).type(
     params.amount
   );
@@ -183,7 +181,7 @@ describe("PT Section D", () => {
       cy.getDataTestId("noJointVenture").check({ force: true });
 
       cy.addAsset({
-        description: "New Asset",
+        name: "New Asset",
         amount: 100,
       });
 
@@ -198,9 +196,9 @@ describe("PT Section D", () => {
       cy.get("#__BVID__314").type("432");
       cy.get("#__BVID__321").type("543");
 
-      assets.forEach(({ description, amount }) => {
+      assets.forEach(({ name, amount }) => {
         cy.addAsset({
-          description,
+          name,
           amount,
         });
       });

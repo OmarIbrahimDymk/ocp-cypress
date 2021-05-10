@@ -1,14 +1,14 @@
 [
   {
-    "description": "Asset 1",
+    "name": "Asset 1",
     "amount": 123
   },
   {
-    "description": "Asset 2",
+    "name": "Asset 2",
     "amount": 312
   },
   {
-    "description": "Asset 3",
+    "name": "Asset 3",
     "amount": 34
   }
 ]

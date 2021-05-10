@@ -1,2 +1,3 @@
 node_modules
 cypress/support/lib/elements.js
+cypress/support/lib/shareholder.js
