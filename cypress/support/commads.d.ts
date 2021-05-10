@@ -55,6 +55,7 @@ declare namespace Cypress {
       interest?: number;
       dateOfParticipation?: string;
       isOperator?: boolean;
+      skipAddBtn?: boolean;
     });
 
     fixture(file: string);
