@@ -1,0 +1,26 @@
+[
+  {
+    "row": 0,
+    "identityNumber": "01010191",
+    "fullName": "Shareholder A",
+    "isDirector": true,
+    "capital": 1000,
+    "sharePercentage": 40
+  },
+  {
+    "row": 1,
+    "identityNumber": "01010192",
+    "fullName": "Shareholder B",
+    "isDirector": false,
+    "capital": 2300,
+    "sharePercentage": 40
+  },
+  {
+    "row": 2,
+    "identityNumber": "01010193",
+    "fullName": "Shareholder C",
+    "isDirector": true,
+    "capital": 1400,
+    "sharePercentage": 20
+  }
+]

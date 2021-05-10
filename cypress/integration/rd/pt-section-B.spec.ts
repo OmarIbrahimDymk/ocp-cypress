@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
-
 import { tableInput2 } from "../../support/lib/elements";
 import { IShareholder, ShareholderEnum } from "../../support/lib/shareholder";
+import { cloneDeep } from "lodash";
 
 Cypress.Commands.add("enterShareholder", (params: IShareholder) => {
   cy.getDataTestId(
@@ -190,5 +190,116 @@ describe("PT - Section B", () => {
     cy.getDataTestId("submitBtn").click();
 
     cy.contains("The total % of shares must equal 100%");
+  });
+
+  it("should be able to submit", async () => {
+    const shareholders = await cy.fixture("shareholders/getThreeShareholders");
+
+    shareholders.forEach((shareholder) => {
+      cy.getDataTestId(tableInput2.addBtn()).click();
+
+      cy.enterShareholder(shareholder);
+    });
+
+    cy.getDataTestId("submitBtn").click({ force: true });
+
+    cy.intercept("POST", "/taxform", (req) => {
+      expect(req.body.sectionB).to.include({
+        totalCapital: 4700,
+        totalSharePercentage: 100,
+      });
+
+      shareholders.forEach((shareholder, index) => {
+        delete shareholder.row;
+        expect(req.body.sectionB.shareholders[index]).to.include(shareholder);
+      });
+    });
+
+    cy.intercept("/taxform", "success");
+  });
+
+  it("should be able to add multiple shareholders", () => {
+    cy.task("randomShareholders", 5).then((getShareholders: IShareholder[]) => {
+      const shareholders: IShareholder[] = getShareholders;
+
+      shareholders.forEach((shareholder: IShareholder) => {
+        cy.getDataTestId(tableInput2.addBtn()).click();
+
+        cy.enterShareholder(shareholder);
+      });
+
+      cy.getDataTestId("submitBtn").click({ force: true });
+
+      cy.intercept("POST", "/taxform", (req) => {
+        const totalCapital: number = +shareholders
+          .reduce((acc, s) => acc + +s.capital, 0)
+          .toFixed(2);
+
+        expect(req.body.sectionB).to.include({
+          totalCapital: totalCapital,
+          totalSharePercentage: 100,
+        });
+
+        shareholders.forEach((shareholder, index) => {
+          delete shareholder.row;
+          const ic = shareholder.identityNumber.split("");
+          ic.splice(2, 0, "-");
+          shareholder.identityNumber = ic.join("");
+          expect(req.body.sectionB.shareholders[index]).to.include(shareholder);
+        });
+      });
+
+      cy.intercept("/taxform", "success");
+    });
+  });
+
+  it.only("should be able to add multiple shareholders and delete some", () => {
+    cy.task("randomShareholders", 5).then((getShareholders: IShareholder[]) => {
+      const shareholders: IShareholder[] = getShareholders;
+
+      shareholders.forEach((shareholder: IShareholder) => {
+        cy.getDataTestId(tableInput2.addBtn()).click();
+
+        cy.enterShareholder(shareholder);
+      });
+
+      cy.getDataTestId(tableInput2.deleteBtn(1)).click();
+
+      cy.getDataTestId(
+        tableInput2.inputField(ShareholderEnum.SharePercentage, 1)
+      )
+        .clear()
+        .type("40");
+
+      cy.getDataTestId("submitBtn").click({ force: true });
+
+      let modifiedShareholders = cloneDeep(shareholders);
+      modifiedShareholders.splice(1, 1);
+      modifiedShareholders[1].sharePercentage = 40;
+
+      modifiedShareholders.forEach((shareholder) => {
+        delete shareholder.row;
+        const ic = shareholder.identityNumber.split("");
+        ic.splice(2, 0, "-");
+        shareholder.identityNumber = ic.join("");
+      });
+
+      cy.intercept("POST", "/taxform", (req) => {
+        const totalCapital: number = +modifiedShareholders
+          .reduce((acc, s) => acc + +s.capital, 0)
+          .toFixed(2);
+
+        expect(req.body.sectionB).to.include({
+          totalCapital: totalCapital,
+          totalSharePercentage: 100,
+        });
+
+        modifiedShareholders.forEach((shareholder, index) => {
+          expect(req.body.sectionB.shareholders[index]).to.include(shareholder);
+        });
+      });
+
+      cy.intercept("/taxform", "success");
+    });
   });
 });
