@@ -27,6 +27,7 @@ describe("PT - Section B", () => {
     cy.fixture("tokens/local.json").then((user) => {
       cy.rdLogin(user);
       cy.goTo("PTSectionB");
+      cy.intercept("/.well-known/openid-configuration", "success");
     });
   });
 
@@ -213,9 +214,9 @@ describe("PT - Section B", () => {
         delete shareholder.row;
         expect(req.body.sectionB.shareholders[index]).to.include(shareholder);
       });
-    });
 
-    cy.intercept("/taxform", "success");
+      req.reply("success");
+    });
   });
 
   it("should be able to add multiple shareholders", () => {
@@ -247,14 +248,26 @@ describe("PT - Section B", () => {
           shareholder.identityNumber = ic.join("");
           expect(req.body.sectionB.shareholders[index]).to.include(shareholder);
         });
-      });
 
-      cy.intercept("/taxform", "success");
+        req.reply("success");
+      });
     });
   });
 
   it.only("should be able to add multiple shareholders and delete some", () => {
     cy.task("randomShareholders", 5).then((getShareholders: IShareholder[]) => {
+      cy.intercept(
+        {
+          method: "GET",
+          url: "/rocbn/api/entities/rd/369/stakeholders",
+        },
+        {
+          body: {
+            lists: [],
+          },
+        }
+      );
+
       const shareholders: IShareholder[] = getShareholders;
 
       shareholders.forEach((shareholder: IShareholder) => {
@@ -297,9 +310,9 @@ describe("PT - Section B", () => {
         modifiedShareholders.forEach((shareholder, index) => {
           expect(req.body.sectionB.shareholders[index]).to.include(shareholder);
         });
-      });
 
-      cy.intercept("/taxform", "success");
+        req.reply("success");
+      });
     });
   });
 });
