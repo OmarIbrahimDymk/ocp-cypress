@@ -59,12 +59,13 @@ Cypress.Commands.add("rdLogin", (user) => {
   );
 });
 
-Cypress.Commands.add("goTo", (...sections) => {
-  cy.visit("http://localhost:5082/playground/369");
-  cy.get(".multiselect__tags").click();
+Cypress.Commands.add("goTo", (...sections: string[]) => {
+  let url = new URL("http://localhost:5082/playground/369");
+  url.searchParams.append("selectedComponents", "");
   sections.forEach((section) => {
-    cy.contains(section).click({ force: true });
+    url.searchParams.append("selectedComponents", section);
   });
+  cy.visit(url.toString());
   cy.get(".multiselect__select").click({ force: true });
 });
 
