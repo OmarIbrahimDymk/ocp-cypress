@@ -21,7 +21,8 @@ declare namespace Cypress {
      * Custom command to go to specific section(s).
      * @example cy.goTo("PTSectionB")
      */
-    goTo(section: string): Chainable<Element>;
+    goTo(section: string[]): Chainable<Element>;
+    goTo(selectBaseComponent: string): Chainable<Element>;
 
     /**
      * Custom command to get data-testid attribute.

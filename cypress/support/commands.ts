@@ -66,7 +66,13 @@ Cypress.Commands.add("goTo", (...sections: string[]) => {
     url.searchParams.append("selectedComponents", section);
   });
   cy.visit(url.toString());
-  cy.get(".multiselect__select").click({ force: true });
+});
+
+Cypress.Commands.add("selectBaseComponent", (baseComponent: string) => {
+  let url = new URL("http://localhost:5082/playground/369");
+  url.searchParams.append("isBaseComponent", "");
+  url.searchParams.append("selectedBaseComponent", baseComponent);
+  cy.visit(url.toString());
 });
 
 Cypress.Commands.add("getDataTestId", (testId) =>
