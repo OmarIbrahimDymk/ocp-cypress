@@ -311,109 +311,247 @@ describe("PT Section D", () => {
       cy.getDataTestId("addJoinVentures").click();
     });
 
-    it("should auto populate filer company registration number and name in every first row", () => {
-      cy.getDataTestId(
-        tableInput2.inputField("registrationNumber", 0, "Participant-0")
-      ).within(() => {
-        cy.get(".multiselect__single").should("have.text", "RC00000018");
-      });
-      cy.getDataTestId(
-        tableInput2.inputField("contractingParty", 0, "Participant-0")
-      ).should("have.value", "Petronas");
+    describe("Participants", () => {
+      it("should auto populate filer company registration number and name in every first row", () => {
+        cy.getDataTestId(
+          tableInput2.inputField("registrationNumber", 0, "Participant-0")
+        ).within(() => {
+          cy.get(".multiselect__single").should("have.text", "RC00000018");
+        });
+        cy.getDataTestId(
+          tableInput2.inputField("contractingParty", 0, "Participant-0")
+        ).should("have.value", "Petronas");
 
-      cy.getDataTestId("addJoinVentures").click({ force: true });
+        cy.getDataTestId("addJoinVentures").click({ force: true });
 
-      cy.getDataTestId(
-        tableInput2.inputField("registrationNumber", 0, "Participant-1")
-      ).within(() => {
-        cy.get(".multiselect__single").should("have.text", "RC00000018");
-      });
-      cy.getDataTestId(
-        tableInput2.inputField("contractingParty", 0, "Participant-1")
-      ).should("have.value", "Petronas");
-    });
-
-    it("should display error message on submit if total participant is less than 2", () => {});
-
-    it("should auto suggest participant registration number if exist in DB and auto populate participant name", () => {
-      cy.contains("Yes").click({ force: true });
-
-      cy.getDataTestId(tableInput2.addBtn("Participant-0")).click();
-
-      cy.typeRegistrationNumber("1");
-
-      cy.intercept(
-        { method: "GET", url: "/rocbn/api/entities/search?entityType=" },
-        {
-          body: {
-            lists: [
-              { registrationNumber: "RC00000001", name: "Stubbed Company 1" },
-              { registrationNumber: "RC00000002", name: "Stubbed Company 2" },
-              { registrationNumber: "RC00000003", name: "Stubbed Company 3" },
-              { registrationNumber: "RC00000004", name: "Stubbed Company 4" },
-            ],
-          },
-        }
-      );
-
-      cy.selectRegistrationNumber("RC00000001");
-
-      cy.getDataTestId(
-        tableInput2.inputField("contractingParty", 1, "Participant-0")
-      ).should("have.value", "Stubbed Company 1");
-    });
-
-    it("should let user enter registration manually if entered registration number is not exist in DB", () => {
-      cy.getDataTestId(tableInput2.addBtn("Participant-0")).click();
-
-      cy.typeRegistrationNumber("RC00000005");
-      cy.selectRegistrationNumber("RC00000005");
-
-      cy.getDataTestId(
-        tableInput2.inputField("contractingParty", 1, "Participant-0")
-      )
-        .should("be.empty")
-        .should("not.have.attr", "disabled");
-      cy.getDataTestId(
-        tableInput2.inputField("contractingParty", 1, "Participant-0")
-      ).type("Company 5", { force: true });
-    });
-
-    it("should display error message if date of participation is a future date", () => {
-      cy.addParticipant({
-        row: 0,
-        dateOfParticipation: "28-Apr-2022",
+        cy.getDataTestId(
+          tableInput2.inputField("registrationNumber", 0, "Participant-1")
+        ).within(() => {
+          cy.get(".multiselect__single").should("have.text", "RC00000018");
+        });
+        cy.getDataTestId(
+          tableInput2.inputField("contractingParty", 0, "Participant-1")
+        ).should("have.value", "Petronas");
       });
 
-      cy.contains("must not be set in the future");
-    });
+      it("should display error message on submit if total participant is less than 2", () => {});
 
-    it("should show error if more than 1 operator is selected", () => {
-      cy.addParticipant({
-        row: 0,
-        interest: 20,
-        dateOfParticipation: "28-Apr-2021",
-        isOperator: true,
+      it("should auto suggest participant registration number if exist in DB and auto populate participant name", () => {
+        cy.contains("Yes").click({ force: true });
+
+        cy.getDataTestId(tableInput2.addBtn("Participant-0")).click();
+
+        cy.typeRegistrationNumber("1");
+
+        cy.selectRegistrationNumber("RC00000001");
+
+        cy.getDataTestId(
+          tableInput2.inputField("contractingParty", 1, "Participant-0")
+        ).should("have.value", "Stubbed Company 1");
       });
 
-      cy.addParticipant({
-        row: 1,
-        registrationNumber: "RC00000005",
-        contractingParty: "Company 5",
-        interest: 80,
-        dateOfParticipation: "28-Apr-2021",
-        isOperator: true,
+      it("should let user enter registration manually if entered registration number is not exist in DB", () => {
+        cy.getDataTestId(tableInput2.addBtn("Participant-0")).click();
+
+        cy.typeRegistrationNumber("RC00000005");
+        cy.selectRegistrationNumber("RC00000005");
+
+        cy.getDataTestId(
+          tableInput2.inputField("contractingParty", 1, "Participant-0")
+        )
+          .should("be.empty")
+          .should("not.have.attr", "disabled");
+        cy.getDataTestId(
+          tableInput2.inputField("contractingParty", 1, "Participant-0")
+        ).type("Company 5", { force: true });
       });
 
-      cy.contains("Exactly one operator is allowed.").should("be.visible");
+      it("should display error message if date of participation is a future date", () => {
+        cy.addParticipant({
+          row: 0,
+          dateOfParticipation: "28-Apr-2022",
+        });
+
+        cy.contains("must not be set in the future");
+      });
+
+      it("should show error if more than 1 operator is selected", () => {
+        cy.addParticipant({
+          row: 0,
+          interest: 20,
+          dateOfParticipation: "28-Apr-2021",
+          isOperator: true,
+        });
+
+        cy.addParticipant({
+          row: 1,
+          registrationNumber: "RC00000005",
+          contractingParty: "Company 5",
+          interest: 80,
+          dateOfParticipation: "28-Apr-2021",
+          isOperator: true,
+        });
+
+        cy.contains("Exactly one operator is allowed.").should("be.visible");
+      });
+
+      it("should calculate total participant interest", () => {
+        cy.contains("RC00000018");
+        cy.addParticipant({
+          row: 0,
+          interest: 20,
+          dateOfParticipation: "28-Apr-2021",
+        });
+
+        cy.addParticipant({
+          row: 1,
+          registrationNumber: "RC00000005",
+          contractingParty: "Company 5",
+          interest: 80,
+          dateOfParticipation: "28-Apr-2021",
+        });
+
+        cy.getDataTestId("totalInterest0").should("have.value", "100.00");
+      });
     });
 
-    it("should calculate total participant interest", () => {
+    describe("Revenue", () => {
+      it("should display agreement name and filer name", () => {
+        cy.getDataTestId("agreementName0").type("My Agreement", {
+          force: true,
+        });
+        cy.getDataTestId("agreementNameShare0").should((name) => {
+          expect(name).to.contain("My Agreement Share");
+        });
+        cy.getDataTestId("filerCompanyName0").should((name) => {
+          expect(name).to.contain("Petronas Share");
+        });
+      });
+
+      it("should display error message if share is not between 1 and 100", () => {
+        cy.getDataTestId("filerShare0").type("101{enter}");
+        cy.contains("Share must be between 1 and 100").should("be.visible");
+      });
+
+      it("should auto calculate filer share", () => {
+        cy.getDataTestId("filerShare0").type("50");
+        cy.getDataTestId(
+          tableInput2.inputField("amount", 0, collectionEnum.Revenue)
+        ).type("1000");
+        cy.getDataTestId(
+          tableInput2.inputField("share", 0, collectionEnum.Revenue)
+        ).should("have.value", "500.00");
+      });
+
+      it("should be able to add more gross proceed and auto calculate total filer share", () => {
+        cy.getDataTestId("filerShare0").type("50");
+        cy.getDataTestId(
+          tableInput2.inputField("amount", 0, collectionEnum.Revenue)
+        ).type("1000");
+        cy.getDataTestId(
+          tableInput2.inputField("amount", 1, collectionEnum.Revenue)
+        ).type("2000");
+
+        cy.getDataTestId(tableInput2.addBtn(collectionEnum.Revenue)).click();
+        cy.getDataTestId(
+          tableInput2.inputField("name", 2, collectionEnum.Revenue)
+        ).type("Soil Sales");
+        cy.getDataTestId(
+          tableInput2.inputField("amount", 2, collectionEnum.Revenue)
+        ).type("3000");
+
+        cy.getDataTestId("totalFilerShare0").should("have.value", "3,000.00");
+      });
+    });
+
+    describe("Carried Interest Arrangement", () => {
+      it("should display table if yes is selected", () => {
+        cy.getDataTestId("interest0").should("not.exist");
+
+        cy.getDataTestId("CIA-radio0").within(() => {
+          cy.contains("Yes").click();
+        });
+
+        cy.getDataTestId("interest0").should("be.visible");
+      });
+
+      it("should be able to add gross proceed and auto calculate total interest", () => {
+        cy.getDataTestId("CIA-radio0").within(() => {
+          cy.contains("Yes").click();
+        });
+
+        cy.getDataTestId(
+          tableInput2.inputField("amount", 0, collectionEnum.CIA)
+        ).type("1000");
+        cy.getDataTestId(
+          tableInput2.inputField("amount", 1, collectionEnum.CIA)
+        ).type("2000");
+
+        cy.getDataTestId(tableInput2.addBtn(collectionEnum.CIA)).click();
+        cy.getDataTestId(
+          tableInput2.inputField("name", 2, collectionEnum.CIA)
+        ).type("Soil Sales");
+        cy.getDataTestId(
+          tableInput2.inputField("amount", 2, collectionEnum.CIA)
+        ).type("3000");
+
+        cy.getDataTestId("totalCIA0").should("have.value", "6,000.00");
+      });
+    });
+
+    it("should be able to auto calculate venture total", () => {
+      cy.getDataTestId("filerShare0").type("50");
+
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 0, collectionEnum.Revenue)
+      ).type("1000");
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 1, collectionEnum.Revenue)
+      ).type("2000");
+
+      cy.getDataTestId(tableInput2.addBtn(collectionEnum.Revenue)).click();
+      cy.getDataTestId(
+        tableInput2.inputField("name", 2, collectionEnum.Revenue)
+      ).type("Soil Sales");
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 2, collectionEnum.Revenue)
+      ).type("3000");
+
+      cy.getDataTestId("CIA-radio0").within(() => {
+        cy.contains("Yes").click();
+      });
+
+      cy.getDataTestId("interest0").type("50");
+
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 0, collectionEnum.CIA)
+      ).type("1000");
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 1, collectionEnum.CIA)
+      ).type("2000");
+
+      cy.getDataTestId(tableInput2.addBtn(collectionEnum.CIA)).click();
+      cy.getDataTestId(
+        tableInput2.inputField("name", 2, collectionEnum.CIA)
+      ).type("Soil Sales");
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 2, collectionEnum.CIA)
+      ).type("3000");
+
+      cy.getDataTestId("ventureTotal").should("have.value", "9,000.00");
+      cy.getDataTestId("grandTotal").should("have.value", "9,000.00");
+    });
+
+    it("should be able to submit", () => {
+      cy.getDataTestId("agreementName0").type("My Agreement", { force: true });
+
       cy.contains("RC00000018");
       cy.addParticipant({
         row: 0,
         interest: 20,
         dateOfParticipation: "28-Apr-2021",
+        isOperator: true,
+        skipAddBtn: true,
       });
 
       cy.addParticipant({
@@ -424,7 +562,49 @@ describe("PT Section D", () => {
         dateOfParticipation: "28-Apr-2021",
       });
 
-      cy.get("#__BVID__486").should("have.value", 100);
+      cy.getDataTestId("filerShare0").type("50");
+
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 0, collectionEnum.Revenue)
+      ).type("1000");
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 1, collectionEnum.Revenue)
+      ).type("2000");
+
+      cy.getDataTestId(tableInput2.addBtn(collectionEnum.Revenue)).click();
+      cy.getDataTestId(
+        tableInput2.inputField("name", 2, collectionEnum.Revenue)
+      ).type("Soil Sales");
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 2, collectionEnum.Revenue)
+      ).type("3000");
+
+      cy.getDataTestId("CIA-radio0").within(() => {
+        cy.contains("Yes").click();
+      });
+
+      cy.getDataTestId("interest0").type("50");
+
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 0, collectionEnum.CIA)
+      ).type("1000");
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 1, collectionEnum.CIA)
+      ).type("2000");
+
+      cy.getDataTestId(tableInput2.addBtn(collectionEnum.CIA)).click();
+      cy.getDataTestId(
+        tableInput2.inputField("name", 2, collectionEnum.CIA)
+      ).type("Soil Sales");
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 2, collectionEnum.CIA)
+      ).type("3000");
+
+      cy.getDataTestId("submitBtn").click({ force: true });
+
+      cy.intercept("POST", "/taxform", (req) => {
+        req.reply("success");
+      });
     });
   });
 });
