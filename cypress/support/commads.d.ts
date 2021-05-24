@@ -21,7 +21,7 @@ declare namespace Cypress {
      * Custom command to go to specific section(s).
      * @example cy.goTo("PTSectionB")
      */
-    goTo(section: string[]): Chainable<Element>;
+    goTo(...section: string[]): Chainable<Element>;
     goTo(selectBaseComponent: string): Chainable<Element>;
 
     /**
@@ -60,5 +60,17 @@ declare namespace Cypress {
     });
 
     fixture(file: string);
+
+    fillH1(params?: { currency?: "BND" | "USD"; d3?: string; g2?: string });
+    enterPaidTax(params: {
+      row: number;
+      paymentDate: string;
+      paymentMethod: "Card" | "Cash";
+      bankName: "BIBD" | "Baiduri";
+      amount: string;
+      currencyType: "BND" | "USD";
+      exchangeRate: string;
+      amountBND: string;
+    });
   }
 }
