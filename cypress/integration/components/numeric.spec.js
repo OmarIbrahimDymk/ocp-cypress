@@ -12,12 +12,19 @@ const baseComponent = "base-component";
       });
     });
 
-    it("should display placeholder equal to 0.00", () => {
+    it("should display placeholder equal to 0.00 if value is null", () => {
       cy.getDataTestId(baseComponent).should(
         "have.attr",
         "placeholder",
         "0.00"
       );
+    });
+
+    it("should display 0.00 if value is 0", () => {
+      cy.getDataTestId(baseComponent)
+        .type("0")
+        .blur()
+        .should("have.value", "0.00");
     });
 
     it("should auto format to currency on blur", () => {
@@ -74,23 +81,39 @@ const baseComponent = "base-component";
         .should("have.value", "1.24");
     });
 
-    it("should not allow user to enter . as the first character", () => {
-      cy.getDataTestId(baseComponent)
-        .clear()
-        .type(".")
-        .should("have.value", "");
+    context("Period character", () => {
+      it("should not allow user to enter . as the first character", () => {
+        cy.getDataTestId(baseComponent)
+          .clear()
+          .type(".")
+          .should("have.value", "");
+      });
+
+      it("should only allow 1 period character", () => {
+        cy.getDataTestId(baseComponent)
+          .type("123.123.123")
+          .should("have.value", "123.123123");
+      });
+
+      it("should not allow user to enter multiple . consecutively", () => {
+        cy.getDataTestId(baseComponent)
+          .type("123....45")
+          .should("have.value", "123.45");
+      });
     });
 
-    it("should only allow 1 period character", () => {
-      cy.getDataTestId(baseComponent)
-        .type("123.123.123")
-        .should("have.value", "123.123123");
-    });
+    context("Minus character", () => {
+      it("should only allow 1 minus character", () => {
+        cy.getDataTestId(baseComponent)
+          .type("-123-456-789")
+          .should("have.value", "-123456789");
+      });
 
-    it("should not allow user to enter multiple . consecutively", () => {
-      cy.getDataTestId(baseComponent)
-        .type("123....45")
-        .should("have.value", "123.45");
+      it("should not allow user to enter multiple - consecutively", () => {
+        cy.getDataTestId(baseComponent)
+          .type("----12345")
+          .should("have.value", "-12345");
+      });
     });
   });
 });
