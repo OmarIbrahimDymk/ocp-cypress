@@ -3,11 +3,13 @@
 import { tableInput, tableInput2 } from "../../support/lib/elements";
 
 Cypress.Commands.add("addAsset", (params) => {
-  cy.getDataTestId(tableInput.inputField("name", "Assets")).type(params.name);
-  cy.getDataTestId(tableInput.inputField("amount", "Assets")).type(
-    params.amount
-  );
-  cy.getDataTestId(tableInput.addBtn("Assets")).click();
+  cy.getDataTestId(
+    tableInput.inputField("name", collectionEnum.GrossProceed)
+  ).type(params.name);
+  cy.getDataTestId(
+    tableInput.inputField("amount", collectionEnum.GrossProceed)
+  ).type(params.amount);
+  cy.getDataTestId(tableInput.addBtn(collectionEnum.GrossProceed)).click();
 });
 
 Cypress.Commands.add("typeRegistrationNumber", (text, row = 1) => {
@@ -26,9 +28,11 @@ Cypress.Commands.add("selectRegistrationNumber", (text) => {
 });
 
 Cypress.Commands.add("addParticipant", (params) => {
-  cy.getDataTestId(
-    tableInput2.addBtn(`Participant-${params.venture ?? 0}`)
-  ).click();
+  if (!params.skipAddBtn) {
+    cy.getDataTestId(
+      tableInput2.addBtn(`Participant-${params.venture ?? 0}`)
+    ).click();
+  }
 
   if (params.registrationNumber) {
     cy.typeRegistrationNumber(params.registrationNumber);
@@ -67,7 +71,7 @@ Cypress.Commands.add("addParticipant", (params) => {
   if (params.dateOfParticipation) {
     cy.getDataTestId(
       tableInput2.inputField(
-        "dateOfParticipation",
+        "participationDate",
         params.row,
         `Participant-${params.venture ?? 0}`
       )
@@ -87,6 +91,12 @@ Cypress.Commands.add("addParticipant", (params) => {
       )
     ).check({ force: true });
 });
+
+enum collectionEnum {
+  Revenue = "Revenue",
+  CIA = "CIA",
+  GrossProceed = "GrossProceed",
+}
 
 describe("PT Section D", () => {
   beforeEach(() => {
@@ -132,38 +142,55 @@ describe("PT Section D", () => {
       cy.getDataTestId("addJoinVentures").click();
     });
 
-    it.only("should do quick test", () => {
+    it("should do quick test", () => {
       cy.getDataTestId("noJointVenture").check({ force: true });
       cy.getDataTestId("jointVenture").check({ force: true });
       cy.getDataTestId("addJoinVentures").click();
-      cy.get("#__BVID__463").type("2344", { force: true });
-      cy.get("#__BVID__470").type("3455", { force: true });
-      cy.get("[data-testid=tableInputField-name-Assets]").type("Asset", {
+      cy.getDataTestId("grossProceed0").type("2344", { force: true });
+      cy.getDataTestId("grossProceed1").type("3455", { force: true });
+      cy.getDataTestId(
+        tableInput.inputField("name", collectionEnum.GrossProceed)
+      ).type("Asset", {
         force: true,
       });
-      cy.get("[data-testid=tableInputField-amount-Assets]").type("4536", {
+      cy.getDataTestId(
+        tableInput.inputField("amount", collectionEnum.GrossProceed)
+      ).type("4536", {
         force: true,
       });
-      cy.get("[data-testid=tableInputAddBtn-Assets]").click({ force: true });
-      cy.get("[data-testid=name0]").type("Nameee", { force: true });
-      cy.get("#__BVID__540").type("60", { force: true });
-      cy.get("[data-testid=tableInput2Field-amount0-Revenue]").type("2345", {
+      cy.getDataTestId(tableInput.addBtn(collectionEnum.GrossProceed)).click({
         force: true,
       });
-      cy.get("[data-testid=tableInput2Field-amount1-Revenue]").type("2345", {
+      cy.getDataTestId("ringFenced-radio0").within(() => {
+        cy.contains("Yes").click();
+      });
+      cy.getDataTestId("agreementName0").type("Nameee", { force: true });
+      cy.getDataTestId("filerShare0").type("60", { force: true });
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 0, collectionEnum.Revenue)
+      ).type("2345", {
+        force: true,
+      });
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 1, collectionEnum.Revenue)
+      ).type("2345", {
         force: true,
       });
 
-      cy.get(
-        "#__BVID__547 > :nth-child(1) > .custom-control-label > span"
-      ).click({ force: true });
+      cy.getDataTestId("CIA-radio0").within(() => {
+        cy.contains("Yes").click();
+      });
 
-      cy.get("#__BVID__596").type("2341", { force: true });
+      cy.getDataTestId("interest0").type("2341", { force: true });
 
-      cy.get("[data-testid=tableInput2Field-amount0-CIA]").type("3425", {
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 0, collectionEnum.CIA)
+      ).type("3425", {
         force: true,
       });
-      cy.get("[data-testid=tableInput2Field-amount1-CIA]").type("3623", {
+      cy.getDataTestId(
+        tableInput2.inputField("amount", 1, collectionEnum.CIA)
+      ).type("3623", {
         force: true,
       });
     });
@@ -220,8 +247,8 @@ describe("PT Section D", () => {
 
       cy.getDataTestId("noJointVenture").check({ force: true });
 
-      cy.get("#__BVID__314").type("432");
-      cy.get("#__BVID__321").type("543");
+      cy.getDataTestId("grossProceed0").type("432");
+      cy.getDataTestId("grossProceed1").type("543");
 
       assets.forEach(({ name, amount }) => {
         cy.addAsset({
@@ -230,7 +257,50 @@ describe("PT Section D", () => {
         });
       });
 
-      cy.get("#__BVID__308").should("have.value", 1444);
+      cy.getDataTestId("grossProceedsTotal").should("have.value", "1,444.00");
+    });
+
+    it("should be able to submit", () => {
+      cy.fixture("assets/assets").then((assets) => {
+        cy.getDataTestId("noJointVenture").check({ force: true });
+
+        cy.getDataTestId("grossProceed0").type("432");
+        cy.getDataTestId("grossProceed1").type("543");
+
+        assets.forEach(({ name, amount }) => {
+          cy.addAsset({
+            name,
+            amount,
+          });
+        });
+
+        cy.getDataTestId("submitBtn").click({ force: true });
+
+        const expectedGrossProceeds = [
+          { name: "Crude Oil Sales", amount: 432 },
+          { name: "Natural Gas Sales", amount: 543 },
+          { name: "Asset 1", amount: 123 },
+          { name: "Asset 2", amount: 312 },
+          { name: "Asset 3", amount: 34 },
+        ];
+
+        cy.intercept("POST", "/taxform", (req) => {
+          expect(req.body.sectionD).to.include({
+            isNoJointVenture: true,
+            isJointVenture: false,
+            grossProceedsTotal: 1444,
+            grandTotalRevenue: 1444,
+          });
+
+          req.body.sectionD.grossProceeds.forEach((grossProceed, index) => {
+            expect(grossProceed).to.include(expectedGrossProceeds[index]);
+          });
+
+          expect(req.body.sectionD.ventures).to.deep.equal([]);
+
+          req.reply("success");
+        });
+      });
     });
   });
 
@@ -239,29 +309,6 @@ describe("PT Section D", () => {
       cy.getDataTestId("jointVenture").check({ force: true });
 
       cy.getDataTestId("addJoinVentures").click();
-
-      cy.intercept(
-        {
-          method: "GET",
-          url: "/rocbn/api/entities/rd/",
-        },
-        {
-          body: {
-            registrationNo: "RC00000018",
-            name: "Petronas",
-            addresses: [
-              {
-                address1: "1",
-                address2: "2",
-                address3: "3",
-                district: { name: "Brunei Muara" },
-                postalCode: "BE1234",
-                country: { name: "Brunei Darussalam" },
-              },
-            ],
-          },
-        }
-      );
     });
 
     it("should auto populate filer company registration number and name in every first row", () => {
