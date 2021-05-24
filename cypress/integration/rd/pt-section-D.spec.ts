@@ -94,6 +94,33 @@ describe("PT Section D", () => {
       cy.viewport(1500, 900);
       cy.rdLogin(user);
       cy.goTo("PTSectionD");
+      cy.intercept("/.well-known/openid-configuration", "success");
+
+      cy.fixture("responses/entities.json").then((entitiesResponse) => {
+        cy.intercept(
+          {
+            method: "GET",
+            url: "/rocbn/api/entities/rd/",
+          },
+          {
+            body: entitiesResponse,
+          }
+        );
+      });
+
+      cy.intercept(
+        { method: "GET", url: "/rocbn/api/entities/search?entityType=" },
+        {
+          body: {
+            lists: [
+              { registrationNumber: "RC00000001", name: "Stubbed Company 1" },
+              { registrationNumber: "RC00000002", name: "Stubbed Company 2" },
+              { registrationNumber: "RC00000003", name: "Stubbed Company 3" },
+              { registrationNumber: "RC00000004", name: "Stubbed Company 4" },
+            ],
+          },
+        }
+      );
     });
   });
 

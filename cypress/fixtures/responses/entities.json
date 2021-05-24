@@ -1,0 +1,30 @@
+{
+  "companyTypeId": 1,
+  "basisPeriod": "1/1/2020",
+  "startDate": "1/1/2020",
+  "businessSector": {
+    "id": 1
+  },
+  "businessSubSector": {
+    "id": 1
+  },
+  "businessSubSectorDetail": {
+    "id": 1
+  },
+  "registrationNo": "RC00000018",
+  "name": "Petronas",
+  "addresses": [
+    {
+      "address1": "1",
+      "address2": "2",
+      "address3": "3",
+      "district": {
+        "name": "Brunei Muara"
+      },
+      "postalCode": "BE1234",
+      "country": {
+        "name": "Brunei Darussalam"
+      }
+    }
+  ]
+}
