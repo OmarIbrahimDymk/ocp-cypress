@@ -1,4 +1,5 @@
 {
   "experimentalStudio": true,
-  "blockHosts": "*google-analytics.com"
+  "blockHosts": "*google-analytics.com",
+  "projectId": "xqfc8y"
 }
