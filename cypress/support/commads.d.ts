@@ -8,14 +8,7 @@ declare namespace Cypress {
      * Custom command to login for RD module.
      * @example cy.rdLogin(user)
      */
-    rdLogin(user: {
-      id_token: string;
-      session_state: string;
-      access_token: string;
-      token_type: string;
-      scope: string;
-      profile: Object;
-    }): Chainable<Element>;
+    rdLogin(): Chainable<Element>;
 
     /**
      * Custom command to go to specific section(s).

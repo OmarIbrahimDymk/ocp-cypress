@@ -52,11 +52,15 @@ Cypress.Commands.add("searchEntity", (entity) => {
   cy.get("tr > :nth-child(3) > .btn").should("exist");
 });
 
-Cypress.Commands.add("rdLogin", (user) => {
-  localStorage.setItem(
-    "oidc.user:http://localhost:5081:eservice_portal_development",
-    JSON.stringify(user)
-  );
+Cypress.Commands.add("rdLogin", () => {
+  cy.intercept("/.well-known/openid-configuration", "success");
+
+  cy.fixture("tokens/local.json").then((user) => {
+    localStorage.setItem(
+      "oidc.user:http://localhost:5081:eservice_portal_development",
+      JSON.stringify(user)
+    );
+  });
 });
 
 Cypress.Commands.add("goTo", (...sections: string[]) => {
