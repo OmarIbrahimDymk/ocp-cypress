@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:run-rd": "cypress run --headless --browser chrome --spec 'cypress/integration/rd/*'",
+    "cy:run-rd": "cypress run --headless --browser chrome --spec 'cypress/integration/rd/*' --record --key e4518c87-c7f3-4028-ae0e-cb499a5343ab",
     "cy:open": "cypress open",
     "build": "tsc --p tsconfig-build.json"
   },
