@@ -176,7 +176,7 @@ describe("PT Section H", () => {
   });
 
   context("h6", () => {
-    it.only("should auto sum h4 + h5", () => {
+    it("should auto sum h4 + h5", () => {
       cy.fillH1();
       cy.getDataTestId("h2").type("1000", { force: true });
       cy.getDataTestId("h2ii").type("100", { force: true });
