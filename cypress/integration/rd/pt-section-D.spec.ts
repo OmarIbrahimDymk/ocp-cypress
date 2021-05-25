@@ -114,7 +114,7 @@ describe("PT Section D", () => {
     cy.goTo("PTSectionD");
   });
 
-  describe("General", () => {
+  context("General", () => {
     it("should display section D", () => {
       cy.contains("Section D");
       cy.getDataTestId("noJointVenture").check({ force: true });
@@ -202,7 +202,7 @@ describe("PT Section D", () => {
     it.skip("should display error message if user does not upload Production Sharing Operation Attachment", () => {});
   });
 
-  describe("No Joint Venture", () => {
+  context("No Joint Venture", () => {
     it("should display error message for D1 fields if empty on click Submit", () => {
       cy.getDataTestId("noJointVenture").check({ force: true });
 
@@ -284,14 +284,14 @@ describe("PT Section D", () => {
     });
   });
 
-  describe("Joint Venture", () => {
+  context("Joint Venture", () => {
     beforeEach(() => {
       cy.getDataTestId("jointVenture").check({ force: true });
 
       cy.getDataTestId("addJoinVentures").click();
     });
 
-    describe("Participants", () => {
+    context("Participants", () => {
       it("should auto populate filer company registration number and name in every first row", () => {
         cy.getDataTestId(
           tableInput2.inputField("registrationNumber", 0, "Participant-0")
@@ -395,7 +395,7 @@ describe("PT Section D", () => {
       });
     });
 
-    describe("Revenue", () => {
+    context("Revenue", () => {
       it("should display agreement name and filer name", () => {
         cy.getDataTestId("agreementName0").type("My Agreement", {
           force: true,
@@ -444,7 +444,7 @@ describe("PT Section D", () => {
       });
     });
 
-    describe("Carried Interest Arrangement", () => {
+    context("Carried Interest Arrangement", () => {
       it("should display table if yes is selected", () => {
         cy.getDataTestId("interest0").should("not.exist");
 
