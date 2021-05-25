@@ -61,20 +61,19 @@ Cypress.Commands.add("enterPaidTax", (params: IPaidTaxDetails) => {
 describe("PT Section H", () => {
   beforeEach(() => {
     cy.fixture("tokens/local.json").then((user) => {
-      cy.rdLogin(user);
-      cy.goTo("PTSectionA", "PTSectionD", "PTSectionG", "PTSectionH");
-      cy.intercept("/.well-known/openid-configuration", "success");
-
       cy.fixture("responses/entities.json").then((entitiesResponse) => {
+        cy.intercept("/.well-known/openid-configuration", "success");
         cy.intercept(
           {
             method: "GET",
-            url: "/rocbn/api/entities/rd/",
+            url: "/rocbn/api/entities/rd/369",
           },
           {
             body: entitiesResponse,
           }
         ).as("getEntities");
+        cy.rdLogin(user);
+        cy.goTo("PTSectionA", "PTSectionD", "PTSectionG", "PTSectionH");
       });
     });
   });

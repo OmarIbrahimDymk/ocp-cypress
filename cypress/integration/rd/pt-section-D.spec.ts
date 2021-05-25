@@ -101,16 +101,12 @@ enum collectionEnum {
 describe("PT Section D", () => {
   beforeEach(() => {
     cy.fixture("tokens/local.json").then((user) => {
-      cy.viewport(1500, 900);
-      cy.rdLogin(user);
-      cy.goTo("PTSectionD");
-      cy.intercept("/.well-known/openid-configuration", "success");
-
       cy.fixture("responses/entities.json").then((entitiesResponse) => {
+        cy.intercept("/.well-known/openid-configuration", "success");
         cy.intercept(
           {
             method: "GET",
-            url: "/rocbn/api/entities/rd/",
+            url: "/rocbn/api/entities/rd/*",
           },
           {
             body: entitiesResponse,
@@ -119,7 +115,7 @@ describe("PT Section D", () => {
       });
 
       cy.intercept(
-        { method: "GET", url: "/rocbn/api/entities/search?entityType=" },
+        { method: "GET", url: "/rocbn/api/entities/search?entityType=*" },
         {
           body: {
             lists: [
@@ -131,6 +127,10 @@ describe("PT Section D", () => {
           },
         }
       );
+
+      cy.viewport(1500, 900);
+      cy.rdLogin(user);
+      cy.goTo("PTSectionD");
     });
   });
 
