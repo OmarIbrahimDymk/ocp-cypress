@@ -1,0 +1,8372 @@
+{
+  "districts": [
+    {
+      "id": 1,
+      "name": "Brunei Muara"
+    },
+    {
+      "id": 2,
+      "name": "Belait"
+    },
+    {
+      "id": 3,
+      "name": "Tutong"
+    },
+    {
+      "id": 4,
+      "name": "Temburong"
+    }
+  ],
+  "countries": [
+    {
+      "id": 1,
+      "name": "Afghanistan",
+      "code": "AF",
+      "isBrunei": false
+    },
+    {
+      "id": 2,
+      "name": "Albania",
+      "code": "AL",
+      "isBrunei": false
+    },
+    {
+      "id": 3,
+      "name": "Algeria",
+      "code": "DZ",
+      "isBrunei": false
+    },
+    {
+      "id": 4,
+      "name": "American Samoa",
+      "code": "DS",
+      "isBrunei": false
+    },
+    {
+      "id": 5,
+      "name": "Andorra",
+      "code": "AD",
+      "isBrunei": false
+    },
+    {
+      "id": 6,
+      "name": "Angola",
+      "code": "AO",
+      "isBrunei": false
+    },
+    {
+      "id": 7,
+      "name": "Anguilla",
+      "code": "AI",
+      "isBrunei": false
+    },
+    {
+      "id": 8,
+      "name": "Antarctica",
+      "code": "AQ",
+      "isBrunei": false
+    },
+    {
+      "id": 9,
+      "name": "Antigua and Barbuda",
+      "code": "AG",
+      "isBrunei": false
+    },
+    {
+      "id": 10,
+      "name": "Argentina",
+      "code": "AR",
+      "isBrunei": false
+    },
+    {
+      "id": 11,
+      "name": "Armenia",
+      "code": "AM",
+      "isBrunei": false
+    },
+    {
+      "id": 12,
+      "name": "Aruba",
+      "code": "AW",
+      "isBrunei": false
+    },
+    {
+      "id": 13,
+      "name": "Australia",
+      "code": "AU",
+      "isBrunei": false
+    },
+    {
+      "id": 14,
+      "name": "Austria",
+      "code": "AT",
+      "isBrunei": false
+    },
+    {
+      "id": 15,
+      "name": "Azerbaijan",
+      "code": "AZ",
+      "isBrunei": false
+    },
+    {
+      "id": 16,
+      "name": "Bahamas",
+      "code": "BS",
+      "isBrunei": false
+    },
+    {
+      "id": 17,
+      "name": "Bahrain",
+      "code": "BH",
+      "isBrunei": false
+    },
+    {
+      "id": 18,
+      "name": "Bangladesh",
+      "code": "BD",
+      "isBrunei": false
+    },
+    {
+      "id": 19,
+      "name": "Barbados",
+      "code": "BB",
+      "isBrunei": false
+    },
+    {
+      "id": 20,
+      "name": "Belarus",
+      "code": "BY",
+      "isBrunei": false
+    },
+    {
+      "id": 21,
+      "name": "Belgium",
+      "code": "BE",
+      "isBrunei": false
+    },
+    {
+      "id": 22,
+      "name": "Belize",
+      "code": "BZ",
+      "isBrunei": false
+    },
+    {
+      "id": 23,
+      "name": "Benin",
+      "code": "BJ",
+      "isBrunei": false
+    },
+    {
+      "id": 24,
+      "name": "Bermuda",
+      "code": "BM",
+      "isBrunei": false
+    },
+    {
+      "id": 25,
+      "name": "Bhutan",
+      "code": "BT",
+      "isBrunei": false
+    },
+    {
+      "id": 26,
+      "name": "Bolivia",
+      "code": "BO",
+      "isBrunei": false
+    },
+    {
+      "id": 27,
+      "name": "Bosnia and Herzegovina",
+      "code": "BA",
+      "isBrunei": false
+    },
+    {
+      "id": 28,
+      "name": "Botswana",
+      "code": "BW",
+      "isBrunei": false
+    },
+    {
+      "id": 29,
+      "name": "Bouvet Island",
+      "code": "BV",
+      "isBrunei": false
+    },
+    {
+      "id": 30,
+      "name": "Brazil",
+      "code": "BR",
+      "isBrunei": false
+    },
+    {
+      "id": 31,
+      "name": "British Indian Ocean Territory",
+      "code": "IO",
+      "isBrunei": false
+    },
+    {
+      "id": 32,
+      "name": "Brunei Darussalam",
+      "code": "BN",
+      "isBrunei": true
+    },
+    {
+      "id": 33,
+      "name": "Bulgaria",
+      "code": "BG",
+      "isBrunei": false
+    },
+    {
+      "id": 34,
+      "name": "Burkina Faso",
+      "code": "BF",
+      "isBrunei": false
+    },
+    {
+      "id": 35,
+      "name": "Burundi",
+      "code": "BI",
+      "isBrunei": false
+    },
+    {
+      "id": 36,
+      "name": "Cambodia",
+      "code": "KH",
+      "isBrunei": false
+    },
+    {
+      "id": 37,
+      "name": "Cameroon",
+      "code": "CM",
+      "isBrunei": false
+    },
+    {
+      "id": 38,
+      "name": "Canada",
+      "code": "CA",
+      "isBrunei": false
+    },
+    {
+      "id": 39,
+      "name": "Cape Verde",
+      "code": "CV",
+      "isBrunei": false
+    },
+    {
+      "id": 40,
+      "name": "Cayman Islands",
+      "code": "KY",
+      "isBrunei": false
+    },
+    {
+      "id": 41,
+      "name": "Central African Republic",
+      "code": "CF",
+      "isBrunei": false
+    },
+    {
+      "id": 42,
+      "name": "Chad",
+      "code": "TD",
+      "isBrunei": false
+    },
+    {
+      "id": 43,
+      "name": "Chile",
+      "code": "CL",
+      "isBrunei": false
+    },
+    {
+      "id": 44,
+      "name": "China",
+      "code": "CN",
+      "isBrunei": false
+    },
+    {
+      "id": 215,
+      "name": "Chinese Taipei",
+      "code": "TW",
+      "isBrunei": false
+    },
+    {
+      "id": 45,
+      "name": "Christmas Island",
+      "code": "CX",
+      "isBrunei": false
+    },
+    {
+      "id": 46,
+      "name": "Cocos (Keeling) Islands",
+      "code": "CC",
+      "isBrunei": false
+    },
+    {
+      "id": 47,
+      "name": "Colombia",
+      "code": "CO",
+      "isBrunei": false
+    },
+    {
+      "id": 48,
+      "name": "Comoros",
+      "code": "KM",
+      "isBrunei": false
+    },
+    {
+      "id": 51,
+      "name": "Cook Islands",
+      "code": "CK",
+      "isBrunei": false
+    },
+    {
+      "id": 52,
+      "name": "Costa Rica",
+      "code": "CR",
+      "isBrunei": false
+    },
+    {
+      "id": 53,
+      "name": "Croatia new Country {Hrvatska},",
+      "code": "HR",
+      "isBrunei": false
+    },
+    {
+      "id": 54,
+      "name": "Cuba",
+      "code": "CU",
+      "isBrunei": false
+    },
+    {
+      "id": 55,
+      "name": "Cyprus",
+      "code": "CY",
+      "isBrunei": false
+    },
+    {
+      "id": 56,
+      "name": "Czech Republic",
+      "code": "CZ",
+      "isBrunei": false
+    },
+    {
+      "id": 49,
+      "name": "Democratic Republic of the Congo",
+      "code": "CD",
+      "isBrunei": false
+    },
+    {
+      "id": 57,
+      "name": "Denmark",
+      "code": "DK",
+      "isBrunei": false
+    },
+    {
+      "id": 58,
+      "name": "Djibouti",
+      "code": "DJ",
+      "isBrunei": false
+    },
+    {
+      "id": 59,
+      "name": "Dominica",
+      "code": "DM",
+      "isBrunei": false
+    },
+    {
+      "id": 60,
+      "name": "Dominican Republic",
+      "code": "DO",
+      "isBrunei": false
+    },
+    {
+      "id": 61,
+      "name": "East Timor",
+      "code": "TP",
+      "isBrunei": false
+    },
+    {
+      "id": 62,
+      "name": "Ecuador",
+      "code": "EC",
+      "isBrunei": false
+    },
+    {
+      "id": 63,
+      "name": "Egypt",
+      "code": "EG",
+      "isBrunei": false
+    },
+    {
+      "id": 64,
+      "name": "El Salvador",
+      "code": "SV",
+      "isBrunei": false
+    },
+    {
+      "id": 65,
+      "name": "Equatorial Guinea",
+      "code": "GQ",
+      "isBrunei": false
+    },
+    {
+      "id": 66,
+      "name": "Eritrea",
+      "code": "ER",
+      "isBrunei": false
+    },
+    {
+      "id": 67,
+      "name": "Estonia",
+      "code": "EE",
+      "isBrunei": false
+    },
+    {
+      "id": 68,
+      "name": "Ethiopia",
+      "code": "ET",
+      "isBrunei": false
+    },
+    {
+      "id": 69,
+      "name": "Falkland Islands (Malvinas)",
+      "code": "FK",
+      "isBrunei": false
+    },
+    {
+      "id": 70,
+      "name": "Faroe Islands",
+      "code": "FO",
+      "isBrunei": false
+    },
+    {
+      "id": 71,
+      "name": "Fiji",
+      "code": "FJ",
+      "isBrunei": false
+    },
+    {
+      "id": 72,
+      "name": "Finland",
+      "code": "FI",
+      "isBrunei": false
+    },
+    {
+      "id": 73,
+      "name": "France",
+      "code": "FR",
+      "isBrunei": false
+    },
+    {
+      "id": 74,
+      "name": "France, Metropolitan",
+      "code": "FX",
+      "isBrunei": false
+    },
+    {
+      "id": 75,
+      "name": "French Guiana",
+      "code": "GF",
+      "isBrunei": false
+    },
+    {
+      "id": 76,
+      "name": "French Polynesia",
+      "code": "PF",
+      "isBrunei": false
+    },
+    {
+      "id": 77,
+      "name": "French Southern Territories",
+      "code": "TF",
+      "isBrunei": false
+    },
+    {
+      "id": 78,
+      "name": "Gabon",
+      "code": "GA",
+      "isBrunei": false
+    },
+    {
+      "id": 79,
+      "name": "Gambia",
+      "code": "GM",
+      "isBrunei": false
+    },
+    {
+      "id": 80,
+      "name": "Georgia",
+      "code": "GE",
+      "isBrunei": false
+    },
+    {
+      "id": 81,
+      "name": "Germany",
+      "code": "DE",
+      "isBrunei": false
+    },
+    {
+      "id": 82,
+      "name": "Ghana",
+      "code": "GH",
+      "isBrunei": false
+    },
+    {
+      "id": 83,
+      "name": "Gibraltar",
+      "code": "GI",
+      "isBrunei": false
+    },
+    {
+      "id": 85,
+      "name": "Greece",
+      "code": "GR",
+      "isBrunei": false
+    },
+    {
+      "id": 86,
+      "name": "Greenland",
+      "code": "GL",
+      "isBrunei": false
+    },
+    {
+      "id": 87,
+      "name": "Grenada",
+      "code": "GD",
+      "isBrunei": false
+    },
+    {
+      "id": 88,
+      "name": "Guadeloupe",
+      "code": "GP",
+      "isBrunei": false
+    },
+    {
+      "id": 89,
+      "name": "Guam",
+      "code": "GU",
+      "isBrunei": false
+    },
+    {
+      "id": 90,
+      "name": "Guatemala",
+      "code": "GT",
+      "isBrunei": false
+    },
+    {
+      "id": 84,
+      "name": "Guernsey",
+      "code": "GK",
+      "isBrunei": false
+    },
+    {
+      "id": 91,
+      "name": "Guinea",
+      "code": "GN",
+      "isBrunei": false
+    },
+    {
+      "id": 92,
+      "name": "Guinea-Bissau",
+      "code": "GW",
+      "isBrunei": false
+    },
+    {
+      "id": 93,
+      "name": "Guyana",
+      "code": "GY",
+      "isBrunei": false
+    },
+    {
+      "id": 94,
+      "name": "Haiti",
+      "code": "HT",
+      "isBrunei": false
+    },
+    {
+      "id": 95,
+      "name": "Heard and Mc Donald Islands",
+      "code": "HM",
+      "isBrunei": false
+    },
+    {
+      "id": 96,
+      "name": "Honduras",
+      "code": "HN",
+      "isBrunei": false
+    },
+    {
+      "id": 97,
+      "name": "Hong Kong",
+      "code": "HK",
+      "isBrunei": false
+    },
+    {
+      "id": 98,
+      "name": "Hungary",
+      "code": "HU",
+      "isBrunei": false
+    },
+    {
+      "id": 99,
+      "name": "Iceland",
+      "code": "IS",
+      "isBrunei": false
+    },
+    {
+      "id": 100,
+      "name": "India",
+      "code": "IN",
+      "isBrunei": false
+    },
+    {
+      "id": 102,
+      "name": "Indonesia",
+      "code": "ID",
+      "isBrunei": false
+    },
+    {
+      "id": 103,
+      "name": "Iran (Islamic Republic of)",
+      "code": "IR",
+      "isBrunei": false
+    },
+    {
+      "id": 104,
+      "name": "Iraq",
+      "code": "IQ",
+      "isBrunei": false
+    },
+    {
+      "id": 105,
+      "name": "Ireland",
+      "code": "IE",
+      "isBrunei": false
+    },
+    {
+      "id": 101,
+      "name": "Isle of Man",
+      "code": "IM",
+      "isBrunei": false
+    },
+    {
+      "id": 106,
+      "name": "Israel",
+      "code": "IL",
+      "isBrunei": false
+    },
+    {
+      "id": 107,
+      "name": "Italy",
+      "code": "IT",
+      "isBrunei": false
+    },
+    {
+      "id": 108,
+      "name": "Ivory Coast",
+      "code": "CI",
+      "isBrunei": false
+    },
+    {
+      "id": 110,
+      "name": "Jamaica",
+      "code": "JM",
+      "isBrunei": false
+    },
+    {
+      "id": 111,
+      "name": "Japan",
+      "code": "JP",
+      "isBrunei": false
+    },
+    {
+      "id": 109,
+      "name": "Jersey",
+      "code": "JE",
+      "isBrunei": false
+    },
+    {
+      "id": 112,
+      "name": "Jordan",
+      "code": "JO",
+      "isBrunei": false
+    },
+    {
+      "id": 113,
+      "name": "Kazakhstan",
+      "code": "KZ",
+      "isBrunei": false
+    },
+    {
+      "id": 114,
+      "name": "Kenya",
+      "code": "KE",
+      "isBrunei": false
+    },
+    {
+      "id": 115,
+      "name": "Kiribati",
+      "code": "KI",
+      "isBrunei": false
+    },
+    {
+      "id": 116,
+      "name": "Korea, Democratic People''s Republic of",
+      "code": "KP",
+      "isBrunei": false
+    },
+    {
+      "id": 117,
+      "name": "Korea, Republic of",
+      "code": "KR",
+      "isBrunei": false
+    },
+    {
+      "id": 118,
+      "name": "Kosovo",
+      "code": "XK",
+      "isBrunei": false
+    },
+    {
+      "id": 119,
+      "name": "Kuwait",
+      "code": "KW",
+      "isBrunei": false
+    },
+    {
+      "id": 120,
+      "name": "Kyrgyzstan",
+      "code": "KG",
+      "isBrunei": false
+    },
+    {
+      "id": 121,
+      "name": "Lao People''s Democratic Republic",
+      "code": "LA",
+      "isBrunei": false
+    },
+    {
+      "id": 122,
+      "name": "Latvia",
+      "code": "LV",
+      "isBrunei": false
+    },
+    {
+      "id": 123,
+      "name": "Lebanon",
+      "code": "LB",
+      "isBrunei": false
+    },
+    {
+      "id": 124,
+      "name": "Lesotho",
+      "code": "LS",
+      "isBrunei": false
+    },
+    {
+      "id": 125,
+      "name": "Liberia",
+      "code": "LR",
+      "isBrunei": false
+    },
+    {
+      "id": 126,
+      "name": "Libyan Arab Jamahiriya",
+      "code": "LY",
+      "isBrunei": false
+    },
+    {
+      "id": 127,
+      "name": "Liechtenstein",
+      "code": "LI",
+      "isBrunei": false
+    },
+    {
+      "id": 128,
+      "name": "Lithuania",
+      "code": "LT",
+      "isBrunei": false
+    },
+    {
+      "id": 129,
+      "name": "Luxembourg",
+      "code": "LU",
+      "isBrunei": false
+    },
+    {
+      "id": 130,
+      "name": "Macau",
+      "code": "MO",
+      "isBrunei": false
+    },
+    {
+      "id": 132,
+      "name": "Madagascar",
+      "code": "MG",
+      "isBrunei": false
+    },
+    {
+      "id": 133,
+      "name": "Malawi",
+      "code": "MW",
+      "isBrunei": false
+    },
+    {
+      "id": 134,
+      "name": "Malaysia",
+      "code": "MY",
+      "isBrunei": false
+    },
+    {
+      "id": 135,
+      "name": "Maldives",
+      "code": "MV",
+      "isBrunei": false
+    },
+    {
+      "id": 136,
+      "name": "Mali",
+      "code": "ML",
+      "isBrunei": false
+    },
+    {
+      "id": 137,
+      "name": "Malta",
+      "code": "MT",
+      "isBrunei": false
+    },
+    {
+      "id": 138,
+      "name": "Marshall Islands",
+      "code": "MH",
+      "isBrunei": false
+    },
+    {
+      "id": 139,
+      "name": "Martinique",
+      "code": "MQ",
+      "isBrunei": false
+    },
+    {
+      "id": 140,
+      "name": "Mauritania",
+      "code": "MR",
+      "isBrunei": false
+    },
+    {
+      "id": 141,
+      "name": "Mauritius",
+      "code": "MU",
+      "isBrunei": false
+    },
+    {
+      "id": 142,
+      "name": "Mayotte",
+      "code": "TY",
+      "isBrunei": false
+    },
+    {
+      "id": 143,
+      "name": "Mexico",
+      "code": "MX",
+      "isBrunei": false
+    },
+    {
+      "id": 144,
+      "name": "Micronesia, Federated States of",
+      "code": "FM",
+      "isBrunei": false
+    },
+    {
+      "id": 145,
+      "name": "Moldova, Republic of",
+      "code": "MD",
+      "isBrunei": false
+    },
+    {
+      "id": 146,
+      "name": "Monaco",
+      "code": "MC",
+      "isBrunei": false
+    },
+    {
+      "id": 147,
+      "name": "Mongolia",
+      "code": "MN",
+      "isBrunei": false
+    },
+    {
+      "id": 148,
+      "name": "Montenegro",
+      "code": "ME",
+      "isBrunei": false
+    },
+    {
+      "id": 149,
+      "name": "Montserrat",
+      "code": "MS",
+      "isBrunei": false
+    },
+    {
+      "id": 150,
+      "name": "Morocco",
+      "code": "MA",
+      "isBrunei": false
+    },
+    {
+      "id": 151,
+      "name": "Mozambique",
+      "code": "MZ",
+      "isBrunei": false
+    },
+    {
+      "id": 152,
+      "name": "Myanmar",
+      "code": "MM",
+      "isBrunei": false
+    },
+    {
+      "id": 153,
+      "name": "Namibia",
+      "code": "NA",
+      "isBrunei": false
+    },
+    {
+      "id": 154,
+      "name": "Nauru",
+      "code": "NR",
+      "isBrunei": false
+    },
+    {
+      "id": 155,
+      "name": "Nepal",
+      "code": "NP",
+      "isBrunei": false
+    },
+    {
+      "id": 156,
+      "name": "Netherlands",
+      "code": "NL",
+      "isBrunei": false
+    },
+    {
+      "id": 157,
+      "name": "Netherlands Antilles",
+      "code": "AN",
+      "isBrunei": false
+    },
+    {
+      "id": 158,
+      "name": "New Caledonia",
+      "code": "NC",
+      "isBrunei": false
+    },
+    {
+      "id": 159,
+      "name": "New Zealand",
+      "code": "NZ",
+      "isBrunei": false
+    },
+    {
+      "id": 160,
+      "name": "Nicaragua",
+      "code": "NI",
+      "isBrunei": false
+    },
+    {
+      "id": 161,
+      "name": "Niger",
+      "code": "NE",
+      "isBrunei": false
+    },
+    {
+      "id": 162,
+      "name": "Nigeria",
+      "code": "NG",
+      "isBrunei": false
+    },
+    {
+      "id": 163,
+      "name": "Niue",
+      "code": "NU",
+      "isBrunei": false
+    },
+    {
+      "id": 164,
+      "name": "Norfolk Island",
+      "code": "NF",
+      "isBrunei": false
+    },
+    {
+      "id": 131,
+      "name": "North Macedonia",
+      "code": "MK",
+      "isBrunei": false
+    },
+    {
+      "id": 165,
+      "name": "Northern Mariana Islands",
+      "code": "MP",
+      "isBrunei": false
+    },
+    {
+      "id": 166,
+      "name": "Norway",
+      "code": "NO",
+      "isBrunei": false
+    },
+    {
+      "id": 247,
+      "name": "Not Specified",
+      "code": "NS",
+      "isBrunei": false
+    },
+    {
+      "id": 167,
+      "name": "Oman",
+      "code": "OM",
+      "isBrunei": false
+    },
+    {
+      "id": 168,
+      "name": "Pakistan",
+      "code": "PK",
+      "isBrunei": false
+    },
+    {
+      "id": 169,
+      "name": "Palau",
+      "code": "PW",
+      "isBrunei": false
+    },
+    {
+      "id": 170,
+      "name": "Palestine",
+      "code": "PS",
+      "isBrunei": false
+    },
+    {
+      "id": 171,
+      "name": "Panama",
+      "code": "PA",
+      "isBrunei": false
+    },
+    {
+      "id": 172,
+      "name": "Papua New Guinea",
+      "code": "PG",
+      "isBrunei": false
+    },
+    {
+      "id": 173,
+      "name": "Paraguay",
+      "code": "PY",
+      "isBrunei": false
+    },
+    {
+      "id": 174,
+      "name": "Peru",
+      "code": "PE",
+      "isBrunei": false
+    },
+    {
+      "id": 175,
+      "name": "Philippines",
+      "code": "PH",
+      "isBrunei": false
+    },
+    {
+      "id": 176,
+      "name": "Pitcairn",
+      "code": "PN",
+      "isBrunei": false
+    },
+    {
+      "id": 177,
+      "name": "Poland",
+      "code": "PL",
+      "isBrunei": false
+    },
+    {
+      "id": 178,
+      "name": "Portugal",
+      "code": "PT",
+      "isBrunei": false
+    },
+    {
+      "id": 179,
+      "name": "Puerto Rico",
+      "code": "PR",
+      "isBrunei": false
+    },
+    {
+      "id": 180,
+      "name": "Qatar",
+      "code": "QA",
+      "isBrunei": false
+    },
+    {
+      "id": 50,
+      "name": "Republic of Congo",
+      "code": "CG",
+      "isBrunei": false
+    },
+    {
+      "id": 181,
+      "name": "Reunion",
+      "code": "RE",
+      "isBrunei": false
+    },
+    {
+      "id": 182,
+      "name": "Romania",
+      "code": "RO",
+      "isBrunei": false
+    },
+    {
+      "id": 183,
+      "name": "Russian Federation",
+      "code": "RU",
+      "isBrunei": false
+    },
+    {
+      "id": 184,
+      "name": "Rwanda",
+      "code": "RW",
+      "isBrunei": false
+    },
+    {
+      "id": 185,
+      "name": "Saint Kitts and Nevis",
+      "code": "KN",
+      "isBrunei": false
+    },
+    {
+      "id": 186,
+      "name": "Saint Lucia",
+      "code": "LC",
+      "isBrunei": false
+    },
+    {
+      "id": 187,
+      "name": "Saint Vincent and the Grenadines",
+      "code": "VC",
+      "isBrunei": false
+    },
+    {
+      "id": 188,
+      "name": "Samoa",
+      "code": "WS",
+      "isBrunei": false
+    },
+    {
+      "id": 189,
+      "name": "San Marino",
+      "code": "SM",
+      "isBrunei": false
+    },
+    {
+      "id": 190,
+      "name": "Sao Tome and Principe",
+      "code": "ST",
+      "isBrunei": false
+    },
+    {
+      "id": 191,
+      "name": "Saudi Arabia",
+      "code": "SA",
+      "isBrunei": false
+    },
+    {
+      "id": 192,
+      "name": "Senegal",
+      "code": "SN",
+      "isBrunei": false
+    },
+    {
+      "id": 193,
+      "name": "Serbia",
+      "code": "RS",
+      "isBrunei": false
+    },
+    {
+      "id": 194,
+      "name": "Seychelles",
+      "code": "SC",
+      "isBrunei": false
+    },
+    {
+      "id": 195,
+      "name": "Sierra Leone",
+      "code": "SL",
+      "isBrunei": false
+    },
+    {
+      "id": 196,
+      "name": "Singapore",
+      "code": "SG",
+      "isBrunei": false
+    },
+    {
+      "id": 197,
+      "name": "Slovakia",
+      "code": "SK",
+      "isBrunei": false
+    },
+    {
+      "id": 198,
+      "name": "Slovenia",
+      "code": "SI",
+      "isBrunei": false
+    },
+    {
+      "id": 199,
+      "name": "Solomon Islands",
+      "code": "SB",
+      "isBrunei": false
+    },
+    {
+      "id": 200,
+      "name": "Somalia",
+      "code": "SO",
+      "isBrunei": false
+    },
+    {
+      "id": 201,
+      "name": "South Africa",
+      "code": "ZA",
+      "isBrunei": false
+    },
+    {
+      "id": 202,
+      "name": "South Georgia South Sandwich Islands",
+      "code": "GS",
+      "isBrunei": false
+    },
+    {
+      "id": 203,
+      "name": "South Sudan",
+      "code": "SS",
+      "isBrunei": false
+    },
+    {
+      "id": 204,
+      "name": "Spain",
+      "code": "ES",
+      "isBrunei": false
+    },
+    {
+      "id": 205,
+      "name": "Sri Lanka",
+      "code": "LK",
+      "isBrunei": false
+    },
+    {
+      "id": 206,
+      "name": "St. Helena",
+      "code": "SH",
+      "isBrunei": false
+    },
+    {
+      "id": 207,
+      "name": "St. Pierre and Miquelon",
+      "code": "PM",
+      "isBrunei": false
+    },
+    {
+      "id": 208,
+      "name": "Sudan",
+      "code": "SD",
+      "isBrunei": false
+    },
+    {
+      "id": 209,
+      "name": "Suriname",
+      "code": "SR",
+      "isBrunei": false
+    },
+    {
+      "id": 210,
+      "name": "Svalbard and Jan Mayen Islands",
+      "code": "SJ",
+      "isBrunei": false
+    },
+    {
+      "id": 211,
+      "name": "Swaziland",
+      "code": "SZ",
+      "isBrunei": false
+    },
+    {
+      "id": 212,
+      "name": "Sweden",
+      "code": "SE",
+      "isBrunei": false
+    },
+    {
+      "id": 213,
+      "name": "Switzerland",
+      "code": "CH",
+      "isBrunei": false
+    },
+    {
+      "id": 214,
+      "name": "Syrian Arab Republic",
+      "code": "SY",
+      "isBrunei": false
+    },
+    {
+      "id": 216,
+      "name": "Tajikistan",
+      "code": "TJ",
+      "isBrunei": false
+    },
+    {
+      "id": 217,
+      "name": "Tanzania, United Republic of",
+      "code": "TZ",
+      "isBrunei": false
+    },
+    {
+      "id": 218,
+      "name": "Thailand",
+      "code": "TH",
+      "isBrunei": false
+    },
+    {
+      "id": 219,
+      "name": "Togo",
+      "code": "TG",
+      "isBrunei": false
+    },
+    {
+      "id": 220,
+      "name": "Tokelau",
+      "code": "TK",
+      "isBrunei": false
+    },
+    {
+      "id": 221,
+      "name": "Tonga",
+      "code": "TO",
+      "isBrunei": false
+    },
+    {
+      "id": 222,
+      "name": "Trinidad and Tobago",
+      "code": "TT",
+      "isBrunei": false
+    },
+    {
+      "id": 223,
+      "name": "Tunisia",
+      "code": "TN",
+      "isBrunei": false
+    },
+    {
+      "id": 224,
+      "name": "Turkey",
+      "code": "TR",
+      "isBrunei": false
+    },
+    {
+      "id": 225,
+      "name": "Turkmenistan",
+      "code": "TM",
+      "isBrunei": false
+    },
+    {
+      "id": 226,
+      "name": "Turks and Caicos Islands",
+      "code": "TC",
+      "isBrunei": false
+    },
+    {
+      "id": 227,
+      "name": "Tuvalu",
+      "code": "TV",
+      "isBrunei": false
+    },
+    {
+      "id": 228,
+      "name": "Uganda",
+      "code": "UG",
+      "isBrunei": false
+    },
+    {
+      "id": 229,
+      "name": "Ukraine",
+      "code": "UA",
+      "isBrunei": false
+    },
+    {
+      "id": 230,
+      "name": "United Arab Emirates",
+      "code": "AE",
+      "isBrunei": false
+    },
+    {
+      "id": 231,
+      "name": "United Kingdom",
+      "code": "GB",
+      "isBrunei": false
+    },
+    {
+      "id": 232,
+      "name": "United States",
+      "code": "US",
+      "isBrunei": false
+    },
+    {
+      "id": 233,
+      "name": "United States minor outlying islands",
+      "code": "UM",
+      "isBrunei": false
+    },
+    {
+      "id": 234,
+      "name": "Uruguay",
+      "code": "UY",
+      "isBrunei": false
+    },
+    {
+      "id": 235,
+      "name": "Uzbekistan",
+      "code": "UZ",
+      "isBrunei": false
+    },
+    {
+      "id": 236,
+      "name": "Vanuatu",
+      "code": "VU",
+      "isBrunei": false
+    },
+    {
+      "id": 237,
+      "name": "Vatican City State",
+      "code": "VA",
+      "isBrunei": false
+    },
+    {
+      "id": 238,
+      "name": "Venezuela",
+      "code": "VE",
+      "isBrunei": false
+    },
+    {
+      "id": 239,
+      "name": "Vietnam",
+      "code": "VN",
+      "isBrunei": false
+    },
+    {
+      "id": 240,
+      "name": "Virgin Islands (British)",
+      "code": "VG",
+      "isBrunei": false
+    },
+    {
+      "id": 241,
+      "name": "Virgin Islands (U.S.)",
+      "code": "VI",
+      "isBrunei": false
+    },
+    {
+      "id": 242,
+      "name": "Wallis and Futuna Islands",
+      "code": "WF",
+      "isBrunei": false
+    },
+    {
+      "id": 243,
+      "name": "Western Sahara",
+      "code": "EH",
+      "isBrunei": false
+    },
+    {
+      "id": 244,
+      "name": "Yemen",
+      "code": "YE",
+      "isBrunei": false
+    },
+    {
+      "id": 245,
+      "name": "Zambia",
+      "code": "ZM",
+      "isBrunei": false
+    },
+    {
+      "id": 246,
+      "name": "Zimbabwe",
+      "code": "ZW",
+      "isBrunei": false
+    }
+  ],
+  "postCodes": [
+    {
+      "id": 1,
+      "code": "BB1114",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Skim Tanah Kurnia Rakyat Jati Lambak Kiri"
+    },
+    {
+      "id": 2,
+      "code": "BB1214",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Kampong Lambak Kiri"
+    },
+    {
+      "id": 3,
+      "code": "BB1314",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Kampong Lambak A"
+    },
+    {
+      "id": 4,
+      "code": "BB1514",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Kampong Terunjing"
+    },
+    {
+      "id": 5,
+      "code": "BB1714",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Kampong Lambak B"
+    },
+    {
+      "id": 6,
+      "code": "BB2313",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Kampong Serusop"
+    },
+    {
+      "id": 7,
+      "code": "BB2513",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Lapangan Terbang Antarabangsa Brunei"
+    },
+    {
+      "id": 8,
+      "code": "BB2713",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Kampong Jaya Setia"
+    },
+    {
+      "id": 9,
+      "code": "BB3113",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Kampong Jaya Bakti"
+    },
+    {
+      "id": 10,
+      "code": "BB3313",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Kampong Burong Pingai Berakas"
+    },
+    {
+      "id": 11,
+      "code": "BB3513",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Kawasan Jabatan-Jabatan dan Perumahan Kerajaan"
+    },
+    {
+      "id": 12,
+      "code": "BB3713",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Kampong Anggerek Desa"
+    },
+    {
+      "id": 13,
+      "code": "BB4113",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Kampong Orang Kaya Besar Imas"
+    },
+    {
+      "id": 14,
+      "code": "BB4313",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Kampong Pulaie"
+    },
+    {
+      "id": 15,
+      "code": "BB4513",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Kampong Pancha Delima"
+    },
+    {
+      "id": 16,
+      "code": "BB5113",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Kampung Pengiran Siraja Muda Delima Satu"
+    },
+    {
+      "id": 17,
+      "code": "BB1414",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Perkhemahan Berakas"
+    },
+    {
+      "id": 18,
+      "code": "BC1515",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas B",
+      "village": "Kampong Salambigar"
+    },
+    {
+      "id": 19,
+      "code": "BC1715",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas B",
+      "village": "Kampong Sungai Orok"
+    },
+    {
+      "id": 20,
+      "code": "BC2115",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas B",
+      "village": "Kampong Sungai Hanching"
+    },
+    {
+      "id": 21,
+      "code": "BC2315",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas B",
+      "village": "Perumahan Negara Lambak Kanan Kawasan 1"
+    },
+    {
+      "id": 22,
+      "code": "BC2515",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas B",
+      "village": "Perumahan Negara Lambak Kanan Kawasan 2"
+    },
+    {
+      "id": 23,
+      "code": "BC2715",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas B",
+      "village": "Perumahan Negara Lambak Kanan Kawasan 3"
+    },
+    {
+      "id": 24,
+      "code": "BC2915",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas B",
+      "village": "Perumahan Negara Lambak Kanan Kawasan 4"
+    },
+    {
+      "id": 25,
+      "code": "BC3115",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas B",
+      "village": "Perumahan Negara Lambak Kanan Kawasan 5"
+    },
+    {
+      "id": 26,
+      "code": "BC3315",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas B",
+      "village": "Kampong Sungai Tilong"
+    },
+    {
+      "id": 27,
+      "code": "BC3615",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas B",
+      "village": "Kampong Manggis"
+    },
+    {
+      "id": 28,
+      "code": "BC3715",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas B",
+      "village": "Kampong Madang"
+    },
+    {
+      "id": 29,
+      "code": "BC4115",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas B",
+      "village": "Kampong Sungai Akar"
+    },
+    {
+      "id": 30,
+      "code": "BM1126",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Burong Pingai Ayer",
+      "village": "Kampong Burong Pingai Ayer"
+    },
+    {
+      "id": 31,
+      "code": "BM1326",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Burong Pingai Ayer",
+      "village": "Kampong Lurong Dalam"
+    },
+    {
+      "id": 32,
+      "code": "BM1526",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Burong Pingai Ayer",
+      "village": "Kampong Pandai Besi A"
+    },
+    {
+      "id": 33,
+      "code": "BM1726",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Burong Pingai Ayer",
+      "village": "Kampong Pandai Besi B"
+    },
+    {
+      "id": 34,
+      "code": "BM1926",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Burong Pingai Ayer",
+      "village": "Kampong Sungai Pandan A"
+    },
+    {
+      "id": 35,
+      "code": "BM2126",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Burong Pingai Ayer",
+      "village": "Kampong Sungai Pandan B"
+    },
+    {
+      "id": 36,
+      "code": "BM2326",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Burong Pingai Ayer",
+      "village": "Kampong Pengiran Setia Negara"
+    },
+    {
+      "id": 37,
+      "code": "BM2526",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Burong Pingai Ayer",
+      "village": "Kampong Pekan Lama"
+    },
+    {
+      "id": 38,
+      "code": "BE2119",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong A",
+      "village": "Kampong Tungku"
+    },
+    {
+      "id": 39,
+      "code": "BE2319",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong A",
+      "village": "Kampong Katok"
+    },
+    {
+      "id": 40,
+      "code": "BE2519",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong A",
+      "village": "Skim Tanah Kurnia Rakyat Jati Tungku Kawasan 1"
+    },
+    {
+      "id": 41,
+      "code": "BE2719",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong A",
+      "village": "Skim Tanah Kurnia Rakyat Jati Tungku Kawasan 2"
+    },
+    {
+      "id": 42,
+      "code": "BE2919",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong A",
+      "village": "Skim Tanah Kurnia Rakyat Jati Tungku Kawasan 3"
+    },
+    {
+      "id": 43,
+      "code": "BE3119",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong A",
+      "village": "Kampong Rimba & Skim Tanah Kurnia Rakyat Jati Rimba"
+    },
+    {
+      "id": 44,
+      "code": "BE3319",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong A",
+      "village": "Perumahan Negara Rimba Kawasan 1"
+    },
+    {
+      "id": 45,
+      "code": "BE3419",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong A",
+      "village": "Perumahan Negara Rimba Kawasan 2"
+    },
+    {
+      "id": 46,
+      "code": "BE3519",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong A",
+      "village": "Perumahan Negara Rimba Kawasan 3"
+    },
+    {
+      "id": 47,
+      "code": "BE3619",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong A",
+      "village": "Perumahan Negara Rimba Kawasan 4"
+    },
+    {
+      "id": 48,
+      "code": "BE3819",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong A",
+      "village": "Perumahan Negara Rimba Kawasan 5"
+    },
+    {
+      "id": 49,
+      "code": "BE4719",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong A",
+      "village": "Hutan Simpan"
+    },
+    {
+      "id": 50,
+      "code": "BE1118",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong B",
+      "village": "Kampong Beribi"
+    },
+    {
+      "id": 51,
+      "code": "BE1318",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong B",
+      "village": "Kampong Kiarong"
+    },
+    {
+      "id": 52,
+      "code": "BE1518",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong B",
+      "village": "Kampong Kiulap"
+    },
+    {
+      "id": 53,
+      "code": "BE1718",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong B",
+      "village": "Kampong Mata-Mata"
+    },
+    {
+      "id": 54,
+      "code": "BE1918",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong B",
+      "village": "Kampong Perpindahan Mata-Mata"
+    },
+    {
+      "id": 55,
+      "code": "BE3719",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong B",
+      "village": "Kampong Pengkalan Gadong"
+    },
+    {
+      "id": 56,
+      "code": "BE3919",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong B",
+      "village": "Kampong Menglait"
+    },
+    {
+      "id": 57,
+      "code": "BE2118",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong B",
+      "village": "STKRJ Mata-Mata Kawasan 1"
+    },
+    {
+      "id": 58,
+      "code": "BE2318",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong B",
+      "village": "STKRJ Mata-Mata Kawasan 2"
+    },
+    {
+      "id": 59,
+      "code": "BE2518",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Gadong B",
+      "village": "STKRJ Mata-Mata Kawasan 3"
+    },
+    {
+      "id": 60,
+      "code": "BA1111",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kianggeh",
+      "village": "Kampong Berangan"
+    },
+    {
+      "id": 61,
+      "code": "BA1211",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kianggeh",
+      "village": "Kampong Kianggeh"
+    },
+    {
+      "id": 62,
+      "code": "BA1311",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kianggeh",
+      "village": "Kampong Tungkadeh"
+    },
+    {
+      "id": 63,
+      "code": "BA1411",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kianggeh",
+      "village": "Kampong Pusar Ulak"
+    },
+    {
+      "id": 64,
+      "code": "BA1511",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kianggeh",
+      "village": "Kampong Kumbang Pasang"
+    },
+    {
+      "id": 65,
+      "code": "BA1611",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kianggeh",
+      "village": "Kampong Tasek Lama"
+    },
+    {
+      "id": 66,
+      "code": "BA1912",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kianggeh",
+      "village": "Kampong Parit"
+    },
+    {
+      "id": 67,
+      "code": "BA2112",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kianggeh",
+      "village": "Kampong Tumasek"
+    },
+    {
+      "id": 68,
+      "code": "BA2313",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kianggeh",
+      "village": "Lingkungan Diplomatik"
+    },
+    {
+      "id": 69,
+      "code": "BA2511",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kianggeh",
+      "village": "Kampong Melabau"
+    },
+    {
+      "id": 70,
+      "code": "BA8611",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kianggeh",
+      "village": "Pusat Bandar"
+    },
+    {
+      "id": 71,
+      "code": "BF1120",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kilanas",
+      "village": "Kampong Madewa"
+    },
+    {
+      "id": 72,
+      "code": "BF1320",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kilanas",
+      "village": "Kampong Bunut"
+    },
+    {
+      "id": 73,
+      "code": "BF1520",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kilanas",
+      "village": "Kampong Tasek Meradun"
+    },
+    {
+      "id": 74,
+      "code": "BF1720",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kilanas",
+      "village": "Kampong Burong Lepas"
+    },
+    {
+      "id": 75,
+      "code": "BF1920",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kilanas",
+      "village": "Kampong Bengkurong"
+    },
+    {
+      "id": 76,
+      "code": "BF2120",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kilanas",
+      "village": "Kampong Sinarubai"
+    },
+    {
+      "id": 77,
+      "code": "BF2520",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kilanas",
+      "village": "Kampong Kilanas"
+    },
+    {
+      "id": 78,
+      "code": "BF2720",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kilanas",
+      "village": "Kampong Jangsak"
+    },
+    {
+      "id": 79,
+      "code": "BF2920",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kilanas",
+      "village": "Kampong Tanjung Bunut"
+    },
+    {
+      "id": 80,
+      "code": "BF1020",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kilanas",
+      "village": "Kampong Telanai"
+    },
+    {
+      "id": 81,
+      "code": "BF1220",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kilanas",
+      "village": "Kampong Bunut Perpindahan"
+    },
+    {
+      "id": 82,
+      "code": "BF3520",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kilanas",
+      "village": "Pulau Ranggu"
+    },
+    {
+      "id": 83,
+      "code": "BF3720",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kilanas",
+      "village": "Pulau Luba"
+    },
+    {
+      "id": 84,
+      "code": "BD1117",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Sungai Lampai"
+    },
+    {
+      "id": 85,
+      "code": "BD1317",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Pintu Malim"
+    },
+    {
+      "id": 86,
+      "code": "BD1517",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Kota Batu"
+    },
+    {
+      "id": 87,
+      "code": "BD1717",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Dato Gandi"
+    },
+    {
+      "id": 88,
+      "code": "BD1817",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Gadong Batu"
+    },
+    {
+      "id": 89,
+      "code": "BD1917",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Sungai Matan"
+    },
+    {
+      "id": 90,
+      "code": "BD2117",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Serdang"
+    },
+    {
+      "id": 91,
+      "code": "BD2217",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Sungai Belukut"
+    },
+    {
+      "id": 92,
+      "code": "BD2317",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Pelambaian"
+    },
+    {
+      "id": 93,
+      "code": "BD2517",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Sungai Besar"
+    },
+    {
+      "id": 94,
+      "code": "BD2717",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Subok"
+    },
+    {
+      "id": 95,
+      "code": "BD2917",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Belimbing"
+    },
+    {
+      "id": 96,
+      "code": "BD3017",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Buang Tawar"
+    },
+    {
+      "id": 97,
+      "code": "BD3117",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Tanjong Kindana"
+    },
+    {
+      "id": 98,
+      "code": "BD3517",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Pudak"
+    },
+    {
+      "id": 99,
+      "code": "BD4117",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Riong"
+    },
+    {
+      "id": 100,
+      "code": "BD4317",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Kampong Menuggul"
+    },
+    {
+      "id": 101,
+      "code": "BD4717",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Mengkubau"
+    },
+    {
+      "id": 102,
+      "code": "BD4817",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Pulau Chermin"
+    },
+    {
+      "id": 103,
+      "code": "BD4917",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Kota Batu",
+      "village": "Pulau Sibungur"
+    },
+    {
+      "id": 104,
+      "code": "BJ1324",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Lumapas",
+      "village": "Kampong Putat"
+    },
+    {
+      "id": 105,
+      "code": "BJ1424",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Lumapas",
+      "village": "Kampong Baong"
+    },
+    {
+      "id": 106,
+      "code": "BJ1724",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Lumapas",
+      "village": "Kampong Kasat"
+    },
+    {
+      "id": 107,
+      "code": "BJ1924",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Lumapas",
+      "village": "Kampong Buang Sakar"
+    },
+    {
+      "id": 108,
+      "code": "BJ2124",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Lumapas",
+      "village": "Kampong Tarap Bau"
+    },
+    {
+      "id": 109,
+      "code": "BJ2524",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Lumapas",
+      "village": "Kampong Lupak Luas"
+    },
+    {
+      "id": 110,
+      "code": "BJ2724",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Lumapas",
+      "village": "Kampong Sungai Asam"
+    },
+    {
+      "id": 111,
+      "code": "BJ2924",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Lumapas",
+      "village": "Kampong Buang Tekurok"
+    },
+    {
+      "id": 112,
+      "code": "BJ3324",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Lumapas",
+      "village": "Kampong Lumapas"
+    },
+    {
+      "id": 113,
+      "code": "BJ3724",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Lumapas",
+      "village": "Kampong Panchor"
+    },
+    {
+      "id": 114,
+      "code": "BJ3924",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Lumapas",
+      "village": "Kampong Kilugus"
+    },
+    {
+      "id": 115,
+      "code": "BJ4124",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Lumapas",
+      "village": "STKRJ Kilugus"
+    },
+    {
+      "id": 116,
+      "code": "BU1129",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Mentiri",
+      "village": "Kampong Tanah Jambu"
+    },
+    {
+      "id": 117,
+      "code": "BU1429",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Mentiri",
+      "village": "Kampong Salar"
+    },
+    {
+      "id": 118,
+      "code": "BU1229",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Mentiri",
+      "village": "Kampong Sungai Buloh"
+    },
+    {
+      "id": 119,
+      "code": "BU1529",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Mentiri",
+      "village": "Kampong Batu Marang"
+    },
+    {
+      "id": 120,
+      "code": "BU1729",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Mentiri",
+      "village": "Kampong Panchor"
+    },
+    {
+      "id": 121,
+      "code": "BU1929",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Mentiri",
+      "village": "Kampong Mentiri"
+    },
+    {
+      "id": 122,
+      "code": "BU2129",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Mentiri",
+      "village": "Perumahan Negara Mentiri Kawasan A"
+    },
+    {
+      "id": 123,
+      "code": "BU2229",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Mentiri",
+      "village": "Perumahan Negara Mentiri Kawasan B"
+    },
+    {
+      "id": 124,
+      "code": "BU2529",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Mentiri",
+      "village": "Kampong Pengkalan Sibabau"
+    },
+    {
+      "id": 125,
+      "code": "BU2729",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Mentiri",
+      "village": "STKRJ Tanah Jambu"
+    },
+    {
+      "id": 126,
+      "code": "BU2929",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Mentiri",
+      "village": "Perumahan Negara Tanah Jambu"
+    },
+    {
+      "id": 127,
+      "code": "BU3129",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Mentiri",
+      "village": "Perumahan Negara Panchor"
+    },
+    {
+      "id": 128,
+      "code": "BH1123",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Pangkalan Batu",
+      "village": "Kampong Pangkalan Batu"
+    },
+    {
+      "id": 129,
+      "code": "BH1023",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Pangkalan Batu",
+      "village": "Kampong Parit"
+    },
+    {
+      "id": 130,
+      "code": "BH1323",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Pangkalan Batu",
+      "village": "Kampong Batu Ampar"
+    },
+    {
+      "id": 131,
+      "code": "BH1523",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Pangkalan Batu",
+      "village": "Kampong Batang Perhentian"
+    },
+    {
+      "id": 132,
+      "code": "BH1923",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Pangkalan Batu",
+      "village": "Kampong Kuala Lurah"
+    },
+    {
+      "id": 133,
+      "code": "BH2123",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Pangkalan Batu",
+      "village": "Kampong Junjongan"
+    },
+    {
+      "id": 134,
+      "code": "BH2323",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Pangkalan Batu",
+      "village": "Kampong Limau Manis"
+    },
+    {
+      "id": 135,
+      "code": "BH2523",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Pangkalan Batu",
+      "village": "Kampong Wasan"
+    },
+    {
+      "id": 136,
+      "code": "BH2723",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Pangkalan Batu",
+      "village": "Kampong Masin"
+    },
+    {
+      "id": 137,
+      "code": "BH2923",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Pangkalan Batu",
+      "village": "Kampong Batong"
+    },
+    {
+      "id": 138,
+      "code": "BH3123",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Pangkalan Batu",
+      "village": "Kampong Panchor Murai"
+    },
+    {
+      "id": 139,
+      "code": "BH3223",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Pangkalan Batu",
+      "village": "Kampong Bebatik"
+    },
+    {
+      "id": 140,
+      "code": "BH3323",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Pangkalan Batu",
+      "village": "Kampong Bebuloh"
+    },
+    {
+      "id": 141,
+      "code": "BH2623",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Pangkalan Batu",
+      "village": "Kampong Imang"
+    },
+    {
+      "id": 142,
+      "code": "BP1126",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Peramu",
+      "village": "Kampong Peramu"
+    },
+    {
+      "id": 143,
+      "code": "BP1326",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Peramu",
+      "village": "Kampong Pekilong Muara"
+    },
+    {
+      "id": 144,
+      "code": "BP1526",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Peramu",
+      "village": "Kampong Setia Pahlawan"
+    },
+    {
+      "id": 145,
+      "code": "BP1726",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Peramu",
+      "village": "Kampong Bakut Pengiran Siraja Muda A"
+    },
+    {
+      "id": 146,
+      "code": "BP1926",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Peramu",
+      "village": "Kampong Bakut Pengiran Siraja Muda B"
+    },
+    {
+      "id": 147,
+      "code": "BP2126",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Peramu",
+      "village": "Kampong Lurong Sikuna"
+    },
+    {
+      "id": 148,
+      "code": "BP2326",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Peramu",
+      "village": "Kampong Bakut Berumput"
+    },
+    {
+      "id": 149,
+      "code": "BR1126",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Saba",
+      "village": "Kampong Saba Laut"
+    },
+    {
+      "id": 150,
+      "code": "BR1326",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Saba",
+      "village": "Kampong Saba Darat A"
+    },
+    {
+      "id": 151,
+      "code": "BR1526",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Saba",
+      "village": "Kampong Saba Darat B"
+    },
+    {
+      "id": 152,
+      "code": "BR1726",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Saba",
+      "village": "Kampong Saba Ujong"
+    },
+    {
+      "id": 153,
+      "code": "BR1926",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Saba",
+      "village": "Kampong Saba Tengah"
+    },
+    {
+      "id": 154,
+      "code": "BG1121",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sengkurong",
+      "village": "Kampong Sengkurong A"
+    },
+    {
+      "id": 155,
+      "code": "BG1321",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sengkurong",
+      "village": "Kampong Sengkurong B"
+    },
+    {
+      "id": 156,
+      "code": "BG1221",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sengkurong",
+      "village": "Kampong Pasai"
+    },
+    {
+      "id": 157,
+      "code": "BG1521",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sengkurong",
+      "village": "Kampong Tagap"
+    },
+    {
+      "id": 158,
+      "code": "BG1721",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sengkurong",
+      "village": "Kampong Selayun"
+    },
+    {
+      "id": 159,
+      "code": "BG2121",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sengkurong",
+      "village": "Kampong Mulaut"
+    },
+    {
+      "id": 160,
+      "code": "BG2321",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sengkurong",
+      "village": "Kampong Tanjong Nangka"
+    },
+    {
+      "id": 161,
+      "code": "BG2521",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sengkurong",
+      "village": "Kampong Kulapis"
+    },
+    {
+      "id": 162,
+      "code": "BG2721",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sengkurong",
+      "village": "Kampong Katimahar"
+    },
+    {
+      "id": 163,
+      "code": "BG2921",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sengkurong",
+      "village": "Kampong Lugu"
+    },
+    {
+      "id": 164,
+      "code": "BG3021",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sengkurong",
+      "village": "STKRJ Lugu"
+    },
+    {
+      "id": 165,
+      "code": "BG3122",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sengkurong",
+      "village": "Kampong Jerudong"
+    },
+    {
+      "id": 166,
+      "code": "BG3522",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sengkurong",
+      "village": "Kampong Peninjau"
+    },
+    {
+      "id": 167,
+      "code": "BT1128",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Serasa",
+      "village": "Pekan Muara"
+    },
+    {
+      "id": 168,
+      "code": "BT1328",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Serasa",
+      "village": "Pulau Pelumpong & Tanjung Pelumpong"
+    },
+    {
+      "id": 169,
+      "code": "BT1728",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Serasa",
+      "village": "Kampong Serasa"
+    },
+    {
+      "id": 170,
+      "code": "BT2128",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Serasa",
+      "village": "Kampong Sabun"
+    },
+    {
+      "id": 171,
+      "code": "BT2328",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Serasa",
+      "village": "Kampong Kapok"
+    },
+    {
+      "id": 172,
+      "code": "BT2728",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Serasa",
+      "village": "Kampong Meragang"
+    },
+    {
+      "id": 173,
+      "code": "BT2928",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Serasa",
+      "village": "Perumahan Negara Kampong Meragang"
+    },
+    {
+      "id": 174,
+      "code": "BT3328",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Serasa",
+      "village": "Pulau Muara Besar"
+    },
+    {
+      "id": 175,
+      "code": "BT3128",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Serasa",
+      "village": "Pulau Baru-Baru"
+    },
+    {
+      "id": 176,
+      "code": "BT1628",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Serasa",
+      "village": "Pulau Pasir Tengah"
+    },
+    {
+      "id": 177,
+      "code": "BT1528",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Serasa",
+      "village": "Pulau Salar"
+    },
+    {
+      "id": 178,
+      "code": "BK1125",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sungai Kebun",
+      "village": "Kampong Bolkiah A"
+    },
+    {
+      "id": 179,
+      "code": "BK1325",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sungai Kebun",
+      "village": "Kampong Bolkiah B"
+    },
+    {
+      "id": 180,
+      "code": "BK1525",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sungai Kebun",
+      "village": "Kampong Setia A"
+    },
+    {
+      "id": 181,
+      "code": "BK1725",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sungai Kebun",
+      "village": "Kampong Setia B"
+    },
+    {
+      "id": 182,
+      "code": "BK1925",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sungai Kebun",
+      "village": "Kampong Sungai Siamas"
+    },
+    {
+      "id": 183,
+      "code": "BK2125",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sungai Kebun",
+      "village": "Kampong Ujong Klinik"
+    },
+    {
+      "id": 184,
+      "code": "BK2325",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sungai Kebun",
+      "village": "Kampong Sungai Kebun"
+    },
+    {
+      "id": 185,
+      "code": "BN1111",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Tamoi",
+      "village": "Kampong Sumbiling Lama"
+    },
+    {
+      "id": 186,
+      "code": "BL1112",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Tamoi",
+      "village": "Kampong Ujong Bukit"
+    },
+    {
+      "id": 187,
+      "code": "BL1312",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Tamoi",
+      "village": "Kampong Limbongan"
+    },
+    {
+      "id": 188,
+      "code": "BL1512",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Tamoi",
+      "village": "Kampong Pengiran Bendahara Lama"
+    },
+    {
+      "id": 189,
+      "code": "BL1712",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Tamoi",
+      "village": "Kampong Pengiran Kerma Indera Lama"
+    },
+    {
+      "id": 190,
+      "code": "BL1912",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Tamoi",
+      "village": "Kampong Pengiran Tajuddin Hitam"
+    },
+    {
+      "id": 191,
+      "code": "BL2112",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Tamoi",
+      "village": "Kampong Tamoi Tengah"
+    },
+    {
+      "id": 192,
+      "code": "BL2312",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Tamoi",
+      "village": "Kampong Tamoi Ujong"
+    },
+    {
+      "id": 193,
+      "code": "KF1138",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Bukit Sawat",
+      "village": "Kampong Sungai Mau"
+    },
+    {
+      "id": 194,
+      "code": "KF1338",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Bukit Sawat",
+      "village": "Kampong Bisut"
+    },
+    {
+      "id": 195,
+      "code": "KF1738",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Bukit Sawat",
+      "village": "Kampong Bukit Sawat"
+    },
+    {
+      "id": 196,
+      "code": "KF2138",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Bukit Sawat",
+      "village": "Kampong Bukit Kandol"
+    },
+    {
+      "id": 197,
+      "code": "KF3138",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Bukit Sawat",
+      "village": "Kampong Merangking Ulu"
+    },
+    {
+      "id": 198,
+      "code": "KF3338",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Bukit Sawat",
+      "village": "Kampong Merangking Hilir"
+    },
+    {
+      "id": 199,
+      "code": "KF3738",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Bukit Sawat",
+      "village": "Kampong Tarap"
+    },
+    {
+      "id": 200,
+      "code": "KF3938",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Bukit Sawat",
+      "village": "Kampong Pangkalan Siong"
+    },
+    {
+      "id": 201,
+      "code": "KF4538",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Bukit Sawat",
+      "village": "Kampong Pulau Apil"
+    },
+    {
+      "id": 202,
+      "code": "KF1238",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Bukit Sawat",
+      "village": "Kampong Merangking"
+    },
+    {
+      "id": 203,
+      "code": "KD1132",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Balai",
+      "village": "Kampong Kuala Balai"
+    },
+    {
+      "id": 204,
+      "code": "KD1532",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Balai",
+      "village": "Kampong Sungai Damit"
+    },
+    {
+      "id": 205,
+      "code": "KD1732",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Balai",
+      "village": "Kampong Tanjong Rangas"
+    },
+    {
+      "id": 206,
+      "code": "KD1932",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Balai",
+      "village": "Kampong Tugong"
+    },
+    {
+      "id": 207,
+      "code": "KD2132",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Balai",
+      "village": "Kampong Pangalayan"
+    },
+    {
+      "id": 208,
+      "code": "KD2332",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Balai",
+      "village": "Kampong Kajitan"
+    },
+    {
+      "id": 209,
+      "code": "KD2532",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Balai",
+      "village": "Kampong Sungai Mendaram"
+    },
+    {
+      "id": 210,
+      "code": "KD2732",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Balai",
+      "village": "Kampong Penyarap"
+    },
+    {
+      "id": 211,
+      "code": "KD2932",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Balai",
+      "village": "Kampong Lubok Tapang"
+    },
+    {
+      "id": 212,
+      "code": "KD3132",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Balai",
+      "village": "Kampong Lubok Lanyap"
+    },
+    {
+      "id": 213,
+      "code": "KD3332",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Balai",
+      "village": "Kampong Tanjong Sudai"
+    },
+    {
+      "id": 214,
+      "code": "KD3532",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Balai",
+      "village": "Kampong Sungai Lutong"
+    },
+    {
+      "id": 215,
+      "code": "KA1131",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Belait",
+      "village": "Pekan Kuala Belait"
+    },
+    {
+      "id": 216,
+      "code": "KA1531",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Belait",
+      "village": "Kampong Mumong A"
+    },
+    {
+      "id": 217,
+      "code": "KA1731",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Belait",
+      "village": "Kampong Mumong B"
+    },
+    {
+      "id": 218,
+      "code": "KA1931",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Belait",
+      "village": "Kampong Pandan A"
+    },
+    {
+      "id": 219,
+      "code": "KA2031",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Belait",
+      "village": "Kampong Pandan B"
+    },
+    {
+      "id": 220,
+      "code": "KA2131",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Belait",
+      "village": "Kampong Pandan C"
+    },
+    {
+      "id": 221,
+      "code": "KA2731",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Belait",
+      "village": "Kampong Sungai Melilit"
+    },
+    {
+      "id": 222,
+      "code": "KA3331",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Kuala Belait",
+      "village": "Kampong Sungai Teraban"
+    },
+    {
+      "id": 223,
+      "code": "KE1137",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Labi",
+      "village": "Kampong Bukit Puan"
+    },
+    {
+      "id": 224,
+      "code": "KE1337",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Labi",
+      "village": "Kampong Sungai Petai"
+    },
+    {
+      "id": 225,
+      "code": "KE1737",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Labi",
+      "village": "Kampong Tapang Lupak"
+    },
+    {
+      "id": 226,
+      "code": "KE1937",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Labi",
+      "village": "Kampong Tanajor"
+    },
+    {
+      "id": 227,
+      "code": "KE2137",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Labi",
+      "village": "Kampong Ratan"
+    },
+    {
+      "id": 228,
+      "code": "KE2337",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Labi",
+      "village": "Kampong Terunan"
+    },
+    {
+      "id": 229,
+      "code": "KE2537",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Labi",
+      "village": "Kampong Gatas"
+    },
+    {
+      "id": 230,
+      "code": "KE2737",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Labi",
+      "village": "Kampong Kenapol"
+    },
+    {
+      "id": 231,
+      "code": "KE3137",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Labi",
+      "village": "Kampong Terawan"
+    },
+    {
+      "id": 232,
+      "code": "KE2437",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Labi",
+      "village": "Kampong Labi Lama"
+    },
+    {
+      "id": 233,
+      "code": "KE3937",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Labi",
+      "village": "Kampong Teraja"
+    },
+    {
+      "id": 234,
+      "code": "KE2637",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Labi",
+      "village": "Kampong Labi"
+    },
+    {
+      "id": 235,
+      "code": "KE3237",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Labi",
+      "village": "Kampong Simpang Tiga"
+    },
+    {
+      "id": 236,
+      "code": "KE3337",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Labi",
+      "village": "Kampong Rampayoh"
+    },
+    {
+      "id": 237,
+      "code": "KE3537",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Labi",
+      "village": "Kampong Mendaram Kecil"
+    },
+    {
+      "id": 238,
+      "code": "KC1135",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Kampong Sungai Liang"
+    },
+    {
+      "id": 239,
+      "code": "KC1335",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Kampong Sungai Gana"
+    },
+    {
+      "id": 240,
+      "code": "KC1535",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Hutan Simpan Andulau"
+    },
+    {
+      "id": 241,
+      "code": "KC1735",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Kampong Keluyoh"
+    },
+    {
+      "id": 242,
+      "code": "KC1935",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Kampong Perumpong"
+    },
+    {
+      "id": 243,
+      "code": "KC2535",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Kampong Lilas"
+    },
+    {
+      "id": 244,
+      "code": "KC2735",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Kampong Tunggulian"
+    },
+    {
+      "id": 245,
+      "code": "KC3335",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Kampong Agis-Agis"
+    },
+    {
+      "id": 246,
+      "code": "KC3535",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Kampong Sungai Lalit"
+    },
+    {
+      "id": 247,
+      "code": "KC3735",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Kampong Sungai Kang"
+    },
+    {
+      "id": 248,
+      "code": "KC3935",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Kampong Sungai Kuru"
+    },
+    {
+      "id": 249,
+      "code": "KC4135",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Kampong Lumut Tersusun"
+    },
+    {
+      "id": 250,
+      "code": "KC2935",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Kampong Lumut"
+    },
+    {
+      "id": 251,
+      "code": "KC4535",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Kampong Sungai Bakong"
+    },
+    {
+      "id": 252,
+      "code": "KC4735",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Kampong Sungai Taring"
+    },
+    {
+      "id": 253,
+      "code": "KC4935",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Kampong Sungai Tali"
+    },
+    {
+      "id": 254,
+      "code": "KC5135",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Perumahan Negara Lumut Kawasan 1"
+    },
+    {
+      "id": 255,
+      "code": "KC5335",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Perumahan Negara Lumut Kawasan 2"
+    },
+    {
+      "id": 256,
+      "code": "KC5535",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "STKRJ Lumut"
+    },
+    {
+      "id": 257,
+      "code": "KC5735",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Liang",
+      "village": "Perkhemahan Lumut"
+    },
+    {
+      "id": 258,
+      "code": "KH1339",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Melilas",
+      "village": "Kampong Melilas"
+    },
+    {
+      "id": 259,
+      "code": "KH1739",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Melilas",
+      "village": "Kampong Bang Garang"
+    },
+    {
+      "id": 260,
+      "code": "KH1939",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Melilas",
+      "village": "Kampong Bukit Tuding"
+    },
+    {
+      "id": 261,
+      "code": "KB1133",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Seria",
+      "village": "Pekan Seria Kawasan II"
+    },
+    {
+      "id": 262,
+      "code": "KB1233",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Seria",
+      "village": "Pekan Seria Kawasan II"
+    },
+    {
+      "id": 263,
+      "code": "KB1533",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Seria",
+      "village": "Kampong Lorong Tiga Selatan"
+    },
+    {
+      "id": 264,
+      "code": "KB1933",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Seria",
+      "village": "Kampong Sungai Bera"
+    },
+    {
+      "id": 265,
+      "code": "KB2133",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Seria",
+      "village": "Badas"
+    },
+    {
+      "id": 266,
+      "code": "KB2333",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Seria",
+      "village": "Kampong Anduki"
+    },
+    {
+      "id": 267,
+      "code": "KB1633",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Seria",
+      "village": "Perumahan Negara Lorong Tengah Seria"
+    },
+    {
+      "id": 268,
+      "code": "KB2833",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Seria",
+      "village": "Ibu Pejabat Shell"
+    },
+    {
+      "id": 269,
+      "code": "KB3733",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Seria",
+      "village": "Kawasan simpanan Gurkha Kem"
+    },
+    {
+      "id": 270,
+      "code": "KB4533",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Seria",
+      "village": "Kampong Penaga"
+    },
+    {
+      "id": 271,
+      "code": "KB4733",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Seria",
+      "village": "Kampong Perumahan Negara Penaga"
+    },
+    {
+      "id": 272,
+      "code": "KG1139",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Sukang",
+      "village": "Kampong Apak-Apak"
+    },
+    {
+      "id": 273,
+      "code": "KG1739",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Sukang",
+      "village": "Kampong Kukub"
+    },
+    {
+      "id": 274,
+      "code": "KG1939",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Sukang",
+      "village": "Kampong Sukang"
+    },
+    {
+      "id": 275,
+      "code": "KG2139",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Sukang",
+      "village": "Kampong Dungun"
+    },
+    {
+      "id": 276,
+      "code": "KG1239",
+      "district": {
+        "id": 2,
+        "name": "Belait"
+      },
+      "mukim": "Sukang",
+      "village": "Kampong Sungai Hilir"
+    },
+    {
+      "id": 277,
+      "code": "TB1141",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Keriam",
+      "village": "Kampong Keriam"
+    },
+    {
+      "id": 278,
+      "code": "TB1341",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Keriam",
+      "village": "Kampong Bukit Panggal"
+    },
+    {
+      "id": 279,
+      "code": "TB1541",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Keriam",
+      "village": "Kampong Luagan Dudok"
+    },
+    {
+      "id": 280,
+      "code": "TB1741",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Keriam",
+      "village": "Kampong Sinaut"
+    },
+    {
+      "id": 281,
+      "code": "TB2741",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Keriam",
+      "village": "Kampong Sungai Kelugos"
+    },
+    {
+      "id": 282,
+      "code": "TB2941",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Keriam",
+      "village": "Kampong Kupang"
+    },
+    {
+      "id": 283,
+      "code": "TB3141",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Keriam",
+      "village": "Kampong Maraburong"
+    },
+    {
+      "id": 284,
+      "code": "TB3341",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Keriam",
+      "village": "Kampong Ikas"
+    },
+    {
+      "id": 285,
+      "code": "TB3541",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Keriam",
+      "village": "Kawasan Padang Tembak Binturan"
+    },
+    {
+      "id": 286,
+      "code": "TE1143",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Kiudang",
+      "village": "Kampong Bakiau"
+    },
+    {
+      "id": 287,
+      "code": "TE1343",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Kiudang",
+      "village": "Kampong Pengkalan Mau"
+    },
+    {
+      "id": 288,
+      "code": "TE1543",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Kiudang",
+      "village": "Kampong Kiudang"
+    },
+    {
+      "id": 289,
+      "code": "TE1743",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Kiudang",
+      "village": "Kampong Mungkom"
+    },
+    {
+      "id": 290,
+      "code": "TE1943",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Kiudang",
+      "village": "Kampong Pad Nunok"
+    },
+    {
+      "id": 291,
+      "code": "TE2143",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Kiudang",
+      "village": "Kampong Birau"
+    },
+    {
+      "id": 292,
+      "code": "TE2343",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Kiudang",
+      "village": "Kampong Luagan Timbaran"
+    },
+    {
+      "id": 293,
+      "code": "TE2543",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Kiudang",
+      "village": "Kampong Batang Mitus"
+    },
+    {
+      "id": 294,
+      "code": "TE2743",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Kiudang",
+      "village": "Kampong Kebia"
+    },
+    {
+      "id": 295,
+      "code": "TG1143",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Lamunin",
+      "village": "Kampong Layong"
+    },
+    {
+      "id": 296,
+      "code": "TG1343",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Lamunin",
+      "village": "Kampong Kuala Abang"
+    },
+    {
+      "id": 297,
+      "code": "TG2343",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Lamunin",
+      "village": "Kampong Lamunin"
+    },
+    {
+      "id": 298,
+      "code": "TG2743",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Lamunin",
+      "village": "Kampong Bukit Sulang"
+    },
+    {
+      "id": 299,
+      "code": "TG2843",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Lamunin",
+      "village": "Kampong Menengah"
+    },
+    {
+      "id": 300,
+      "code": "TG2943",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Lamunin",
+      "village": "Kampong Bintudoh"
+    },
+    {
+      "id": 301,
+      "code": "TG3143",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Lamunin",
+      "village": "Kampong Panchung"
+    },
+    {
+      "id": 302,
+      "code": "TG3343",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Lamunin",
+      "village": "Kampong Biong"
+    },
+    {
+      "id": 303,
+      "code": "TG3543",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Lamunin",
+      "village": "Kampong Bukit Bang Dalam"
+    },
+    {
+      "id": 304,
+      "code": "TG2443",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Lamunin",
+      "village": "Kampong Bukit Barun"
+    },
+    {
+      "id": 305,
+      "code": "TG3943",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Lamunin",
+      "village": "Hutan Simpan Bukit Ladan"
+    },
+    {
+      "id": 306,
+      "code": "TA1341",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Pekan Tutong",
+      "village": "Bukit Bendera"
+    },
+    {
+      "id": 307,
+      "code": "TA1741",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Pekan Tutong",
+      "village": "Kampong Petani"
+    },
+    {
+      "id": 308,
+      "code": "TA1941",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Pekan Tutong",
+      "village": "Kampong Panchor Papan"
+    },
+    {
+      "id": 309,
+      "code": "TA2141",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Pekan Tutong",
+      "village": "Kampong Panchor Dulit"
+    },
+    {
+      "id": 310,
+      "code": "TA2341",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Pekan Tutong",
+      "village": "Kampong Sengkarai"
+    },
+    {
+      "id": 311,
+      "code": "TA2541",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Pekan Tutong",
+      "village": "Kampong Serambangun"
+    },
+    {
+      "id": 312,
+      "code": "TA2741",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Pekan Tutong",
+      "village": "Kampong Penanjong"
+    },
+    {
+      "id": 313,
+      "code": "TA2941",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Pekan Tutong",
+      "village": "Kampong Tanah Burok"
+    },
+    {
+      "id": 314,
+      "code": "TA3141",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Pekan Tutong",
+      "village": "Tutong Kem"
+    },
+    {
+      "id": 315,
+      "code": "TA3341",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Pekan Tutong",
+      "village": "Kampong Kuala Tutong"
+    },
+    {
+      "id": 316,
+      "code": "TA3541",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Pekan Tutong",
+      "village": "Kampong Penabai"
+    },
+    {
+      "id": 317,
+      "code": "TA3741",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Pekan Tutong",
+      "village": "Kampong Kandang"
+    },
+    {
+      "id": 318,
+      "code": "TA3941",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Pekan Tutong",
+      "village": "Paya Pekan Tutong"
+    },
+    {
+      "id": 319,
+      "code": "TH1149",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Rambai",
+      "village": "Kampong Rambai"
+    },
+    {
+      "id": 320,
+      "code": "TH1349",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Rambai",
+      "village": "Kampong Merimbun"
+    },
+    {
+      "id": 321,
+      "code": "TH1549",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Rambai",
+      "village": "Kampong Kuala Ungar"
+    },
+    {
+      "id": 322,
+      "code": "TH1749",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Rambai",
+      "village": "Kampong Benutan"
+    },
+    {
+      "id": 323,
+      "code": "TH3149",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Rambai",
+      "village": "Kampong Supon Besar"
+    },
+    {
+      "id": 324,
+      "code": "TH3549",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Rambai",
+      "village": "Kampong Supon Kecil"
+    },
+    {
+      "id": 325,
+      "code": "TH3749",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Rambai",
+      "village": "Kampong Lalipo"
+    },
+    {
+      "id": 326,
+      "code": "TH3949",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Rambai",
+      "village": "Kampong Bedawan"
+    },
+    {
+      "id": 327,
+      "code": "TH4149",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Rambai",
+      "village": "Kampong Belabau"
+    },
+    {
+      "id": 328,
+      "code": "TH4349",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Rambai",
+      "village": "Hutan Simpan Bukit Ladan"
+    },
+    {
+      "id": 329,
+      "code": "TD1141",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Tanjong Maya",
+      "village": "Kampong Tanjong Maya"
+    },
+    {
+      "id": 330,
+      "code": "TD1341",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Tanjong Maya",
+      "village": "Kampong Sebakit"
+    },
+    {
+      "id": 331,
+      "code": "TD1541",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Tanjong Maya",
+      "village": "Kampong Bangunggos"
+    },
+    {
+      "id": 332,
+      "code": "TD1741",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Tanjong Maya",
+      "village": "Kampong Penapar"
+    },
+    {
+      "id": 333,
+      "code": "TD1941",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Tanjong Maya",
+      "village": "Kampong Pemadang"
+    },
+    {
+      "id": 334,
+      "code": "TD2341",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Tanjong Maya",
+      "village": "Kampong Bukit Udal"
+    },
+    {
+      "id": 335,
+      "code": "TD2541",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Tanjong Maya",
+      "village": "Kampong Lubok Pulau"
+    },
+    {
+      "id": 336,
+      "code": "TD2741",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Tanjong Maya",
+      "village": "Kampong Bukit Sibut"
+    },
+    {
+      "id": 337,
+      "code": "TD2941",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Tanjong Maya",
+      "village": "Kampong Liulon"
+    },
+    {
+      "id": 338,
+      "code": "TD3141",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Tanjong Maya",
+      "village": "Kampong Padang"
+    },
+    {
+      "id": 339,
+      "code": "TD3341",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Tanjong Maya",
+      "village": "Kampong Tanjong Panjang"
+    },
+    {
+      "id": 340,
+      "code": "TC1145",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Telisai",
+      "village": "Kampong Telisai"
+    },
+    {
+      "id": 341,
+      "code": "TC1345",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Telisai",
+      "village": "Perumahan Negara Telisai"
+    },
+    {
+      "id": 342,
+      "code": "TC1545",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Telisai",
+      "village": "Kampong Telamba"
+    },
+    {
+      "id": 343,
+      "code": "TC2145",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Telisai",
+      "village": "Kampong Sungai Paku"
+    },
+    {
+      "id": 344,
+      "code": "TC2345",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Telisai",
+      "village": "Kampong Danau"
+    },
+    {
+      "id": 345,
+      "code": "TC2545",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Telisai",
+      "village": "Kampong Penapar-Danau"
+    },
+    {
+      "id": 346,
+      "code": "TC2745",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Telisai",
+      "village": "Kampong Keramut"
+    },
+    {
+      "id": 347,
+      "code": "TC2945",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Telisai",
+      "village": "Kampong Tumpuan Ugas"
+    },
+    {
+      "id": 348,
+      "code": "TC3145",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Telisai",
+      "village": "Kampong Bukit Beruang"
+    },
+    {
+      "id": 349,
+      "code": "TC3345",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Telisai",
+      "village": "Perumahan Negara Bukit Beruang"
+    },
+    {
+      "id": 350,
+      "code": "TC3545",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Telisai",
+      "village": "Kampong Binchaya"
+    },
+    {
+      "id": 351,
+      "code": "TC3745",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Telisai",
+      "village": "Kampong Pengkalan Dalai"
+    },
+    {
+      "id": 352,
+      "code": "TC3945",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Telisai",
+      "village": "Kampong Penyatang"
+    },
+    {
+      "id": 353,
+      "code": "TC4145",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Telisai",
+      "village": "Kampong Bukit Pasir"
+    },
+    {
+      "id": 354,
+      "code": "TF1147",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Ukong",
+      "village": "Kampong Ukong"
+    },
+    {
+      "id": 355,
+      "code": "TF1347",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Ukong",
+      "village": "Kampong Pengkalan Ra’an"
+    },
+    {
+      "id": 356,
+      "code": "TF2147",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Ukong",
+      "village": "Kampong Sungai Damit Pemadang"
+    },
+    {
+      "id": 357,
+      "code": "TF2947",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Ukong",
+      "village": "Kampong Pak Bidang"
+    },
+    {
+      "id": 358,
+      "code": "TF3147",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Ukong",
+      "village": "Kampong Bukit"
+    },
+    {
+      "id": 359,
+      "code": "TF4747",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Ukong",
+      "village": "Kampong Long Mayan"
+    },
+    {
+      "id": 360,
+      "code": "TF4947",
+      "district": {
+        "id": 3,
+        "name": "Tutong"
+      },
+      "mukim": "Ukong",
+      "village": "Hutan Simpan Andulau"
+    },
+    {
+      "id": 361,
+      "code": "PD1151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Amo",
+      "village": "Kampong Amo"
+    },
+    {
+      "id": 362,
+      "code": "PD1751",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Amo",
+      "village": "Kampong Sumbiling Lama"
+    },
+    {
+      "id": 363,
+      "code": "PD1851",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Amo",
+      "village": "Kampong Sumbiling Baru"
+    },
+    {
+      "id": 364,
+      "code": "PD1951",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Amo",
+      "village": "Kampong Batang Duri"
+    },
+    {
+      "id": 365,
+      "code": "PD2151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Amo",
+      "village": "Kampong Sibut"
+    },
+    {
+      "id": 366,
+      "code": "PD2351",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Amo",
+      "village": "Kampong Parit"
+    },
+    {
+      "id": 367,
+      "code": "PD3151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Amo",
+      "village": "Kampong Belaban"
+    },
+    {
+      "id": 368,
+      "code": "PD2551",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Amo",
+      "village": "Kampong Biang"
+    },
+    {
+      "id": 369,
+      "code": "PD2751",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Amo",
+      "village": "Kampong Selangan"
+    },
+    {
+      "id": 370,
+      "code": "PD2951",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Amo",
+      "village": "Kampong Sibulu"
+    },
+    {
+      "id": 371,
+      "code": "PD2051",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Amo",
+      "village": "Hutan Simpan Batu Apoi"
+    },
+    {
+      "id": 372,
+      "code": "PA1151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Pekan Bangar"
+    },
+    {
+      "id": 373,
+      "code": "PA1551",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kawasan Perkhemahan Bangar"
+    },
+    {
+      "id": 374,
+      "code": "PA1751",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Menengah"
+    },
+    {
+      "id": 375,
+      "code": "PA1951",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Sungai Sulok"
+    },
+    {
+      "id": 376,
+      "code": "PA2151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Sungai Tanit"
+    },
+    {
+      "id": 377,
+      "code": "PA2351",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Sungai Tanam"
+    },
+    {
+      "id": 378,
+      "code": "PA2551",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Parit Belayang"
+    },
+    {
+      "id": 379,
+      "code": "PA2751",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Semamang"
+    },
+    {
+      "id": 380,
+      "code": "PA2951",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Bang Bulan"
+    },
+    {
+      "id": 381,
+      "code": "PA3151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Belingos"
+    },
+    {
+      "id": 382,
+      "code": "PA3351",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Batang Tuau"
+    },
+    {
+      "id": 383,
+      "code": "PA3551",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Seri Tanjong Belayang"
+    },
+    {
+      "id": 384,
+      "code": "PA3751",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Puni"
+    },
+    {
+      "id": 385,
+      "code": "PA3951",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Ujong Jalan"
+    },
+    {
+      "id": 386,
+      "code": "PA4151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Kinalong"
+    },
+    {
+      "id": 387,
+      "code": "PA4351",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Lagau"
+    },
+    {
+      "id": 388,
+      "code": "PA4551",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Piungan"
+    },
+    {
+      "id": 389,
+      "code": "PA4751",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Batu Bejarah"
+    },
+    {
+      "id": 390,
+      "code": "PA4951",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Subok"
+    },
+    {
+      "id": 391,
+      "code": "PA1351",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Gadong"
+    },
+    {
+      "id": 392,
+      "code": "PA2051",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Kastam Lama"
+    },
+    {
+      "id": 393,
+      "code": "PA2251",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Peliunan"
+    },
+    {
+      "id": 394,
+      "code": "PA2651",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bangar",
+      "village": "Kampong Sungai Getahan"
+    },
+    {
+      "id": 395,
+      "code": "PC1151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Batu Apoi",
+      "village": "Kampong Batu Apoi"
+    },
+    {
+      "id": 396,
+      "code": "PC1351",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Batu Apoi",
+      "village": "Kampong Sungai Radang"
+    },
+    {
+      "id": 397,
+      "code": "PC1551",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Batu Apoi",
+      "village": "Kampong Peliunan"
+    },
+    {
+      "id": 398,
+      "code": "PC1951",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Batu Apoi",
+      "village": "Kampong Gadong Baru"
+    },
+    {
+      "id": 399,
+      "code": "PC2151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Batu Apoi",
+      "village": "Kampong Luagan"
+    },
+    {
+      "id": 400,
+      "code": "PC2351",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Batu Apoi",
+      "village": "Kampong Negalang Ering"
+    },
+    {
+      "id": 401,
+      "code": "PC2551",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Batu Apoi",
+      "village": "Kampong Negalang Unat"
+    },
+    {
+      "id": 402,
+      "code": "PC2751",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Batu Apoi",
+      "village": "Kampong Lakiun"
+    },
+    {
+      "id": 403,
+      "code": "PC2951",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Batu Apoi",
+      "village": "Kampong Tanjong Bungar"
+    },
+    {
+      "id": 404,
+      "code": "PC3151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Batu Apoi",
+      "village": "Kampong Lamaling"
+    },
+    {
+      "id": 405,
+      "code": "PC3351",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Batu Apoi",
+      "village": "Kampong Selapon"
+    },
+    {
+      "id": 406,
+      "code": "PC3551",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Batu Apoi",
+      "village": "Kampong Sekurop"
+    },
+    {
+      "id": 407,
+      "code": "PC1751",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Batu Apoi",
+      "village": "Kampong Selilit"
+    },
+    {
+      "id": 408,
+      "code": "PC3751",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Batu Apoi",
+      "village": "Kampong Rebada"
+    },
+    {
+      "id": 409,
+      "code": "PC3951",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Batu Apoi",
+      "village": "Kampong Simbatang"
+    },
+    {
+      "id": 410,
+      "code": "PE1151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "Kampong Buda-Buda"
+    },
+    {
+      "id": 411,
+      "code": "PE1351",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "Kampong Belais Besar"
+    },
+    {
+      "id": 412,
+      "code": "PE1551",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "Kampong Belais Kecil"
+    },
+    {
+      "id": 413,
+      "code": "PE1751",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "Kampong Paya Bagangan"
+    },
+    {
+      "id": 414,
+      "code": "PE1951",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "Kampong Bokok"
+    },
+    {
+      "id": 415,
+      "code": "PE2151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "Kampong Maniup"
+    },
+    {
+      "id": 416,
+      "code": "PE2351",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "Kampong Bakarut"
+    },
+    {
+      "id": 417,
+      "code": "PE2551",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "Kampong Simbatang"
+    },
+    {
+      "id": 418,
+      "code": "PE2751",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "Kampong Rataie"
+    },
+    {
+      "id": 419,
+      "code": "PE2951",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "Kampong Perpindahan Negara Rataie"
+    },
+    {
+      "id": 420,
+      "code": "PE3151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "STKRJ Kampong Rataie"
+    },
+    {
+      "id": 421,
+      "code": "PE3351",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "Kampong Kenua"
+    },
+    {
+      "id": 422,
+      "code": "PE3751",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "Kampong Lepong"
+    },
+    {
+      "id": 423,
+      "code": "PE4151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "Kampong Semabat"
+    },
+    {
+      "id": 424,
+      "code": "PE4351",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "Kampong Temada"
+    },
+    {
+      "id": 425,
+      "code": "PE4551",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Bokok",
+      "village": "Hutan Simpan Batu Apoi"
+    },
+    {
+      "id": 426,
+      "code": "PB1151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Labu",
+      "village": "Kampong Labu Estate"
+    },
+    {
+      "id": 427,
+      "code": "PB1351",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Labu",
+      "village": "Kampong Senukoh"
+    },
+    {
+      "id": 428,
+      "code": "PB1551",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Labu",
+      "village": "Kampong Piasau-Piasau"
+    },
+    {
+      "id": 429,
+      "code": "PB1751",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Labu",
+      "village": "Kampong Perdayan"
+    },
+    {
+      "id": 430,
+      "code": "PB1951",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Labu",
+      "village": "Hutan Simpan Labu"
+    },
+    {
+      "id": 431,
+      "code": "PB2151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Labu",
+      "village": "Hutan Simpan Perdayan"
+    },
+    {
+      "id": 432,
+      "code": "PB2351",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Labu",
+      "village": "Pulau Kibi"
+    },
+    {
+      "id": 433,
+      "code": "PB3351",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Labu",
+      "village": "Pulau Kitang"
+    },
+    {
+      "id": 434,
+      "code": "PB2551",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Labu",
+      "village": "Pulau Pituat"
+    },
+    {
+      "id": 435,
+      "code": "PB2951",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Labu",
+      "village": "Pulau Selanjak"
+    },
+    {
+      "id": 436,
+      "code": "PB3551",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Labu",
+      "village": "Pulau Selirong"
+    },
+    {
+      "id": 437,
+      "code": "PB2751",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Labu",
+      "village": "Pulau Siarau"
+    },
+    {
+      "id": 438,
+      "code": "PB3151",
+      "district": {
+        "id": 4,
+        "name": "Temburong"
+      },
+      "mukim": "Labu",
+      "village": "Pulau Tarap"
+    },
+    {
+      "id": 439,
+      "code": "BN1111",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Sungai Kedayan",
+      "village": "Kampong Sumbiling Lama"
+    },
+    {
+      "id": 440,
+      "code": "BB4713",
+      "district": {
+        "id": 1,
+        "name": "Brunei Muara"
+      },
+      "mukim": "Berakas A",
+      "village": "Kampung Delima Satu"
+    }
+  ],
+  "occupations": [
+    {
+      "id": 1,
+      "name": "Manager",
+      "displayIn": null
+    },
+    {
+      "id": 2,
+      "name": "Software Engineer",
+      "displayIn": null
+    },
+    {
+      "id": 3,
+      "name": "Tester",
+      "displayIn": null
+    },
+    {
+      "id": 4,
+      "name": "Project Manager",
+      "displayIn": null
+    },
+    {
+      "id": 5,
+      "name": "Carpenter",
+      "displayIn": null
+    },
+    {
+      "id": 6,
+      "name": "Accountant",
+      "displayIn": null
+    },
+    {
+      "id": 7,
+      "name": "Engineer",
+      "displayIn": null
+    },
+    {
+      "id": 8,
+      "name": "Doctor",
+      "displayIn": null
+    },
+    {
+      "id": 9,
+      "name": "Cricketer",
+      "displayIn": null
+    },
+    {
+      "id": 10,
+      "name": "Baker",
+      "displayIn": null
+    },
+    {
+      "id": 11,
+      "name": "Self-employed",
+      "displayIn": "BN"
+    },
+    {
+      "id": 12,
+      "name": "Government",
+      "displayIn": "BN"
+    },
+    {
+      "id": 13,
+      "name": "Non-Government",
+      "displayIn": "BN"
+    }
+  ],
+  "nationalities": [
+    {
+      "id": 1,
+      "name": "Afghanistan",
+      "code": "AF",
+      "isBrunei": false
+    },
+    {
+      "id": 2,
+      "name": "Albania",
+      "code": "AL",
+      "isBrunei": false
+    },
+    {
+      "id": 3,
+      "name": "Algeria",
+      "code": "DZ",
+      "isBrunei": false
+    },
+    {
+      "id": 4,
+      "name": "American Samoa",
+      "code": "DS",
+      "isBrunei": false
+    },
+    {
+      "id": 5,
+      "name": "Andorra",
+      "code": "AD",
+      "isBrunei": false
+    },
+    {
+      "id": 6,
+      "name": "Angola",
+      "code": "AO",
+      "isBrunei": false
+    },
+    {
+      "id": 7,
+      "name": "Anguilla",
+      "code": "AI",
+      "isBrunei": false
+    },
+    {
+      "id": 8,
+      "name": "Antarctica",
+      "code": "AQ",
+      "isBrunei": false
+    },
+    {
+      "id": 9,
+      "name": "Antigua and Barbuda",
+      "code": "AG",
+      "isBrunei": false
+    },
+    {
+      "id": 10,
+      "name": "Argentina",
+      "code": "AR",
+      "isBrunei": false
+    },
+    {
+      "id": 11,
+      "name": "Armenia",
+      "code": "AM",
+      "isBrunei": false
+    },
+    {
+      "id": 12,
+      "name": "Aruba",
+      "code": "AW",
+      "isBrunei": false
+    },
+    {
+      "id": 13,
+      "name": "Australia",
+      "code": "AU",
+      "isBrunei": false
+    },
+    {
+      "id": 14,
+      "name": "Austria",
+      "code": "AT",
+      "isBrunei": false
+    },
+    {
+      "id": 15,
+      "name": "Azerbaijan",
+      "code": "AZ",
+      "isBrunei": false
+    },
+    {
+      "id": 16,
+      "name": "Bahamas",
+      "code": "BS",
+      "isBrunei": false
+    },
+    {
+      "id": 17,
+      "name": "Bahrain",
+      "code": "BH",
+      "isBrunei": false
+    },
+    {
+      "id": 18,
+      "name": "Bangladesh",
+      "code": "BD",
+      "isBrunei": false
+    },
+    {
+      "id": 19,
+      "name": "Barbados",
+      "code": "BB",
+      "isBrunei": false
+    },
+    {
+      "id": 20,
+      "name": "Belarus",
+      "code": "BY",
+      "isBrunei": false
+    },
+    {
+      "id": 21,
+      "name": "Belgium",
+      "code": "BE",
+      "isBrunei": false
+    },
+    {
+      "id": 22,
+      "name": "Belize",
+      "code": "BZ",
+      "isBrunei": false
+    },
+    {
+      "id": 23,
+      "name": "Benin",
+      "code": "BJ",
+      "isBrunei": false
+    },
+    {
+      "id": 24,
+      "name": "Bermuda",
+      "code": "BM",
+      "isBrunei": false
+    },
+    {
+      "id": 25,
+      "name": "Bhutan",
+      "code": "BT",
+      "isBrunei": false
+    },
+    {
+      "id": 26,
+      "name": "Bolivia",
+      "code": "BO",
+      "isBrunei": false
+    },
+    {
+      "id": 27,
+      "name": "Bosnia and Herzegovina",
+      "code": "BA",
+      "isBrunei": false
+    },
+    {
+      "id": 28,
+      "name": "Botswana",
+      "code": "BW",
+      "isBrunei": false
+    },
+    {
+      "id": 29,
+      "name": "Bouvet Island",
+      "code": "BV",
+      "isBrunei": false
+    },
+    {
+      "id": 30,
+      "name": "Brazil",
+      "code": "BR",
+      "isBrunei": false
+    },
+    {
+      "id": 31,
+      "name": "British Indian Ocean Territory",
+      "code": "IO",
+      "isBrunei": false
+    },
+    {
+      "id": 32,
+      "name": "Brunei Darussalam",
+      "code": "BN",
+      "isBrunei": true
+    },
+    {
+      "id": 33,
+      "name": "Bulgaria",
+      "code": "BG",
+      "isBrunei": false
+    },
+    {
+      "id": 34,
+      "name": "Burkina Faso",
+      "code": "BF",
+      "isBrunei": false
+    },
+    {
+      "id": 35,
+      "name": "Burundi",
+      "code": "BI",
+      "isBrunei": false
+    },
+    {
+      "id": 36,
+      "name": "Cambodia",
+      "code": "KH",
+      "isBrunei": false
+    },
+    {
+      "id": 37,
+      "name": "Cameroon",
+      "code": "CM",
+      "isBrunei": false
+    },
+    {
+      "id": 38,
+      "name": "Canada",
+      "code": "CA",
+      "isBrunei": false
+    },
+    {
+      "id": 39,
+      "name": "Cape Verde",
+      "code": "CV",
+      "isBrunei": false
+    },
+    {
+      "id": 40,
+      "name": "Cayman Islands",
+      "code": "KY",
+      "isBrunei": false
+    },
+    {
+      "id": 41,
+      "name": "Central African Republic",
+      "code": "CF",
+      "isBrunei": false
+    },
+    {
+      "id": 42,
+      "name": "Chad",
+      "code": "TD",
+      "isBrunei": false
+    },
+    {
+      "id": 43,
+      "name": "Chile",
+      "code": "CL",
+      "isBrunei": false
+    },
+    {
+      "id": 44,
+      "name": "China",
+      "code": "CN",
+      "isBrunei": false
+    },
+    {
+      "id": 215,
+      "name": "Chinese Taipei",
+      "code": "TW",
+      "isBrunei": false
+    },
+    {
+      "id": 45,
+      "name": "Christmas Island",
+      "code": "CX",
+      "isBrunei": false
+    },
+    {
+      "id": 46,
+      "name": "Cocos (Keeling) Islands",
+      "code": "CC",
+      "isBrunei": false
+    },
+    {
+      "id": 47,
+      "name": "Colombia",
+      "code": "CO",
+      "isBrunei": false
+    },
+    {
+      "id": 48,
+      "name": "Comoros",
+      "code": "KM",
+      "isBrunei": false
+    },
+    {
+      "id": 51,
+      "name": "Cook Islands",
+      "code": "CK",
+      "isBrunei": false
+    },
+    {
+      "id": 52,
+      "name": "Costa Rica",
+      "code": "CR",
+      "isBrunei": false
+    },
+    {
+      "id": 53,
+      "name": "Croatia new Country {Hrvatska},",
+      "code": "HR",
+      "isBrunei": false
+    },
+    {
+      "id": 54,
+      "name": "Cuba",
+      "code": "CU",
+      "isBrunei": false
+    },
+    {
+      "id": 55,
+      "name": "Cyprus",
+      "code": "CY",
+      "isBrunei": false
+    },
+    {
+      "id": 56,
+      "name": "Czech Republic",
+      "code": "CZ",
+      "isBrunei": false
+    },
+    {
+      "id": 49,
+      "name": "Democratic Republic of the Congo",
+      "code": "CD",
+      "isBrunei": false
+    },
+    {
+      "id": 57,
+      "name": "Denmark",
+      "code": "DK",
+      "isBrunei": false
+    },
+    {
+      "id": 58,
+      "name": "Djibouti",
+      "code": "DJ",
+      "isBrunei": false
+    },
+    {
+      "id": 59,
+      "name": "Dominica",
+      "code": "DM",
+      "isBrunei": false
+    },
+    {
+      "id": 60,
+      "name": "Dominican Republic",
+      "code": "DO",
+      "isBrunei": false
+    },
+    {
+      "id": 61,
+      "name": "East Timor",
+      "code": "TP",
+      "isBrunei": false
+    },
+    {
+      "id": 62,
+      "name": "Ecuador",
+      "code": "EC",
+      "isBrunei": false
+    },
+    {
+      "id": 63,
+      "name": "Egypt",
+      "code": "EG",
+      "isBrunei": false
+    },
+    {
+      "id": 64,
+      "name": "El Salvador",
+      "code": "SV",
+      "isBrunei": false
+    },
+    {
+      "id": 65,
+      "name": "Equatorial Guinea",
+      "code": "GQ",
+      "isBrunei": false
+    },
+    {
+      "id": 66,
+      "name": "Eritrea",
+      "code": "ER",
+      "isBrunei": false
+    },
+    {
+      "id": 67,
+      "name": "Estonia",
+      "code": "EE",
+      "isBrunei": false
+    },
+    {
+      "id": 68,
+      "name": "Ethiopia",
+      "code": "ET",
+      "isBrunei": false
+    },
+    {
+      "id": 69,
+      "name": "Falkland Islands (Malvinas)",
+      "code": "FK",
+      "isBrunei": false
+    },
+    {
+      "id": 70,
+      "name": "Faroe Islands",
+      "code": "FO",
+      "isBrunei": false
+    },
+    {
+      "id": 71,
+      "name": "Fiji",
+      "code": "FJ",
+      "isBrunei": false
+    },
+    {
+      "id": 72,
+      "name": "Finland",
+      "code": "FI",
+      "isBrunei": false
+    },
+    {
+      "id": 73,
+      "name": "France",
+      "code": "FR",
+      "isBrunei": false
+    },
+    {
+      "id": 74,
+      "name": "France, Metropolitan",
+      "code": "FX",
+      "isBrunei": false
+    },
+    {
+      "id": 75,
+      "name": "French Guiana",
+      "code": "GF",
+      "isBrunei": false
+    },
+    {
+      "id": 76,
+      "name": "French Polynesia",
+      "code": "PF",
+      "isBrunei": false
+    },
+    {
+      "id": 77,
+      "name": "French Southern Territories",
+      "code": "TF",
+      "isBrunei": false
+    },
+    {
+      "id": 78,
+      "name": "Gabon",
+      "code": "GA",
+      "isBrunei": false
+    },
+    {
+      "id": 79,
+      "name": "Gambia",
+      "code": "GM",
+      "isBrunei": false
+    },
+    {
+      "id": 80,
+      "name": "Georgia",
+      "code": "GE",
+      "isBrunei": false
+    },
+    {
+      "id": 81,
+      "name": "Germany",
+      "code": "DE",
+      "isBrunei": false
+    },
+    {
+      "id": 82,
+      "name": "Ghana",
+      "code": "GH",
+      "isBrunei": false
+    },
+    {
+      "id": 83,
+      "name": "Gibraltar",
+      "code": "GI",
+      "isBrunei": false
+    },
+    {
+      "id": 85,
+      "name": "Greece",
+      "code": "GR",
+      "isBrunei": false
+    },
+    {
+      "id": 86,
+      "name": "Greenland",
+      "code": "GL",
+      "isBrunei": false
+    },
+    {
+      "id": 87,
+      "name": "Grenada",
+      "code": "GD",
+      "isBrunei": false
+    },
+    {
+      "id": 88,
+      "name": "Guadeloupe",
+      "code": "GP",
+      "isBrunei": false
+    },
+    {
+      "id": 89,
+      "name": "Guam",
+      "code": "GU",
+      "isBrunei": false
+    },
+    {
+      "id": 90,
+      "name": "Guatemala",
+      "code": "GT",
+      "isBrunei": false
+    },
+    {
+      "id": 84,
+      "name": "Guernsey",
+      "code": "GK",
+      "isBrunei": false
+    },
+    {
+      "id": 91,
+      "name": "Guinea",
+      "code": "GN",
+      "isBrunei": false
+    },
+    {
+      "id": 92,
+      "name": "Guinea-Bissau",
+      "code": "GW",
+      "isBrunei": false
+    },
+    {
+      "id": 93,
+      "name": "Guyana",
+      "code": "GY",
+      "isBrunei": false
+    },
+    {
+      "id": 94,
+      "name": "Haiti",
+      "code": "HT",
+      "isBrunei": false
+    },
+    {
+      "id": 95,
+      "name": "Heard and Mc Donald Islands",
+      "code": "HM",
+      "isBrunei": false
+    },
+    {
+      "id": 96,
+      "name": "Honduras",
+      "code": "HN",
+      "isBrunei": false
+    },
+    {
+      "id": 97,
+      "name": "Hong Kong",
+      "code": "HK",
+      "isBrunei": false
+    },
+    {
+      "id": 98,
+      "name": "Hungary",
+      "code": "HU",
+      "isBrunei": false
+    },
+    {
+      "id": 99,
+      "name": "Iceland",
+      "code": "IS",
+      "isBrunei": false
+    },
+    {
+      "id": 100,
+      "name": "India",
+      "code": "IN",
+      "isBrunei": false
+    },
+    {
+      "id": 102,
+      "name": "Indonesia",
+      "code": "ID",
+      "isBrunei": false
+    },
+    {
+      "id": 103,
+      "name": "Iran (Islamic Republic of)",
+      "code": "IR",
+      "isBrunei": false
+    },
+    {
+      "id": 104,
+      "name": "Iraq",
+      "code": "IQ",
+      "isBrunei": false
+    },
+    {
+      "id": 105,
+      "name": "Ireland",
+      "code": "IE",
+      "isBrunei": false
+    },
+    {
+      "id": 101,
+      "name": "Isle of Man",
+      "code": "IM",
+      "isBrunei": false
+    },
+    {
+      "id": 106,
+      "name": "Israel",
+      "code": "IL",
+      "isBrunei": false
+    },
+    {
+      "id": 107,
+      "name": "Italy",
+      "code": "IT",
+      "isBrunei": false
+    },
+    {
+      "id": 108,
+      "name": "Ivory Coast",
+      "code": "CI",
+      "isBrunei": false
+    },
+    {
+      "id": 110,
+      "name": "Jamaica",
+      "code": "JM",
+      "isBrunei": false
+    },
+    {
+      "id": 111,
+      "name": "Japan",
+      "code": "JP",
+      "isBrunei": false
+    },
+    {
+      "id": 109,
+      "name": "Jersey",
+      "code": "JE",
+      "isBrunei": false
+    },
+    {
+      "id": 112,
+      "name": "Jordan",
+      "code": "JO",
+      "isBrunei": false
+    },
+    {
+      "id": 113,
+      "name": "Kazakhstan",
+      "code": "KZ",
+      "isBrunei": false
+    },
+    {
+      "id": 114,
+      "name": "Kenya",
+      "code": "KE",
+      "isBrunei": false
+    },
+    {
+      "id": 115,
+      "name": "Kiribati",
+      "code": "KI",
+      "isBrunei": false
+    },
+    {
+      "id": 116,
+      "name": "Korea, Democratic People''s Republic of",
+      "code": "KP",
+      "isBrunei": false
+    },
+    {
+      "id": 117,
+      "name": "Korea, Republic of",
+      "code": "KR",
+      "isBrunei": false
+    },
+    {
+      "id": 118,
+      "name": "Kosovo",
+      "code": "XK",
+      "isBrunei": false
+    },
+    {
+      "id": 119,
+      "name": "Kuwait",
+      "code": "KW",
+      "isBrunei": false
+    },
+    {
+      "id": 120,
+      "name": "Kyrgyzstan",
+      "code": "KG",
+      "isBrunei": false
+    },
+    {
+      "id": 121,
+      "name": "Lao People''s Democratic Republic",
+      "code": "LA",
+      "isBrunei": false
+    },
+    {
+      "id": 122,
+      "name": "Latvia",
+      "code": "LV",
+      "isBrunei": false
+    },
+    {
+      "id": 123,
+      "name": "Lebanon",
+      "code": "LB",
+      "isBrunei": false
+    },
+    {
+      "id": 124,
+      "name": "Lesotho",
+      "code": "LS",
+      "isBrunei": false
+    },
+    {
+      "id": 125,
+      "name": "Liberia",
+      "code": "LR",
+      "isBrunei": false
+    },
+    {
+      "id": 126,
+      "name": "Libyan Arab Jamahiriya",
+      "code": "LY",
+      "isBrunei": false
+    },
+    {
+      "id": 127,
+      "name": "Liechtenstein",
+      "code": "LI",
+      "isBrunei": false
+    },
+    {
+      "id": 128,
+      "name": "Lithuania",
+      "code": "LT",
+      "isBrunei": false
+    },
+    {
+      "id": 129,
+      "name": "Luxembourg",
+      "code": "LU",
+      "isBrunei": false
+    },
+    {
+      "id": 130,
+      "name": "Macau",
+      "code": "MO",
+      "isBrunei": false
+    },
+    {
+      "id": 132,
+      "name": "Madagascar",
+      "code": "MG",
+      "isBrunei": false
+    },
+    {
+      "id": 133,
+      "name": "Malawi",
+      "code": "MW",
+      "isBrunei": false
+    },
+    {
+      "id": 134,
+      "name": "Malaysia",
+      "code": "MY",
+      "isBrunei": false
+    },
+    {
+      "id": 135,
+      "name": "Maldives",
+      "code": "MV",
+      "isBrunei": false
+    },
+    {
+      "id": 136,
+      "name": "Mali",
+      "code": "ML",
+      "isBrunei": false
+    },
+    {
+      "id": 137,
+      "name": "Malta",
+      "code": "MT",
+      "isBrunei": false
+    },
+    {
+      "id": 138,
+      "name": "Marshall Islands",
+      "code": "MH",
+      "isBrunei": false
+    },
+    {
+      "id": 139,
+      "name": "Martinique",
+      "code": "MQ",
+      "isBrunei": false
+    },
+    {
+      "id": 140,
+      "name": "Mauritania",
+      "code": "MR",
+      "isBrunei": false
+    },
+    {
+      "id": 141,
+      "name": "Mauritius",
+      "code": "MU",
+      "isBrunei": false
+    },
+    {
+      "id": 142,
+      "name": "Mayotte",
+      "code": "TY",
+      "isBrunei": false
+    },
+    {
+      "id": 143,
+      "name": "Mexico",
+      "code": "MX",
+      "isBrunei": false
+    },
+    {
+      "id": 144,
+      "name": "Micronesia, Federated States of",
+      "code": "FM",
+      "isBrunei": false
+    },
+    {
+      "id": 145,
+      "name": "Moldova, Republic of",
+      "code": "MD",
+      "isBrunei": false
+    },
+    {
+      "id": 146,
+      "name": "Monaco",
+      "code": "MC",
+      "isBrunei": false
+    },
+    {
+      "id": 147,
+      "name": "Mongolia",
+      "code": "MN",
+      "isBrunei": false
+    },
+    {
+      "id": 148,
+      "name": "Montenegro",
+      "code": "ME",
+      "isBrunei": false
+    },
+    {
+      "id": 149,
+      "name": "Montserrat",
+      "code": "MS",
+      "isBrunei": false
+    },
+    {
+      "id": 150,
+      "name": "Morocco",
+      "code": "MA",
+      "isBrunei": false
+    },
+    {
+      "id": 151,
+      "name": "Mozambique",
+      "code": "MZ",
+      "isBrunei": false
+    },
+    {
+      "id": 152,
+      "name": "Myanmar",
+      "code": "MM",
+      "isBrunei": false
+    },
+    {
+      "id": 153,
+      "name": "Namibia",
+      "code": "NA",
+      "isBrunei": false
+    },
+    {
+      "id": 154,
+      "name": "Nauru",
+      "code": "NR",
+      "isBrunei": false
+    },
+    {
+      "id": 155,
+      "name": "Nepal",
+      "code": "NP",
+      "isBrunei": false
+    },
+    {
+      "id": 156,
+      "name": "Netherlands",
+      "code": "NL",
+      "isBrunei": false
+    },
+    {
+      "id": 157,
+      "name": "Netherlands Antilles",
+      "code": "AN",
+      "isBrunei": false
+    },
+    {
+      "id": 158,
+      "name": "New Caledonia",
+      "code": "NC",
+      "isBrunei": false
+    },
+    {
+      "id": 159,
+      "name": "New Zealand",
+      "code": "NZ",
+      "isBrunei": false
+    },
+    {
+      "id": 160,
+      "name": "Nicaragua",
+      "code": "NI",
+      "isBrunei": false
+    },
+    {
+      "id": 161,
+      "name": "Niger",
+      "code": "NE",
+      "isBrunei": false
+    },
+    {
+      "id": 162,
+      "name": "Nigeria",
+      "code": "NG",
+      "isBrunei": false
+    },
+    {
+      "id": 163,
+      "name": "Niue",
+      "code": "NU",
+      "isBrunei": false
+    },
+    {
+      "id": 164,
+      "name": "Norfolk Island",
+      "code": "NF",
+      "isBrunei": false
+    },
+    {
+      "id": 131,
+      "name": "North Macedonia",
+      "code": "MK",
+      "isBrunei": false
+    },
+    {
+      "id": 165,
+      "name": "Northern Mariana Islands",
+      "code": "MP",
+      "isBrunei": false
+    },
+    {
+      "id": 166,
+      "name": "Norway",
+      "code": "NO",
+      "isBrunei": false
+    },
+    {
+      "id": 247,
+      "name": "Not Specified",
+      "code": "NS",
+      "isBrunei": false
+    },
+    {
+      "id": 167,
+      "name": "Oman",
+      "code": "OM",
+      "isBrunei": false
+    },
+    {
+      "id": 168,
+      "name": "Pakistan",
+      "code": "PK",
+      "isBrunei": false
+    },
+    {
+      "id": 169,
+      "name": "Palau",
+      "code": "PW",
+      "isBrunei": false
+    },
+    {
+      "id": 170,
+      "name": "Palestine",
+      "code": "PS",
+      "isBrunei": false
+    },
+    {
+      "id": 171,
+      "name": "Panama",
+      "code": "PA",
+      "isBrunei": false
+    },
+    {
+      "id": 172,
+      "name": "Papua New Guinea",
+      "code": "PG",
+      "isBrunei": false
+    },
+    {
+      "id": 173,
+      "name": "Paraguay",
+      "code": "PY",
+      "isBrunei": false
+    },
+    {
+      "id": 174,
+      "name": "Peru",
+      "code": "PE",
+      "isBrunei": false
+    },
+    {
+      "id": 175,
+      "name": "Philippines",
+      "code": "PH",
+      "isBrunei": false
+    },
+    {
+      "id": 176,
+      "name": "Pitcairn",
+      "code": "PN",
+      "isBrunei": false
+    },
+    {
+      "id": 177,
+      "name": "Poland",
+      "code": "PL",
+      "isBrunei": false
+    },
+    {
+      "id": 178,
+      "name": "Portugal",
+      "code": "PT",
+      "isBrunei": false
+    },
+    {
+      "id": 179,
+      "name": "Puerto Rico",
+      "code": "PR",
+      "isBrunei": false
+    },
+    {
+      "id": 180,
+      "name": "Qatar",
+      "code": "QA",
+      "isBrunei": false
+    },
+    {
+      "id": 50,
+      "name": "Republic of Congo",
+      "code": "CG",
+      "isBrunei": false
+    },
+    {
+      "id": 181,
+      "name": "Reunion",
+      "code": "RE",
+      "isBrunei": false
+    },
+    {
+      "id": 182,
+      "name": "Romania",
+      "code": "RO",
+      "isBrunei": false
+    },
+    {
+      "id": 183,
+      "name": "Russian Federation",
+      "code": "RU",
+      "isBrunei": false
+    },
+    {
+      "id": 184,
+      "name": "Rwanda",
+      "code": "RW",
+      "isBrunei": false
+    },
+    {
+      "id": 185,
+      "name": "Saint Kitts and Nevis",
+      "code": "KN",
+      "isBrunei": false
+    },
+    {
+      "id": 186,
+      "name": "Saint Lucia",
+      "code": "LC",
+      "isBrunei": false
+    },
+    {
+      "id": 187,
+      "name": "Saint Vincent and the Grenadines",
+      "code": "VC",
+      "isBrunei": false
+    },
+    {
+      "id": 188,
+      "name": "Samoa",
+      "code": "WS",
+      "isBrunei": false
+    },
+    {
+      "id": 189,
+      "name": "San Marino",
+      "code": "SM",
+      "isBrunei": false
+    },
+    {
+      "id": 190,
+      "name": "Sao Tome and Principe",
+      "code": "ST",
+      "isBrunei": false
+    },
+    {
+      "id": 191,
+      "name": "Saudi Arabia",
+      "code": "SA",
+      "isBrunei": false
+    },
+    {
+      "id": 192,
+      "name": "Senegal",
+      "code": "SN",
+      "isBrunei": false
+    },
+    {
+      "id": 193,
+      "name": "Serbia",
+      "code": "RS",
+      "isBrunei": false
+    },
+    {
+      "id": 194,
+      "name": "Seychelles",
+      "code": "SC",
+      "isBrunei": false
+    },
+    {
+      "id": 195,
+      "name": "Sierra Leone",
+      "code": "SL",
+      "isBrunei": false
+    },
+    {
+      "id": 196,
+      "name": "Singapore",
+      "code": "SG",
+      "isBrunei": false
+    },
+    {
+      "id": 197,
+      "name": "Slovakia",
+      "code": "SK",
+      "isBrunei": false
+    },
+    {
+      "id": 198,
+      "name": "Slovenia",
+      "code": "SI",
+      "isBrunei": false
+    },
+    {
+      "id": 199,
+      "name": "Solomon Islands",
+      "code": "SB",
+      "isBrunei": false
+    },
+    {
+      "id": 200,
+      "name": "Somalia",
+      "code": "SO",
+      "isBrunei": false
+    },
+    {
+      "id": 201,
+      "name": "South Africa",
+      "code": "ZA",
+      "isBrunei": false
+    },
+    {
+      "id": 202,
+      "name": "South Georgia South Sandwich Islands",
+      "code": "GS",
+      "isBrunei": false
+    },
+    {
+      "id": 203,
+      "name": "South Sudan",
+      "code": "SS",
+      "isBrunei": false
+    },
+    {
+      "id": 204,
+      "name": "Spain",
+      "code": "ES",
+      "isBrunei": false
+    },
+    {
+      "id": 205,
+      "name": "Sri Lanka",
+      "code": "LK",
+      "isBrunei": false
+    },
+    {
+      "id": 206,
+      "name": "St. Helena",
+      "code": "SH",
+      "isBrunei": false
+    },
+    {
+      "id": 207,
+      "name": "St. Pierre and Miquelon",
+      "code": "PM",
+      "isBrunei": false
+    },
+    {
+      "id": 208,
+      "name": "Sudan",
+      "code": "SD",
+      "isBrunei": false
+    },
+    {
+      "id": 209,
+      "name": "Suriname",
+      "code": "SR",
+      "isBrunei": false
+    },
+    {
+      "id": 210,
+      "name": "Svalbard and Jan Mayen Islands",
+      "code": "SJ",
+      "isBrunei": false
+    },
+    {
+      "id": 211,
+      "name": "Swaziland",
+      "code": "SZ",
+      "isBrunei": false
+    },
+    {
+      "id": 212,
+      "name": "Sweden",
+      "code": "SE",
+      "isBrunei": false
+    },
+    {
+      "id": 213,
+      "name": "Switzerland",
+      "code": "CH",
+      "isBrunei": false
+    },
+    {
+      "id": 214,
+      "name": "Syrian Arab Republic",
+      "code": "SY",
+      "isBrunei": false
+    },
+    {
+      "id": 216,
+      "name": "Tajikistan",
+      "code": "TJ",
+      "isBrunei": false
+    },
+    {
+      "id": 217,
+      "name": "Tanzania, United Republic of",
+      "code": "TZ",
+      "isBrunei": false
+    },
+    {
+      "id": 218,
+      "name": "Thailand",
+      "code": "TH",
+      "isBrunei": false
+    },
+    {
+      "id": 219,
+      "name": "Togo",
+      "code": "TG",
+      "isBrunei": false
+    },
+    {
+      "id": 220,
+      "name": "Tokelau",
+      "code": "TK",
+      "isBrunei": false
+    },
+    {
+      "id": 221,
+      "name": "Tonga",
+      "code": "TO",
+      "isBrunei": false
+    },
+    {
+      "id": 222,
+      "name": "Trinidad and Tobago",
+      "code": "TT",
+      "isBrunei": false
+    },
+    {
+      "id": 223,
+      "name": "Tunisia",
+      "code": "TN",
+      "isBrunei": false
+    },
+    {
+      "id": 224,
+      "name": "Turkey",
+      "code": "TR",
+      "isBrunei": false
+    },
+    {
+      "id": 225,
+      "name": "Turkmenistan",
+      "code": "TM",
+      "isBrunei": false
+    },
+    {
+      "id": 226,
+      "name": "Turks and Caicos Islands",
+      "code": "TC",
+      "isBrunei": false
+    },
+    {
+      "id": 227,
+      "name": "Tuvalu",
+      "code": "TV",
+      "isBrunei": false
+    },
+    {
+      "id": 228,
+      "name": "Uganda",
+      "code": "UG",
+      "isBrunei": false
+    },
+    {
+      "id": 229,
+      "name": "Ukraine",
+      "code": "UA",
+      "isBrunei": false
+    },
+    {
+      "id": 230,
+      "name": "United Arab Emirates",
+      "code": "AE",
+      "isBrunei": false
+    },
+    {
+      "id": 231,
+      "name": "United Kingdom",
+      "code": "GB",
+      "isBrunei": false
+    },
+    {
+      "id": 232,
+      "name": "United States",
+      "code": "US",
+      "isBrunei": false
+    },
+    {
+      "id": 233,
+      "name": "United States minor outlying islands",
+      "code": "UM",
+      "isBrunei": false
+    },
+    {
+      "id": 234,
+      "name": "Uruguay",
+      "code": "UY",
+      "isBrunei": false
+    },
+    {
+      "id": 235,
+      "name": "Uzbekistan",
+      "code": "UZ",
+      "isBrunei": false
+    },
+    {
+      "id": 236,
+      "name": "Vanuatu",
+      "code": "VU",
+      "isBrunei": false
+    },
+    {
+      "id": 237,
+      "name": "Vatican City State",
+      "code": "VA",
+      "isBrunei": false
+    },
+    {
+      "id": 238,
+      "name": "Venezuela",
+      "code": "VE",
+      "isBrunei": false
+    },
+    {
+      "id": 239,
+      "name": "Vietnam",
+      "code": "VN",
+      "isBrunei": false
+    },
+    {
+      "id": 240,
+      "name": "Virgin Islands (British)",
+      "code": "VG",
+      "isBrunei": false
+    },
+    {
+      "id": 241,
+      "name": "Virgin Islands (U.S.)",
+      "code": "VI",
+      "isBrunei": false
+    },
+    {
+      "id": 242,
+      "name": "Wallis and Futuna Islands",
+      "code": "WF",
+      "isBrunei": false
+    },
+    {
+      "id": 243,
+      "name": "Western Sahara",
+      "code": "EH",
+      "isBrunei": false
+    },
+    {
+      "id": 244,
+      "name": "Yemen",
+      "code": "YE",
+      "isBrunei": false
+    },
+    {
+      "id": 245,
+      "name": "Zambia",
+      "code": "ZM",
+      "isBrunei": false
+    },
+    {
+      "id": 246,
+      "name": "Zimbabwe",
+      "code": "ZW",
+      "isBrunei": false
+    }
+  ],
+  "identityTypes": [
+    {
+      "id": 1,
+      "code": null,
+      "name": "IC-Yellow",
+      "status": null
+    },
+    {
+      "id": 2,
+      "code": null,
+      "name": "IC-Purple",
+      "status": null
+    },
+    {
+      "id": 3,
+      "code": null,
+      "name": "IC-Green",
+      "status": null
+    },
+    {
+      "id": 4,
+      "code": null,
+      "name": "Passport",
+      "status": null
+    }
+  ],
+  "businessNameTypes": [
+    {
+      "id": 1,
+      "name": "Sole Proprietor"
+    },
+    {
+      "id": 2,
+      "name": "Partnership"
+    }
+  ],
+  "businessActivities": [
+    {
+      "id": 1,
+      "name": "01 - Crop and animal production, hunting and related services activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "01",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 2,
+      "name": "02 - Forestry and logging",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "02",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 3,
+      "name": "03 - Fishery and aquaculture",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "03",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 4,
+      "name": "05 - Mining of coal and lignite",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "05",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 5,
+      "name": "06 - Extraction of crude petroleum and natural gas",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "06",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 6,
+      "name": "07 - Mining of metal ores",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "07",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 7,
+      "name": "08 - Other mining and quarrying",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "08",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 8,
+      "name": "09 - Mining support services activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "09",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 9,
+      "name": "10 - Manufacture of food products",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "10",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 10,
+      "name": "11 - Manufacture of beverages",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "11",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 11,
+      "name": "12 - Manufacture of tobacco products",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "12",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 12,
+      "name": "13 - Manufacture of textiles",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "13",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 13,
+      "name": "14 - Manufacture of wearing apparel",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "14",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 14,
+      "name": "15 - Manufacture of leather and related products",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "15",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 15,
+      "name": "16 - Manufacture of wood and of products of wood and cork, except furniture, manufacture of articles of straw and plaiting materials",
+      "isAuthorityRequired": true,
+      "licensingAuthority": null,
+      "code": "16",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 16,
+      "name": "17 - Manufacture of paper and paper products",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "17",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 17,
+      "name": "18 - Printing and reproduction of recorded media",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "18",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 18,
+      "name": "19 - Manufacture of coke and refined petroleum products",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "19",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 19,
+      "name": "20 - Manufacture of chemicals and chemical products",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "20",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 20,
+      "name": "21 - Manufacture of pharmaceuticals, medicinal chemicals and botanical products",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "21",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 21,
+      "name": "22 - Manufacture of rubber and plastic products",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "22",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 22,
+      "name": "23 - Manufacture of other non-metallic mineral products",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "23",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 23,
+      "name": "24 - Manufacture of basic metals",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "24",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 24,
+      "name": "25 - Manufacture of fabricated metal products, except machinery and equipment",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "25",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 25,
+      "name": "26 - Manufacture of computers, electronic and optical products",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "26",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 26,
+      "name": "27 - Manufacture of electrical equipment",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "27",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 27,
+      "name": "28 - Manufacture of machinery and equipment n.e.c.",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "28",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 28,
+      "name": "29 - Manufacture of motor vehicle, trailers and semi-trailers",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "29",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 29,
+      "name": "30 - Manufacture of other transport equipment",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "30",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 30,
+      "name": "31 - Manufacture of furniture",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "31",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 31,
+      "name": "32 - Other manufacturing",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "32",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 32,
+      "name": "33 - Repair and installation of machinery and equipment",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "33",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 33,
+      "name": "35 - Electricity, gas,steam and air conditioning supply",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "35",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 34,
+      "name": "36 - Water collection, treatment and supply",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "36",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 35,
+      "name": "37 - Sewerage",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "37",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 36,
+      "name": "38 - Waste collection, treatment and disposal activities, materials recovery",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "38",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 37,
+      "name": "39 - Remediation activities and other waste management services",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "39",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 38,
+      "name": "41 - Construction of buildings",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "41",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 39,
+      "name": "42 - Civil engineering",
+      "isAuthorityRequired": true,
+      "licensingAuthority": "BOARD OF ARCHITECTS",
+      "code": "42",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 40,
+      "name": "43 - Specialized construction activities",
+      "isAuthorityRequired": true,
+      "licensingAuthority": null,
+      "code": "43",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 41,
+      "name": "45 - Wholesale and retail trade and repair of motor vehicle and motorcyles",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "45",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 42,
+      "name": "46 - Wholesale trade, except of motor vehicles and motorcyles",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "46",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 43,
+      "name": "47 - Retail trade, except of motor vehicles and motorcyles",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "47",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 44,
+      "name": "49 - Land transport and transport via pipelines",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "49",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 45,
+      "name": "50 - Water transport",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "50",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 46,
+      "name": "51 - Air transport",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "51",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 47,
+      "name": "52 - Warehousing and support activities for transportation",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "52",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 48,
+      "name": "53 - Postal and courier activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "53",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 49,
+      "name": "55 - Accommodation",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "55",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 50,
+      "name": "56 - Food and beverage services activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "56",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 51,
+      "name": "58 - Publishing activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "58",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 52,
+      "name": "59 - Motion picture, video and television programme production, sound recording and music publishing activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "59",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 53,
+      "name": "60 - Broadcasting and programming activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "60",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 54,
+      "name": "61 - Telecommunication",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "61",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 55,
+      "name": "62 - Computer programming, consultancy and related activities",
+      "isAuthorityRequired": true,
+      "licensingAuthority": "PLEASE UPLOAD RELEVANT QUALIFICATIONS",
+      "code": "62",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 56,
+      "name": "63 - Information service activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "63",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 57,
+      "name": "64 - Financial services activities, except insurance and pension funding",
+      "isAuthorityRequired": true,
+      "licensingAuthority": "AUTORITI MONETARI BRUNEI DARUSSALAM",
+      "code": "64",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 58,
+      "name": "65 - Insurance, reinsurance and pension funding, except compulsory social security",
+      "isAuthorityRequired": true,
+      "licensingAuthority": "AUTORITI MONETARI BRUNEI DARUSSALAM",
+      "code": "65",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 59,
+      "name": "66 - Other financial activities",
+      "isAuthorityRequired": true,
+      "licensingAuthority": "AUTORITI MONETARI BRUNEI DARUSSALAM",
+      "code": "66",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 60,
+      "name": "68 - Real estate activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "68",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 61,
+      "name": "69 - Legal and accounting activities",
+      "isAuthorityRequired": true,
+      "licensingAuthority": "FOR LEGAL ACTIVITIES, PLEASE UPLOAD PRACTISING CERTIFICATE.",
+      "code": "69",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 62,
+      "name": "70 - Activities of head offices",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "70",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 63,
+      "name": "71 - Architecture and engineering activities and related technical consultancy",
+      "isAuthorityRequired": true,
+      "licensingAuthority": "BOARD OF ARCHITECTS",
+      "code": "71",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 64,
+      "name": "72 - Scientific research and development",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "72",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 65,
+      "name": "73 - Advertising and market research",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "73",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 66,
+      "name": "74 - Other professional, scientific and technical activities",
+      "isAuthorityRequired": true,
+      "licensingAuthority": "PLEASE UPLOAD RELEVANT QUALIFICATIONS",
+      "code": "74",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 67,
+      "name": "75 - Veterinary activities",
+      "isAuthorityRequired": true,
+      "licensingAuthority": "MINISTRY OF HEALTH",
+      "code": "75",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 68,
+      "name": "77 - Rental and leasing activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "77",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 69,
+      "name": "78 - Employment activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "78",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 70,
+      "name": "79 - Travel agency, tour operator and other reservation services",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "79",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 71,
+      "name": "80 - Security and investigation activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "80",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 72,
+      "name": "81 - Services to buildings and landscape activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "81",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 73,
+      "name": "82 - Office administrative, office support and other business support activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "82",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 74,
+      "name": "84 - Public administration and defence, compulsory social security",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "84",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 75,
+      "name": "85 - Education",
+      "isAuthorityRequired": true,
+      "licensingAuthority": "MINISTRY OF EDUCATION",
+      "code": "85",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 76,
+      "name": "86 - Human health activities",
+      "isAuthorityRequired": true,
+      "licensingAuthority": "MINISTRY OF HEALTH",
+      "code": "86",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 77,
+      "name": "87 - Residential care activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "87",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 78,
+      "name": "88 - Social work activities without accomodation",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "88",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 79,
+      "name": "90 - Creative, arts and entertainment activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "90",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 80,
+      "name": "91 - Libraries, archives, museum and other cultural activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "91",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 81,
+      "name": "93 - Sport activities and amusement and recreation activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "93",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 82,
+      "name": "94 - Activities of membership organizations",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "94",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 83,
+      "name": "95 - Repair of computers and personal and household goods",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "95",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 84,
+      "name": "96 - Other personal service activities",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "96",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 85,
+      "name": "97 - Activities of households as employers of domestic personnel",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "97",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 86,
+      "name": "98 - Undifferentiated goods and services producing activities of private households for own use",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "98",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    },
+    {
+      "id": 87,
+      "name": "99 - Activities of extraterritiorial organization and bodies",
+      "isAuthorityRequired": false,
+      "licensingAuthority": null,
+      "code": "99",
+      "parentId": null,
+      "sectorType": "BusinessSector"
+    }
+  ],
+  "ownerTypes": [
+    {
+      "id": 1,
+      "name": "Individual"
+    },
+    {
+      "id": 2,
+      "name": "Registered Company"
+    },
+    {
+      "id": 3,
+      "name": "Other Incorporated Entity"
+    },
+    {
+      "id": 4,
+      "name": "Other Incorporated Entity (Foreign)"
+    },
+    {
+      "id": 5,
+      "name": "Corporate Body"
+    }
+  ],
+  "entityTypes": [
+    {
+      "id": 1,
+      "name": "Business Name",
+      "prefix": null
+    },
+    {
+      "id": 2,
+      "name": "Private Company",
+      "prefix": null
+    },
+    {
+      "id": 3,
+      "name": "Public Company",
+      "prefix": null
+    },
+    {
+      "id": 4,
+      "name": "Foreign Branch",
+      "prefix": null
+    }
+  ],
+  "authorityTypes": [
+    {
+      "value": 1,
+      "name": "Individual"
+    },
+    {
+      "value": 2,
+      "name": "Entity"
+    }
+  ],
+  "agentRoles": [
+    {
+      "value": 1,
+      "name": "TaxAgent"
+    },
+    {
+      "value": 2,
+      "name": "CRSAgent"
+    }
+  ],
+  "agentPositions": [
+    {
+      "value": 1,
+      "name": "Employee"
+    },
+    {
+      "value": 2,
+      "name": "Agent"
+    },
+    {
+      "value": 3,
+      "name": "BusinessOwner"
+    },
+    {
+      "value": 4,
+      "name": "Director"
+    },
+    {
+      "value": 5,
+      "name": "Manager"
+    },
+    {
+      "value": 6,
+      "name": "Partner"
+    },
+    {
+      "value": 7,
+      "name": "Shareholder"
+    }
+  ]
+}
