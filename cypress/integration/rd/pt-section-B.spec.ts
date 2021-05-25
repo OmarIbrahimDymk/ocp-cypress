@@ -24,11 +24,9 @@ Cypress.Commands.add("enterShareholder", (params: IShareholder) => {
 
 describe("PT - Section B", () => {
   beforeEach(() => {
-    cy.fixture("tokens/local.json").then((user) => {
-      cy.rdLogin(user);
-      cy.goTo("PTSectionB");
-      cy.intercept("/.well-known/openid-configuration", "success");
-    });
+    cy.rdLogin();
+
+    cy.goTo("PTSectionB");
   });
 
   it("should be able to add shareholder and get correct total % of shares and total capital amount", () => {

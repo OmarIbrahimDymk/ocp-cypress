@@ -100,38 +100,18 @@ enum collectionEnum {
 
 describe("PT Section D", () => {
   beforeEach(() => {
-    cy.fixture("tokens/local.json").then((user) => {
-      cy.fixture("responses/entities.json").then((entitiesResponse) => {
-        cy.intercept("/.well-known/openid-configuration", "success");
-        cy.intercept(
-          {
-            method: "GET",
-            url: "/rocbn/api/entities/rd/*",
-          },
-          {
-            body: entitiesResponse,
-          }
-        );
-      });
-
-      cy.intercept(
-        { method: "GET", url: "/rocbn/api/entities/search?entityType=*" },
-        {
-          body: {
-            lists: [
-              { registrationNumber: "RC00000001", name: "Stubbed Company 1" },
-              { registrationNumber: "RC00000002", name: "Stubbed Company 2" },
-              { registrationNumber: "RC00000003", name: "Stubbed Company 3" },
-              { registrationNumber: "RC00000004", name: "Stubbed Company 4" },
-            ],
-          },
-        }
-      );
-
-      cy.viewport(1500, 900);
-      cy.rdLogin(user);
-      cy.goTo("PTSectionD");
+    cy.intercept("GET", "/rocbn/api/entities/rd/*", {
+      fixture: "responses/entities",
     });
+
+    cy.intercept("GET", "/rocbn/api/entities/search?entityType=*", {
+      fixture: "responses/entitiesSearch",
+    });
+
+    cy.rdLogin();
+
+    cy.viewport(1500, 900);
+    cy.goTo("PTSectionD");
   });
 
   describe("General", () => {
