@@ -254,7 +254,7 @@ describe("PT - Section B", () => {
     });
   });
 
-  it.only("should be able to add multiple shareholders and delete some", () => {
+  it("should be able to add multiple shareholders and delete some", () => {
     cy.task("randomShareholders", 5).then((getShareholders: IShareholder[]) => {
       cy.intercept(
         {
