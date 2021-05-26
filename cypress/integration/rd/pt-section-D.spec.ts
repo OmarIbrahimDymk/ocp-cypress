@@ -21,7 +21,7 @@ Cypress.Commands.add("typeRegistrationNumber", (text, row = 1) => {
 });
 
 Cypress.Commands.add("selectRegistrationNumber", (text) => {
-  cy.contains(text, { timeout: 15000 }).click({ force: true });
+  cy.contains(text).click({ force: true });
   cy.get(
     "[data-testid=tableInput2Field-registrationNumber1-Participant-0] > .multiselect__content-wrapper > .multiselect__content > :nth-child(2) > .multiselect__option"
   ).click({ force: true });

@@ -80,7 +80,7 @@ Cypress.Commands.add("selectBaseComponent", (baseComponent: string) => {
 });
 
 Cypress.Commands.add("getDataTestId", (testId) =>
-  cy.get(`[data-testid=${testId}]`, { timeout: 15000 })
+  cy.get(`[data-testid=${testId}]`)
 );
 
 // Set CYPRESS_COMMAND_DELAY above zero for demoing to stakeholders,

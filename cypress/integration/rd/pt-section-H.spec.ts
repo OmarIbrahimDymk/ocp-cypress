@@ -4,8 +4,7 @@ import { tableInput, tableInput2 } from "../../support/lib/elements";
 import { IFillH1, IPaidTaxDetails } from "../../support/lib/sectionH";
 
 Cypress.Commands.add("fillH1", (params: IFillH1 = {}) => {
-  cy.wait("@getEntities", { timeout: 10000 });
-  cy.get("#__BVID__493").select(params.currency ?? "BND", { force: true });
+  cy.get("#__BVID__464").select(params.currency ?? "BND", { force: true });
   cy.getDataTestId("noJointVenture").check({ force: true });
   cy.getDataTestId("grossProceed0").type(params.d3 ?? "1500", {
     force: true,
