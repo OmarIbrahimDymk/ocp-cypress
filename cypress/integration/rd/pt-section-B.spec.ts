@@ -27,6 +27,7 @@ describe("PT - Section B", () => {
     cy.rdLogin();
 
     cy.goTo("PTSectionB");
+    cy.viewport(1500, 900);
   });
 
   it("should be able to add shareholder and get correct total % of shares and total capital amount", () => {
@@ -49,8 +50,8 @@ describe("PT - Section B", () => {
       capital: 1500,
     });
 
-    cy.getDataTestId("totalCapitalAmount").should("have.value", "2500");
-    cy.getDataTestId("totalSharePercentage").should("have.value", "90");
+    cy.getDataTestId("totalCapitalAmount").should("have.value", "2,500.00");
+    cy.getDataTestId("totalSharePercentage").should("have.value", "90.00");
   });
 
   it("should be able to delete shareholder and get correct total % of shares", () => {
@@ -66,7 +67,7 @@ describe("PT - Section B", () => {
 
     cy.getDataTestId(tableInput2.deleteBtn()).click();
 
-    cy.getDataTestId("totalCapitalAmount").should("have.value", "0");
+    cy.getDataTestId("totalCapitalAmount").should("have.value", "0.00");
   });
 
   it("should show error message if input is missing value", () => {
@@ -145,29 +146,29 @@ describe("PT - Section B", () => {
     cy.contains("The total % of shares must equal 100%");
   });
 
-  it("should be able to submit", async () => {
-    const shareholders = await cy.fixture("shareholders/getThreeShareholders");
+  it("should be able to submit", () => {
+    cy.fixture("shareholders/getThreeShareholders").then((shareholders) => {
+      shareholders.forEach((shareholder) => {
+        cy.getDataTestId(tableInput2.addBtn()).click();
 
-    shareholders.forEach((shareholder) => {
-      cy.getDataTestId(tableInput2.addBtn()).click();
-
-      cy.enterShareholder(shareholder);
-    });
-
-    cy.getDataTestId("submitBtn").click({ force: true });
-
-    cy.intercept("POST", "/taxform", (req) => {
-      expect(req.body.sectionB).to.include({
-        totalCapital: 4700,
-        totalSharePercentage: 100,
+        cy.enterShareholder(shareholder);
       });
 
-      shareholders.forEach((shareholder, index) => {
-        delete shareholder.row;
-        expect(req.body.sectionB.shareholders[index]).to.include(shareholder);
-      });
+      cy.getDataTestId("submitBtn").click({ force: true });
 
-      req.reply("success");
+      cy.intercept("POST", "/taxform", (req) => {
+        expect(req.body.sectionB).to.include({
+          totalCapital: 4700,
+          totalSharePercentage: 100,
+        });
+
+        shareholders.forEach((shareholder, index) => {
+          delete shareholder.row;
+          expect(req.body.sectionB.shareholders[index]).to.include(shareholder);
+        });
+
+        req.reply("success");
+      });
     });
   });
 
