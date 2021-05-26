@@ -98,25 +98,10 @@ describe("PT - Section B", () => {
   });
 
   it("should populate shareholders details from IT form if use has submitted IT form for the same YOA as PT form", () => {
-    cy.intercept(
-      {
-        method: "GET",
-        url: "/rocbn/api/entities/rd/369/stakeholders",
-      },
-      {
-        body: {
-          lists: [
-            {
-              identifierNumber: "N/A",
-              fullName: "Stubbed Director",
-              isDirector: true,
-              sharePercentage: 40,
-              shareCapital: 2000,
-            },
-          ],
-        },
-      }
-    );
+    cy.intercept("GET", "/rocbn/api/entities/rd/**/stakeholders", {
+      fixture: "responses/stakeholder/stakeholders",
+    });
+
     cy.getDataTestId(tableInput2.inputField(ShareholderEnum.FullName)).should(
       "have.value",
       "Stubbed Director"
@@ -124,25 +109,9 @@ describe("PT - Section B", () => {
   });
 
   it("should populate shareholder details from ROCBN during the business basis period if shareholders details is not available from IT form", () => {
-    cy.intercept(
-      {
-        method: "GET",
-        url: "/rocbn/api/entities/rd/369/stakeholders",
-      },
-      {
-        body: {
-          lists: [
-            {
-              identifierNumber: "N/A",
-              fullName: "Stubbed Director",
-              isDirector: true,
-              sharePercentage: 40,
-              shareCapital: 2000,
-            },
-          ],
-        },
-      }
-    );
+    cy.intercept("GET", "/rocbn/api/entities/rd/**/stakeholders", {
+      fixture: "responses/stakeholder/stakeholders",
+    });
 
     cy.getDataTestId(tableInput2.inputField(ShareholderEnum.FullName)).should(
       "have.value",
@@ -151,24 +120,9 @@ describe("PT - Section B", () => {
   });
 
   it("should leave the field empty, user to manually enter shareholder details if shareholders details is not available from ROCBN during the business basis period", () => {
-    cy.intercept(
-      {
-        method: "GET",
-        url: "/rocbn/api/entities/rd/369/stakeholders",
-      },
-      {
-        body: {
-          lists: [
-            {
-              identifierNumber: "N/A",
-              fullName: "Stubbed Director",
-              isDirector: true,
-              shareCapital: 2000,
-            },
-          ],
-        },
-      }
-    );
+    cy.intercept("GET", "/rocbn/api/entities/rd/**/stakeholders", {
+      fixture: "responses/stakeholder/stakeholderWithMissingShare",
+    });
 
     cy.getDataTestId(tableInput2.inputField(ShareholderEnum.SharePercentage))
       .should("be.empty")
@@ -255,17 +209,9 @@ describe("PT - Section B", () => {
 
   it("should be able to add multiple shareholders and delete some", () => {
     cy.task("randomShareholders", 5).then((getShareholders: IShareholder[]) => {
-      cy.intercept(
-        {
-          method: "GET",
-          url: "/rocbn/api/entities/rd/369/stakeholders",
-        },
-        {
-          body: {
-            lists: [],
-          },
-        }
-      );
+      cy.intercept("GET", "/rocbn/api/entities/rd/369/stakeholders", {
+        fixture: "responses/stakeholder/noStakeholder",
+      });
 
       const shareholders: IShareholder[] = getShareholders;
 
