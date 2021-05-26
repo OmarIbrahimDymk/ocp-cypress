@@ -1,0 +1,10 @@
+{
+  "lists": [
+    {
+      "identifierNumber": "N/A",
+      "name": "Stubbed Director",
+      "isDirector": true,
+      "shareCapital": 2000
+    }
+  ]
+}
