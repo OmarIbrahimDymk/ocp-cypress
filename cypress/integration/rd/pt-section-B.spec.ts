@@ -227,27 +227,28 @@ describe("PT - Section B", () => {
         cy.enterShareholder(shareholder);
       });
 
+      cy.intercept("POST", "taxform", (req) => {
+        req.reply("success");
+      }).as("submit");
+
       cy.getDataTestId("submitBtn").click({ force: true });
 
-      cy.intercept("POST", "/taxform", (req) => {
+      cy.wait("@submit").then(() => {
         const totalCapital: number = +shareholders
           .reduce((acc, s) => acc + +s.capital, 0)
           .toFixed(2);
 
-        expect(req.body.sectionB).to.include({
-          totalCapital: totalCapital,
+        cy.get("@submit").its("request.body.sectionB").should("include", {
           totalSharePercentage: 100,
+          totalCapital: totalCapital,
         });
 
         shareholders.forEach((shareholder, index) => {
           delete shareholder.row;
-          const ic = shareholder.identityNumber.split("");
-          ic.splice(2, 0, "-");
-          shareholder.identityNumber = ic.join("");
-          expect(req.body.sectionB.shareholders[index]).to.include(shareholder);
+          cy.get("@submit")
+            .its("request.body.sectionB.shareholders." + index)
+            .should("include", shareholder);
         });
-
-        req.reply("success");
       });
     });
   });

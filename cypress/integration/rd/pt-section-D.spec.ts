@@ -580,10 +580,73 @@ describe("PT Section D", () => {
         tableInput2.inputField("amount", 2, collectionEnum.CIA)
       ).type("3000");
 
+      cy.intercept("POST", "taxform", (req) => {
+        req.reply("success");
+      }).as("submit");
+
       cy.getDataTestId("submitBtn").click({ force: true });
 
-      cy.intercept("POST", "/taxform", (req) => {
-        req.reply("success");
+      cy.wait("@submit").then((http) => {
+        cy.get("@submit").its("request.body.sectionD").should("include", {
+          isNoJointVenture: false,
+          isJointVenture: true,
+          grossProceedsTotal: null,
+          grandTotalRevenue: 9000,
+        });
+
+        cy.get("@submit")
+          .its("request.body.sectionD.ventures")
+          .should("have.length", 1);
+
+        cy.get("@submit")
+          .its("request.body.sectionD.ventures.0")
+          .should("include", {
+            agreementName: "My Agreement",
+            filerShare: 50,
+            hasCarriedInterestArrangement: true,
+            hasRingFenced: false,
+            interest: 50,
+            totalCarriedInterest: 6000,
+            totalRevenue: 3000,
+          });
+
+        cy.get("@submit")
+          .its("request.body.sectionD.ventures.0.participants")
+          .should("have.length", 2);
+        cy.get("@submit")
+          .its("request.body.sectionD.ventures.0.participants.0")
+          .should("include", {
+            registrationNumber: "RC00000018",
+            contractingParty: "Petronas",
+            interest: 20,
+            participationDate: "2021-04-27T16:00:00.000Z",
+            isOperator: true,
+          });
+
+        cy.get("@submit")
+          .its("request.body.sectionD.ventures.0.revenueDetails")
+          .should("have.length", 3);
+        cy.get("@submit")
+          .its("request.body.sectionD.ventures.0.revenueDetails.2")
+          .should("include", {
+            name: "Soil Sales",
+            amount: 3000,
+            share: 1500,
+          });
+
+        cy.get("@submit")
+          .its(
+            "request.body.sectionD.ventures.0.carriedInterestArrangementDetails"
+          )
+          .should("have.length", 3);
+        cy.get("@submit")
+          .its(
+            "request.body.sectionD.ventures.0.carriedInterestArrangementDetails.2"
+          )
+          .should("include", {
+            name: "Soil Sales",
+            amount: 3000,
+          });
       });
     });
   });
