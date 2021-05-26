@@ -222,22 +222,22 @@ describe("PT Section D", () => {
       cy.contains("D1 (iii)");
     });
 
-    it("should be able to calculate total D1 fields", async () => {
-      const assets = await cy.fixture("assets/assets");
-
+    it("should be able to calculate total D1 fields", () => {
       cy.getDataTestId("noJointVenture").check({ force: true });
 
-      cy.getDataTestId("grossProceed0").type("432");
-      cy.getDataTestId("grossProceed1").type("543");
+      cy.getDataTestId("grossProceed0").type("432.34");
+      cy.getDataTestId("grossProceed1").type("543.23");
 
-      assets.forEach(({ name, amount }) => {
-        cy.addAsset({
-          name,
-          amount,
+      cy.fixture("assets/assets").then((assets) => {
+        assets.forEach(({ name, amount }) => {
+          cy.addAsset({
+            name,
+            amount,
+          });
         });
       });
 
-      cy.getDataTestId("grossProceedsTotal").should("have.value", "1,444.00");
+      cy.getDataTestId("grossProceedsTotal").should("have.value", "1,445.80");
     });
 
     it("should be able to submit", () => {
@@ -590,7 +590,7 @@ describe("PT Section D", () => {
         cy.get("@submit").its("request.body.sectionD").should("include", {
           isNoJointVenture: false,
           isJointVenture: true,
-          grossProceedsTotal: null,
+          grossProceedsTotal: 0,
           grandTotalRevenue: 9000,
         });
 

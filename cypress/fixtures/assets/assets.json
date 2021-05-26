@@ -1,14 +1,14 @@
 [
   {
     "name": "Asset 1",
-    "amount": 123
+    "amount": 123.23
   },
   {
     "name": "Asset 2",
-    "amount": 312
+    "amount": 312.4
   },
   {
     "name": "Asset 3",
-    "amount": 34
+    "amount": 34.6
   }
 ]
