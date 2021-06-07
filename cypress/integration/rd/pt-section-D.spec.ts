@@ -527,6 +527,10 @@ describe("PT Section D", () => {
     it("should be able to submit", () => {
       cy.getDataTestId("agreementName0").type("My Agreement", { force: true });
 
+      cy.getDataTestId("ringFenced-radio0").within(() => {
+        cy.contains("No").click({ force: true });
+      });
+
       cy.contains("RC00000018");
       cy.addParticipant({
         row: 0,

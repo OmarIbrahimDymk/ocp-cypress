@@ -4,7 +4,11 @@ import { tableInput, tableInput2 } from "../../support/lib/elements";
 import { IFillH1, IPaidTaxDetails } from "../../support/lib/sectionH";
 
 Cypress.Commands.add("fillH1", (params: IFillH1 = {}) => {
-  cy.get("#__BVID__464").select(params.currency ?? "BND", { force: true });
+  cy.getDataTestId("input-currency").within(() => {
+    cy.get("select").select(params.currency ?? "BND", {
+      force: true,
+    });
+  });
   cy.getDataTestId("noJointVenture").check({ force: true });
   cy.getDataTestId("grossProceed0").type(params.d3 ?? "1500", {
     force: true,
@@ -146,7 +150,9 @@ describe("PT Section H", () => {
 
     it("should auto sum sub BND amount if BND is selected", () => {
       cy.fillH1({ currency: "BND" });
-      cy.contains("Yes").click({ force: true });
+      cy.getDataTestId("h5-radio").within(() => {
+        cy.contains("Yes").click({ force: true });
+      });
 
       cy.enterPaidTax({
         row: 0,
@@ -182,7 +188,9 @@ describe("PT Section H", () => {
       cy.getDataTestId("h3").type("50", { force: true });
       cy.getDataTestId("h4").should("have.value", "1,600.00");
 
-      cy.contains("Yes").click({ force: true });
+      cy.getDataTestId("h5-radio").within(() => {
+        cy.contains("Yes").click({ force: true });
+      });
 
       cy.enterPaidTax({
         row: 0,
@@ -245,7 +253,9 @@ describe("PT Section H", () => {
       cy.getDataTestId("h3").type("50", { force: true });
       cy.getDataTestId("h4").should("have.value", "1,600.00");
 
-      cy.contains("Yes").click({ force: true });
+      cy.getDataTestId("h5-radio").within(() => {
+        cy.contains("Yes").click({ force: true });
+      });
 
       cy.enterPaidTax({
         row: 0,
