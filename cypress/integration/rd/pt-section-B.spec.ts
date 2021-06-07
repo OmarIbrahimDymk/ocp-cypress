@@ -164,7 +164,9 @@ describe("PT - Section B", () => {
 
         shareholders.forEach((shareholder, index) => {
           delete shareholder.row;
-          expect(req.body.sectionB.shareholders[index]).to.include(shareholder);
+          expect(req.body.sectionB.shareholderDetails[index]).to.include(
+            shareholder
+          );
         });
 
         req.reply("success");
@@ -182,8 +184,10 @@ describe("PT - Section B", () => {
         cy.enterShareholder(shareholder);
       });
 
+      let body;
       cy.intercept("POST", "taxform", (req) => {
         req.reply("success");
+        body = req.body;
       }).as("submit");
 
       cy.getDataTestId("submitBtn").click({ force: true });
@@ -201,7 +205,7 @@ describe("PT - Section B", () => {
         shareholders.forEach((shareholder, index) => {
           delete shareholder.row;
           cy.get("@submit")
-            .its("request.body.sectionB.shareholders." + index)
+            .its("request.body.sectionB.shareholderDetails." + index)
             .should("include", shareholder);
         });
       });
@@ -254,7 +258,9 @@ describe("PT - Section B", () => {
         });
 
         modifiedShareholders.forEach((shareholder, index) => {
-          expect(req.body.sectionB.shareholders[index]).to.include(shareholder);
+          expect(req.body.sectionB.shareholderDetails[index]).to.include(
+            shareholder
+          );
         });
 
         req.reply("success");

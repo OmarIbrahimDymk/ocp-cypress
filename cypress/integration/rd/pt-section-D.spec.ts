@@ -272,11 +272,13 @@ describe("PT Section D", () => {
             grandTotalRevenue: 1444,
           });
 
-          req.body.sectionD.grossProceeds.forEach((grossProceed, index) => {
-            expect(grossProceed).to.include(expectedGrossProceeds[index]);
-          });
+          req.body.sectionD.grossProceedDetails.forEach(
+            (grossProceed, index) => {
+              expect(grossProceed).to.include(expectedGrossProceeds[index]);
+            }
+          );
 
-          expect(req.body.sectionD.ventures).to.deep.equal([]);
+          expect(req.body.sectionD.ventureDetails).to.deep.equal([]);
 
           req.reply("success");
         });
@@ -595,11 +597,11 @@ describe("PT Section D", () => {
         });
 
         cy.get("@submit")
-          .its("request.body.sectionD.ventures")
+          .its("request.body.sectionD.ventureDetails")
           .should("have.length", 1);
 
         cy.get("@submit")
-          .its("request.body.sectionD.ventures.0")
+          .its("request.body.sectionD.ventureDetails.0")
           .should("include", {
             agreementName: "My Agreement",
             filerShare: 50,
@@ -611,10 +613,10 @@ describe("PT Section D", () => {
           });
 
         cy.get("@submit")
-          .its("request.body.sectionD.ventures.0.participants")
+          .its("request.body.sectionD.ventureDetails.0.participationDetails")
           .should("have.length", 2);
         cy.get("@submit")
-          .its("request.body.sectionD.ventures.0.participants.0")
+          .its("request.body.sectionD.ventureDetails.0.participationDetails.0")
           .should("include", {
             registrationNumber: "RC00000018",
             contractingParty: "Petronas",
@@ -624,10 +626,10 @@ describe("PT Section D", () => {
           });
 
         cy.get("@submit")
-          .its("request.body.sectionD.ventures.0.revenueDetails")
+          .its("request.body.sectionD.ventureDetails.0.revenueDetails")
           .should("have.length", 3);
         cy.get("@submit")
-          .its("request.body.sectionD.ventures.0.revenueDetails.2")
+          .its("request.body.sectionD.ventureDetails.0.revenueDetails.2")
           .should("include", {
             name: "Soil Sales",
             amount: 3000,
@@ -636,12 +638,12 @@ describe("PT Section D", () => {
 
         cy.get("@submit")
           .its(
-            "request.body.sectionD.ventures.0.carriedInterestArrangementDetails"
+            "request.body.sectionD.ventureDetails.0.carriedInterestArrangementDetails"
           )
           .should("have.length", 3);
         cy.get("@submit")
           .its(
-            "request.body.sectionD.ventures.0.carriedInterestArrangementDetails.2"
+            "request.body.sectionD.ventureDetails.0.carriedInterestArrangementDetails.2"
           )
           .should("include", {
             name: "Soil Sales",
