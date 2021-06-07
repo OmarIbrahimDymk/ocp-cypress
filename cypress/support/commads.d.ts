@@ -61,9 +61,6 @@ declare namespace Cypress {
       paymentMethod: "Card" | "Cash";
       bankName: "BIBD" | "Baiduri";
       amount: string;
-      currencyType: "BND" | "USD";
-      exchangeRate: string;
-      amountBND: string;
     });
   }
 }

@@ -43,22 +43,6 @@ Cypress.Commands.add("enterPaidTax", (params: IPaidTaxDetails) => {
       force: true,
     }
   );
-  cy.getDataTestId(
-    tableInput2.inputField("currencyType", params.row, "h5")
-  ).type(params.currencyType, {
-    force: true,
-  });
-  cy.getDataTestId(
-    tableInput2.inputField("exchangeRate", params.row, "h5")
-  ).type(params.exchangeRate, {
-    force: true,
-  });
-  cy.getDataTestId(tableInput2.inputField("amountBND", params.row, "h5")).type(
-    params.amountBND,
-    {
-      force: true,
-    }
-  );
 });
 
 describe("PT Section H", () => {
@@ -134,20 +118,6 @@ describe("PT Section H", () => {
   });
 
   context("h5", () => {
-    it("should editable if USD is selected", () => {
-      cy.fillH1({ currency: "USD" });
-      cy.getDataTestId("h5").as("h5");
-      cy.get("@h5").should("not.have.attr", "disabled");
-      cy.get("@h5").type("5000", { force: true }).blur();
-      cy.get("@h5").should("have.value", "5,000.00");
-    });
-
-    it("should be disabled if BND is selected", () => {
-      cy.fillH1({ currency: "BND" });
-      cy.getDataTestId("h5").as("h5");
-      cy.get("@h5").should("have.attr", "disabled");
-    });
-
     it("should auto sum sub BND amount if BND is selected", () => {
       cy.fillH1({ currency: "BND" });
       cy.getDataTestId("h5-radio").within(() => {
@@ -160,9 +130,6 @@ describe("PT Section H", () => {
         paymentMethod: "Card",
         bankName: "BIBD",
         amount: "1000",
-        currencyType: "BND",
-        exchangeRate: "1.20",
-        amountBND: "1400",
       });
 
       cy.enterPaidTax({
@@ -170,10 +137,7 @@ describe("PT Section H", () => {
         paymentDate: "24-Apr-2021",
         paymentMethod: "Cash",
         bankName: "Baiduri",
-        amount: "1000",
-        currencyType: "BND",
-        exchangeRate: "1.20",
-        amountBND: "4000",
+        amount: "4400",
       });
 
       cy.getDataTestId("h5").should("have.value", "5,400.00");
@@ -198,9 +162,6 @@ describe("PT Section H", () => {
         paymentMethod: "Card",
         bankName: "BIBD",
         amount: "1000",
-        currencyType: "BND",
-        exchangeRate: "1.20",
-        amountBND: "1400",
       });
 
       cy.enterPaidTax({
@@ -208,10 +169,7 @@ describe("PT Section H", () => {
         paymentDate: "24-Apr-2021",
         paymentMethod: "Cash",
         bankName: "Baiduri",
-        amount: "1000",
-        currencyType: "BND",
-        exchangeRate: "1.20",
-        amountBND: "4000",
+        amount: "4400",
       });
 
       cy.getDataTestId("h5").should("have.value", "5,400.00");
@@ -263,9 +221,6 @@ describe("PT Section H", () => {
         paymentMethod: "Card",
         bankName: "BIBD",
         amount: "1000",
-        currencyType: "BND",
-        exchangeRate: "1.20",
-        amountBND: "1400",
       });
 
       cy.enterPaidTax({
@@ -273,10 +228,7 @@ describe("PT Section H", () => {
         paymentDate: "24-Apr-2021",
         paymentMethod: "Cash",
         bankName: "Baiduri",
-        amount: "1000",
-        currencyType: "BND",
-        exchangeRate: "1.20",
-        amountBND: "4000",
+        amount: "4400",
       });
 
       cy.getDataTestId("h5").should("have.value", "5,400.00");

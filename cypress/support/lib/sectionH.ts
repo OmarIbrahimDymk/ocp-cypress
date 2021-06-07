@@ -4,9 +4,6 @@ export interface IPaidTaxDetails {
   paymentMethod: "Card" | "Cash";
   bankName: "BIBD" | "Baiduri";
   amount: string;
-  currencyType: "BND" | "USD";
-  exchangeRate: string;
-  amountBND: string;
 }
 
 export interface IFillH1 {
