@@ -262,3 +262,214 @@ describe("PT - Section B", () => {
     });
   });
 });
+
+describe("PT - Section B - Backend Validation", () => {
+  let request: any = {};
+  const requestObj: any = {
+    method: "POST",
+    url: "http://localhost:5885/api/PetroleumTax",
+    failOnStatusCode: false,
+  };
+
+  beforeEach(() => {
+    cy.rdLogin();
+    cy.fixture("requests/petroleum-tax/PetroleumTaxMain").then((req) => {
+      request.main = req;
+    });
+    cy.fixture("requests/petroleum-tax/PetroleumTaxSectionB").then((req) => {
+      request.sectionB = req;
+    });
+  });
+
+  context("Shareholder lists", () => {
+    it("Should return error when no shareholder is listed", () => {
+      // Arrange
+      let body = { ...request.main, ...request.sectionB };
+      body.sectionB.shareholderDetails = [];
+
+      // Act
+      cy.request({
+        ...requestObj,
+        body,
+      }).then((res) => {
+        // Assert
+        expect(res.status).to.equal(400);
+        expect(res.body.errors["SectionB.ShareholderDetails"]).to.include(
+          "Shareholder must be at least 1"
+        );
+      });
+    });
+
+    it("Should return success when at least 1 shareholder is listed", () => {
+      // Arrange
+      let body = { ...request.main, ...request.sectionB };
+
+      // Act
+      cy.request({
+        ...requestObj,
+        body,
+      }).then((res) => {
+        // Assert
+        cy.log(JSON.stringify(res));
+        expect(res.status).to.equal(200);
+      });
+    });
+
+    it("Should return error when all required fields are empty", () => {
+      // Arrange
+      let body = { ...request.main, ...request.sectionB };
+      body.sectionB.shareholderDetails[0].identityNumber = "";
+      body.sectionB.shareholderDetails[0].fullName = "";
+
+      // Act
+      cy.request({
+        ...requestObj,
+        body,
+      }).then((req) => {
+        // Assert
+        expect(req.status).to.equal(400);
+        expect(
+          req.body.errors["SectionB.ShareholderDetails[0].IdentityNumber"]
+        ).to.include("'Registration Number' must not be empty.");
+        expect(
+          req.body.errors["SectionB.ShareholderDetails[0].FullName"]
+        ).to.include("'Name of Shareholder' must not be empty.");
+      });
+    });
+
+    it("Should return error when all required fields are null", () => {
+      // Arrange
+      let body = { ...request.main, ...request.sectionB };
+      body.sectionB.shareholderDetails[0].isDirector = null;
+      body.sectionB.shareholderDetails[0].sharePercentage = null;
+      body.sectionB.shareholderDetails[0].capital = null;
+
+      // Act
+      cy.request({
+        ...requestObj,
+        body,
+      }).then((req) => {
+        // Assert
+        expect(req.status).to.equal(400);
+      });
+    });
+
+    it("Should return error when all numeric fields are in wrong format (X{1:11}.X{1:2})", () => {
+      // Arrange
+      let body = { ...request.main, ...request.sectionB };
+      body.sectionB.shareholderDetails[0].sharePercentage = 1.123;
+      body.sectionB.shareholderDetails[0].capital = 123456789012.12;
+
+      // Act
+      cy.request({
+        ...requestObj,
+        body,
+      }).then((req) => {
+        // Assert
+        expect(req.status).to.equal(400);
+        expect(
+          req.body.errors["SectionB.ShareholderDetails[0].SharePercentage"]
+        ).to.include("% of Share must have X{1:11}.X{1:2} format.");
+        expect(
+          req.body.errors["SectionB.ShareholderDetails[0].Capital"]
+        ).to.include("Capital must have X{1:11}.X{1:2} format.");
+      });
+    });
+  });
+
+  context("Total Share percentage", () => {
+    it("should return error, when total shares percentage is not equal to 100", () => {
+      // Arrange
+      let body = { ...request.main, ...request.sectionB };
+      body.sectionB.totalSharePercentage = 10;
+
+      // Act
+      cy.request({
+        ...requestObj,
+        body,
+      }).then((res) => {
+        // Assert
+        expect(res.status).to.equal(400);
+        expect(res.body.errors["SectionB"]).to.include(
+          "Total percentage of Shares must equal to 100%"
+        );
+      });
+    });
+
+    it("should return error, when individual sum of share does not sum up to 100 even total share is 100", () => {
+      // Arrange
+      let body = { ...request.main, ...request.sectionB };
+      body.sectionB.totalSharePercentage = 100;
+      body.sectionB.shareholderDetails = [
+        {
+          id: 1,
+          petroleumTaxShareholderId: 0,
+          isIndividual: true,
+          isResident: true,
+          identityNumber: "string",
+          fullName: "string",
+          isDirector: true,
+          sharePercentage: 40,
+          capital: 30000,
+        },
+        {
+          id: 2,
+          petroleumTaxShareholderId: 0,
+          isIndividual: true,
+          isResident: true,
+          identityNumber: "string",
+          fullName: "string",
+          isDirector: true,
+          sharePercentage: 30,
+          capital: 30000,
+        },
+      ];
+
+      // Act
+      cy.request({
+        ...requestObj,
+        body,
+      }).then((res) => {
+        // Assert
+        expect(res.status).to.equal(400);
+        expect(res.body.errors["SectionB"]).to.include(
+          "Total percentage of Shares must equal to 100%"
+        );
+      });
+    });
+
+    it("should return error, when total shares percentage is equal to null", () => {
+      // Arrange
+      let body = { ...request.main, ...request.sectionB };
+      body.sectionB.totalSharePercentage = null;
+
+      // Act
+      cy.request({
+        ...requestObj,
+        body,
+      }).then((res) => {
+        // Assert
+        expect(res.status).to.equal(400);
+        expect(res.body.errors["SectionB"]).to.include(
+          "Total percentage of Shares must equal to 100%"
+        );
+      });
+    });
+
+    it("should return success, when total shares percentage is equal to 100", () => {
+      // Arrange
+      let body = { ...request.main, ...request.sectionB };
+      body.sectionB.totalSharePercentage = 100;
+
+      // Act
+      cy.request({
+        ...requestObj,
+        body,
+      }).then((res) => {
+        // Assert
+        expect(res.status).to.equal(200);
+        // expect(res.body).not.to.include("errors");
+      });
+    });
+  });
+});
