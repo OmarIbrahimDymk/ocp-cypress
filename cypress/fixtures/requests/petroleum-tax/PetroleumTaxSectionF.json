@@ -1,0 +1,56 @@
+{
+  "sectionF": {
+    "id": 0,
+    "petroleumTaxId": 0,
+    "actualOutput": 0,
+    "actualOutputPotentialFuture": 0,
+    "capitalAllRate": 0,
+    "capitalAllowancesThisYear": 0,
+    "balancingAllowances": 0,
+    "capitalAllowanceBroughtForward": 0,
+    "totalCapitalAllowances": 0,
+    "totalCapAllUtilised": 0,
+    "capAllAvailableForCarriedFowrard": 0,
+    "totalQualifyingExpenditurePara7": 0,
+    "totalInitialAllowancePara7": 0,
+    "totalAnnualAllowancePara7": 0,
+    "totalQualifyingExpenditurePara8": 0,
+    "total100PerClaimCapitalAllowancePara8": 0,
+    "totalAnnualAllowancePara8": 0,
+    "capitallAllThisYear": 0,
+    "sections": [
+      {
+        "id": 0,
+        "capitalAllowanceId": 0,
+        "sectionId": 0,
+        "totalBroughtForwardBalances": 0,
+        "totalAssetsDisposed": 0,
+        "totalNetForCapitalAllowances": 0,
+        "totalCapitalAllowanceClaim": 0,
+        "totalCapitalAllowancesOnAssetDisposed": 0,
+        "totalIntialAllowance100Claim": 0,
+        "totalAnnualAllowance": 0,
+        "totalCapitalAllowancesTotal": 0,
+        "totalWrittenDownValue": 0,
+        "itemsList": [
+          {
+            "id": 0,
+            "capitalAllowanceDetailId": 0,
+            "isEnteredYOA": true,
+            "basisYear": 0,
+            "sectionNumber": "string",
+            "broughtForwardBalance": 0,
+            "assetsDisposed": 0,
+            "net": 0,
+            "capitalAllowance": 0,
+            "capitalAllowancesOnAssetsDisposed": 0,
+            "initialAllowance100Claim": 0,
+            "annualAllowance": 0,
+            "totalCapitalAllowance": 0,
+            "writtenDownValue": 0
+          }
+        ]
+      }
+    ]
+  }
+}

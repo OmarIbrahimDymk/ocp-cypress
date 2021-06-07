@@ -1,0 +1,65 @@
+{
+  "sectionD": {
+    "id": 0,
+    "petroleumTaxId": 0,
+    "isNoJointVenture": true,
+    "isJointVenture": true,
+    "grandTotalRevenue": 0,
+    "grossProceedsTotal": 0,
+    "productionSharingOperationsTotal": 0,
+    "ventureDetails": [
+      {
+        "id": 0,
+        "incomeId": 0,
+        "ventureNumber": 0,
+        "hasRingFenced": true,
+        "name": "string",
+        "totalParticipationInterest": 0,
+        "hasCarriedInterest": true,
+        "carriedInterstDetails": [
+          {
+            "id": 0,
+            "ventureId": 0,
+            "interest": 0,
+            "total": 0,
+            "itemsList": [
+              {
+                "id": 0,
+                "carriedInterstId": 0,
+                "name": "string",
+                "amount": 0
+              }
+            ]
+          }
+        ],
+        "participationDetails": [
+          {
+            "id": 0,
+            "ventureId": 0,
+            "registrationNumber": "string",
+            "contractingParty": "string",
+            "interest": 0,
+            "participationDate": "2021-06-01T01:50:11.617Z",
+            "isOperator": true
+          }
+        ],
+        "revenueDetails": [
+          {
+            "id": 0,
+            "ventureId": 0,
+            "firstShare": 0,
+            "total": 0
+          }
+        ]
+      }
+    ],
+    "grossProceedDetails": [
+      {
+        "id": 0,
+        "incomeId": 0,
+        "name": "string",
+        "amount": 0
+      }
+    ]
+  }
+}

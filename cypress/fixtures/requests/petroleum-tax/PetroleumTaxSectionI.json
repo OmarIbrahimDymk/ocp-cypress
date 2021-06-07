@@ -1,0 +1,16 @@
+{
+  "sectionI": {
+    "declaration": {
+      "userType": 0,
+      "name": "string",
+      "designation": "string",
+      "contactNumber": {
+        "countryCode": "string",
+        "phoneNumber": "string"
+      },
+      "email": "string",
+      "date": "2021-06-01T01:50:11.617Z",
+      "isAgreed": true
+    }
+  }
+}

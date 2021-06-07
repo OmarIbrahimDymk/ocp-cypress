@@ -1,0 +1,16 @@
+{
+  "sectionA": {
+    "petroleumTaxId": 0,
+    "identifierNumber": "string",
+    "currencyId": 0,
+    "currencyRate": 0,
+    "dateOfIssued": "2021-06-01T01:50:11.617Z",
+    "selectedResidentStatus": true,
+    "businessSectorId": 1,
+    "businessSubSectorId": 1,
+    "businessSubSectorDetailId": 1,
+    "countryId": 1,
+    "dateOfIncorporation": "2021-06-01T01:50:11.617Z",
+    "isResident": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "sectionB": {
+    "id": 0,
+    "petroleumTaxId": 0,
+    "totalSharePercentage": 100,
+    "totalCapital": 30000,
+    "shareholderDetails": [
+      {
+        "id": 0,
+        "petroleumTaxShareholderId": 0,
+        "isIndividual": true,
+        "isResident": true,
+        "identityNumber": "string",
+        "fullName": "string",
+        "isDirector": true,
+        "sharePercentage": 100,
+        "capital": 30000
+      }
+    ]
+  }
+}

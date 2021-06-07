@@ -1,0 +1,18 @@
+{
+  "yoa": 0,
+  "entityId": 0,
+  "issuedDate": "2021-06-01T01:50:11.617Z",
+  "currencyId": 0,
+  "exchangeRate": 0,
+  "companyName": "string",
+  "companyRegisteredAddress": "string",
+  "postalCode": "string",
+  "districtOrState": "string",
+  "country": "string",
+  "businessSectorId": 0,
+  "businessSubSectorId": 0,
+  "businessSubSectorDetailId": 0,
+  "countryId": 0,
+  "dateOfIncorporation": "2021-06-01T01:50:11.617Z",
+  "isResident": true
+}

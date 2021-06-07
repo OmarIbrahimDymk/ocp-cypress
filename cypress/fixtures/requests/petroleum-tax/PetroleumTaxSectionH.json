@@ -1,0 +1,53 @@
+{
+  "sectionH": {
+    "id": 0,
+    "petroleumTaxId": 0,
+    "grossTax": 0,
+    "foreignIncomeDoubleTax": 0,
+    "foreignIncome55Percent": 0,
+    "foreignTaxPayableForeignIncome": 0,
+    "doubleTaxAgreeTaxReduction": 0,
+    "netTaxPayableUSD": 0,
+    "hasPaidTax": true,
+    "paidTaxUSD": 0,
+    "balanceTaxPayableUSD": 0,
+    "totalOtherTaxDueUSD": 0,
+    "otherPaidTaxUSD": 0,
+    "balanceOtherTaxUSD": 0,
+    "currencyType": 0,
+    "exchangeRate": 0,
+    "grossTaxBND": 0,
+    "foreignIncomeUnderDoubleTaxBND": 0,
+    "foreignIncome55PercentBND": 0,
+    "foreignTaxPayableForeignIncomeBND": 0,
+    "doubleTaxAgreeTaxReductionBND": 0,
+    "netTaxPayableBND": 0,
+    "paidTaxBND": 0,
+    "balancePayableBND": 0,
+    "otherTaxDueBND": 0,
+    "otherPaidTaxBND": 0,
+    "balanceOtherTaxBND": 0,
+    "otherTaxesDue": [
+      {
+        "id": 0,
+        "taxPayableId": 0,
+        "name": "string",
+        "amount": 0
+      }
+    ],
+    "paidTaxes": [
+      {
+        "id": 0,
+        "taxPayableId": 0,
+        "paymentId": 0,
+        "paymentDate": "2021-06-01T01:50:11.617Z",
+        "paymentMethod": 0,
+        "bankName": "string",
+        "amount": 0,
+        "currencyType": "string",
+        "exchangeRate": 0,
+        "amountBND": 0
+      }
+    ]
+  }
+}

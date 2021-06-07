@@ -1,0 +1,96 @@
+{
+  "sectionC": {
+    "id": 0,
+    "petroleumTaxId": 0,
+    "isShareCapitalDisabled": true,
+    "cash": 0,
+    "tradeReceivables": 0,
+    "nonTradeReceivables": 0,
+    "amountDueFromDirectorsShareholdersRelatedParties": 0,
+    "amountDueFromDirectors": 0,
+    "amountDueFromShareholders": 0,
+    "amountDueFromRelatedParties": 0,
+    "inventoriesAndWorkInProgress": 0,
+    "inventories": 0,
+    "workInProgress": 0,
+    "otherCurrentAssets": 0,
+    "totalOthCurrAssets": 0,
+    "investmentAssets": 0,
+    "propertyPlantEquip": 0,
+    "otherNonCurrentAssets": 0,
+    "totalOthNonCurrAssets": 0,
+    "totalAssets": 0,
+    "tradePayablesCreditors": 0,
+    "nonTradePayablesCreditors": 0,
+    "amountDueToDirectorsShareholdersRelatedParties": 0,
+    "amountDueToDirectors": 0,
+    "amountDueToShareholders": 0,
+    "amountDueToRelatedParties": 0,
+    "borrowings": 0,
+    "provisions": 0,
+    "otherCurrentLiabilities": 0,
+    "totalOtherCurrentLiabilities": 0,
+    "totalCurrentLiabilities": 0,
+    "finance": 0,
+    "longTermLiability": 0,
+    "otherNonCurrentLiabilities": 0,
+    "totalOtherNonCurrentLiabilities": 0,
+    "totalNonCurrentLiabilities": 0,
+    "totalLiabilities": 0,
+    "shareCapital": 0,
+    "retainedEarnings": 0,
+    "totalOtherEquities": 0,
+    "totalEquity": 0,
+    "totalEquityAndLiabilities": 0,
+    "currentAssetsList": [
+      {
+        "id": 0,
+        "balanceSheetId": 0,
+        "type": 1,
+        "isCurrent": true,
+        "name": "string",
+        "amount": 0
+      }
+    ],
+    "nonCurrentAssetsList": [
+      {
+        "id": 0,
+        "balanceSheetId": 0,
+        "type": 1,
+        "isCurrent": true,
+        "name": "string",
+        "amount": 0
+      }
+    ],
+    "currentLiabilitiesList": [
+      {
+        "id": 0,
+        "balanceSheetId": 0,
+        "type": 1,
+        "isCurrent": true,
+        "name": "string",
+        "amount": 0
+      }
+    ],
+    "nonCurrentLiabilitiesList": [
+      {
+        "id": 0,
+        "balanceSheetId": 0,
+        "type": 1,
+        "isCurrent": true,
+        "name": "string",
+        "amount": 0
+      }
+    ],
+    "equitiesList": [
+      {
+        "id": 0,
+        "balanceSheetId": 0,
+        "type": 1,
+        "isCurrent": true,
+        "name": "string",
+        "amount": 0
+      }
+    ]
+  }
+}

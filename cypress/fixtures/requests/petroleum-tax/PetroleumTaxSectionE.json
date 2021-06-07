@@ -1,0 +1,25 @@
+{
+  "sectionE": {
+    "id": 0,
+    "petroleumTaxId": 0,
+    "rents": 0,
+    "compensation": 0,
+    "repair": 0,
+    "badDebts": 0,
+    "drillingDev": 0,
+    "contributions": 0,
+    "sumDue": 0,
+    "donations": 0,
+    "otherDeductions": 0,
+    "totalExpenses": 0,
+    "chargeableProfitLoss": 0,
+    "itemsList": [
+      {
+        "id": 0,
+        "expenseId": 0,
+        "name": "string",
+        "amount": 0
+      }
+    ]
+  }
+}
