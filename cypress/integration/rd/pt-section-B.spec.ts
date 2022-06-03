@@ -26,7 +26,7 @@ describe("PT - Section B", () => {
   beforeEach(() => {
     cy.rdLogin();
 
-    cy.goTo("PTSectionB");
+    cy.goTo(369, "PTSectionB");
     cy.viewport(1500, 900);
   });
 
@@ -99,17 +99,20 @@ describe("PT - Section B", () => {
   });
 
   it("should populate shareholders details from IT form if use has submitted IT form for the same YOA as PT form", () => {
-    cy.intercept("GET", "/rocbn/api/entities/rd/**/stakeholders", {
-      fixture: "responses/stakeholder/stakeholders",
+    cy.intercept("GET", "/rd/api/incometax/**/**/shareholders", {
+      fixture: "responses/stakeholder/itStakeholders",
     });
 
     cy.getDataTestId(tableInput2.inputField(ShareholderEnum.FullName)).should(
       "have.value",
-      "Stubbed Director"
+      "Stubbed Director (From PT)"
     );
   });
 
   it("should populate shareholder details from ROCBN during the business basis period if shareholders details is not available from IT form", () => {
+    cy.intercept("GET", "/rd/api/incometax/**/**/shareholders", {
+      fixture: "responses/stakeholder/noStakeholder",
+    });
     cy.intercept("GET", "/rocbn/api/entities/rd/**/stakeholders", {
       fixture: "responses/stakeholder/stakeholders",
     });
@@ -156,20 +159,23 @@ describe("PT - Section B", () => {
 
       cy.getDataTestId("submitBtn").click({ force: true });
 
-      cy.intercept("POST", "/taxform", (req) => {
-        expect(req.body.sectionB).to.include({
+      cy.intercept("POST", "/rd/api/petroleumtax/submit", (req) => {
+        req.reply("success");
+      }).as("submit");
+
+      cy.wait("@submit").then((http) => {
+        cy.get("@submit").its("request.body.sectionB").should("include", {
           totalCapital: 4700,
           totalSharePercentage: 100,
         });
 
-        shareholders.forEach((shareholder, index) => {
+        shareholders.forEach((shareholder) => {
           delete shareholder.row;
-          expect(req.body.sectionB.shareholderDetails[index]).to.include(
-            shareholder
-          );
         });
 
-        req.reply("success");
+        cy.get("@submit")
+          .its(`request.body.sectionB.shareholderDetails`)
+          .should("deep.equal", shareholders);
       });
     });
   });
@@ -247,7 +253,7 @@ describe("PT - Section B", () => {
         shareholder.identityNumber = ic.join("");
       });
 
-      cy.intercept("POST", "/taxform", (req) => {
+      cy.intercept("POST", "/rd/api/petroleumtax/submit", (req) => {
         const totalCapital: number = +modifiedShareholders
           .reduce((acc, s) => acc + +s.capital, 0)
           .toFixed(2);
@@ -265,6 +271,46 @@ describe("PT - Section B", () => {
 
         req.reply("success");
       });
+    });
+  });
+
+  it("should post correct view model", () => {
+    cy.getDataTestId(tableInput2.addBtn()).click();
+    cy.enterShareholder({
+      row: 0,
+      identityNumber: "01010191",
+      fullName: "Shareholder A",
+      isDirector: true,
+      sharePercentage: 40,
+      capital: 25000,
+    });
+
+    cy.getDataTestId(tableInput2.addBtn()).click();
+    cy.enterShareholder({
+      row: 1,
+      identityNumber: "01010192",
+      fullName: "Shareholder B",
+      isDirector: true,
+      sharePercentage: 60,
+      capital: 45000,
+    });
+
+    cy.getDataTestId("submitBtn").click({ force: true });
+
+    cy.intercept("POST", "/rd/api/petroleumtax/submit", (req) => {
+      req.reply("success");
+    }).as("submit");
+
+    cy.wait("@submit").then((http) => {
+      cy.get("@submit")
+        .its("request.body.sectionB")
+        .should("deep.include.all.keys", [
+          "totalCapital",
+          "totalSharePercentage",
+        ]);
+      cy.get("@submit")
+        .its("request.body.sectionB.shareholderDetails[0]")
+        .should("deep.include.all.keys", ["fullName"]);
     });
   });
 });

@@ -1,0 +1,26 @@
+{
+  "list": [
+    {
+      "id": 3,
+      "entityName": "string",
+      "dueDate": "2021-08-18T00:31:46.984Z",
+      "agmDueDate": "2021-08-18T00:31:46.984Z",
+      "declareRegisterController": "2021-08-18T00:31:46.984Z",
+      "reminderType": 2,
+      "reminderSequence": 2,
+      "department": 1,
+      "entityTypeId": 2
+    },
+    {
+      "id": 3,
+      "entityName": "string",
+      "dueDate": "2021-08-18T00:31:46.984Z",
+      "agmDueDate": "2021-08-18T00:31:46.984Z",
+      "declareRegisterController": "2021-08-18T00:31:46.984Z",
+      "reminderType": 2,
+      "reminderSequence": 2,
+      "department": 2,
+      "entityTypeId": 2
+    }
+  ]
+}

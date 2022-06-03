@@ -98,7 +98,7 @@ enum collectionEnum {
   GrossProceed = "GrossProceed",
 }
 
-describe("PT Section D", () => {
+describe("PT Section D Frontend", () => {
   beforeEach(() => {
     cy.intercept("GET", "/rocbn/api/entities/rd/*", {
       fixture: "responses/entities",
@@ -111,7 +111,7 @@ describe("PT Section D", () => {
     cy.rdLogin();
 
     cy.viewport(1500, 900);
-    cy.goTo("PTSectionD");
+    cy.goTo(369, "PTSectionD");
   });
 
   context("General", () => {
@@ -264,7 +264,7 @@ describe("PT Section D", () => {
           { name: "Asset 3", amount: 34 },
         ];
 
-        cy.intercept("POST", "/taxform", (req) => {
+        cy.intercept("POST", "/rd/api/petroleumtax/submit", (req) => {
           expect(req.body.sectionD).to.include({
             isNoJointVenture: true,
             isJointVenture: false,
@@ -653,6 +653,60 @@ describe("PT Section D", () => {
             name: "Soil Sales",
             amount: 3000,
           });
+      });
+    });
+  });
+});
+
+describe("PT Section D Backend Validation", () => {
+  let request: any = {};
+  const requestObj: any = {
+    method: "POST",
+    url: "http://localhost:5885/api/PetroleumTax",
+    failOnStatusCode: false,
+  };
+
+  beforeEach(() => {
+    cy.rdLogin();
+    cy.fixture("requests/petroleum-tax/PetroleumTaxMain").then((req) => {
+      request.main = req;
+    });
+    cy.fixture("requests/petroleum-tax/PetroleumTaxSectionD").then((req) => {
+      request.sectionD = req;
+    });
+  });
+
+  context("Shareholder lists", () => {
+    it("Should return error when no shareholder is listed", () => {
+      // Arrange
+      let body = { ...request.main, ...request.sectionB };
+      body.sectionB.shareholderDetails = [];
+
+      // Act
+      cy.request({
+        ...requestObj,
+        body,
+      }).then((res) => {
+        // Assert
+        expect(res.status).to.equal(400);
+        expect(res.body.errors["SectionB.ShareHoldersList"]).to.include(
+          "Shareholder must be at least 1"
+        );
+      });
+    });
+
+    it("Should return success when at least 1 shareholder is listed", () => {
+      // Arrange
+      let body = { ...request.main, ...request.sectionB };
+
+      // Act
+      cy.request({
+        ...requestObj,
+        body,
+      }).then((res) => {
+        // Assert
+        cy.log(JSON.stringify(res));
+        expect(res.status).to.equal(200);
       });
     });
   });

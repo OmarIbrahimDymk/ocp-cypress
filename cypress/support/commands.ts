@@ -63,8 +63,8 @@ Cypress.Commands.add("rdLogin", () => {
   });
 });
 
-Cypress.Commands.add("goTo", (...sections: string[]) => {
-  let url = new URL("http://localhost:5082/playground/369");
+Cypress.Commands.add("goTo", (entityId: number, ...sections: string[]) => {
+  let url = new URL(`http://localhost:5082/playground/${entityId}`);
   url.searchParams.append("selectedComponents", "");
   sections.forEach((section) => {
     url.searchParams.append("selectedComponents", section);

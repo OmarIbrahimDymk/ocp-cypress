@@ -53,16 +53,16 @@ describe("PT Section H", () => {
 
     cy.rdLogin();
 
-    cy.goTo("PTSectionA", "PTSectionD", "PTSectionG", "PTSectionH");
+    cy.goTo(369, "PTSectionA", "PTSectionD", "PTSectionG", "PTSectionH");
   });
 
   it.skip("should display section H", () => {
     cy.viewport(1500, 900);
-    cy.goTo("PTSectionH");
+    cy.goTo(369, "PTSectionH");
   });
 
-  context("h1", () => {
-    it("should display G5 x 0.55 if D3 is greater than 0", () => {
+  context.only("h1", () => {
+    it.only("should display G5 x 0.55 if D3 is greater than 0", () => {
       cy.fillH1();
 
       cy.getDataTestId("h1").should("have.value", "550.00");
